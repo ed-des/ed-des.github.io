@@ -38,9 +38,14 @@ p, ul {
 	font-family: 'Volkhov', serif;
 	font-weight: 400;
 	line-height: 1.5;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 }
 a {
 	color: purple;
+}
+.starter {
+	color: gray;
 }
 .led {
 	color: #CECECE;
