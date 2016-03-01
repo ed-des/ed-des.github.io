@@ -12,7 +12,7 @@ body {
 
 /* --- GENERAL --- */
 
-header h1 {
+header > h1 {
 	margin: 0 40px 20px;
 	padding-top: 40px;
 	font-size: 2.2em;
@@ -20,6 +20,12 @@ header h1 {
 	font-weight: 400;
 	color: #681CFF;
 	text-transform: none;
+}
+section > h1 {
+	font-family: 'Dosis', sans-serif;
+	font-weight: normal;
+	color: gray;
+	margin-top: 40px;
 }
 p, ul {
 	margin: 0;
@@ -47,6 +53,10 @@ a {
 /* header section */
 .header {
 	padding-bottom: 40px;
+}
+.header nav {
+	padding: 40px 40px 0;
+	font-family: 'Inconsolata';
 }
 .header:after {
 	content: "";
@@ -115,26 +125,39 @@ a {
 .info {
 	padding-bottom: 40px;
 }
-.info p {
+.info.gray {
+	background: #efefef;
+}
+.info p, section.info > h1, .info ul {
 	padding: 0 40px;
 	margin-bottom: 16px;
 	width: 60%;
 	font-size: 1.5em;
 }
+.info ul {
+	padding-left: 64px;
+}
+
+/* submitted */
+.submitted p {
+	margin-bottom: 0;
+}
 
 /* footer */
 footer {
 	background: #efefef;
-	padding: 10px 40px 12px 0;
+	background: #ffffff;
+	border-top: 2px solid #efefef;
+	padding: 0 40px 12px 0;
 }
 footer ul {
-
 }
 footer li {
 	display: inline-block;
 	font-family: 'Inconsolata';
 	font-weight: 800;
 	font-size: .8em;
+	padding-top: 10px;
 }
 footer li:last-of-type {
 	float: right;
@@ -148,7 +171,7 @@ footer li:last-of-type {
 		float: none;
 		padding-left: 40px;
 	}
-	.info p {
+	.info p, .info ul, section.info > h1 {
 		width: 100%;
 		font-size: 1.2em;
 	}
@@ -163,7 +186,6 @@ footer li:last-of-type {
 	}
 	.header h1 {
 		font-size: 3em;
-		width: 90%;
 	}
 	.sch-col, .sch-col:first-of-type {
 		width: 100%;
@@ -195,8 +217,11 @@ footer li:last-of-type {
 	.sch-col.assign::before {
 		content: "HW";
 	}
-	.header div, .info p {
+	.header div, .info p, section.info > h1 {
 		padding: 0 16px;
+	}
+	footer ul {
+	    padding: 0 0 0 16px;
 	}
 }
 
