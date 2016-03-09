@@ -6,7 +6,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="Dylan Greif">
-<title>Project Title</title>
+<title>HTML Layout Essentials</title>
 <link rel="stylesheet" href="styles.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -16,7 +16,7 @@
 <header>
 	<nav>
 	</nav>
-	<h1>Layout Essentials</h1>
+    <h1><span class="code">HTML</span> Layout Essentials</h1>
     <p>You already know how to construct a basic <span class="code">HTML</span> page, and how to style the <span class="code">HTML</span> elements using <span class="code">CSS</span>. Now, let’s take a look at how different kinds of elements display in a page layout.</p>
 </header>
 
@@ -61,8 +61,8 @@
         <section class="deepdive">
             <h1>Deep Dive</h1>
             <p>Why would you want to put one element inside another element? Many reasons. One is so that you can group elements together, and then design that group in a certain way. This “Deep Dive” box, for example, puts a header element and a paragraph element in a “parent” container. In CSS, the parent container was given a yellow container.</p>
-            <p class="task"><span class="task-no">Task 1</span> Create  group of elements contained in a parent element, and attribute a style to the parent element.</p>
         </section>
+        <p class="task"><span class="task-no">Task 1</span> Create  group of elements contained in a parent element, and attribute a style to the parent element.</p>
     </section>
 <!--
     <section>
@@ -101,10 +101,10 @@
         <p>When you add inline elements to a page, they will be laid out just like words in a string of text: left-to-right then top-to-bottom.</p>
         <section class="examples borders">
             <h1>Example</h1>
-            <p>In this page’s HTML, every word in the sentence below was put inside a <span class="code">&#60;span&#62;</span> (and styled with a green border):</p>
+            <p>In this page’s <span class="code">HTML</span>, every word in the sentence below was put inside a <span class="code">&#60;span&#62;</span> (and styled with a green border):</p>
             <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span>
-            <p class="task"><span class="task-no">Task 2</span> Create a layout comprised of a sequence of inline elements, one after the other.</p>
         </section>
+        <p class="task"><span class="task-no">Task 2</span> Create a layout comprised of a sequence of inline elements, one after the other.</p>
         <section class="deepdive">
             <h1>Deep Dive</h1>
             <p>While you can use CSS to style an inline element’s container in some ways (like adding a green border, for example), you cannot change the container’s width and height or, say, add a top and bottom margin.</p>
@@ -140,9 +140,9 @@
                 <p>The first <strong>div</strong> element below was given no width, so it fills 100% of its parent container, by default. The second was given a 40% width in CSS to fill 40% of its parent container. The third was given a 100px width in CSS.</p>
                 <div>I</div> <div class="w-40p">think</div> <div class="w-100">therefore</div>
                 <p>Note: even when there is enough horizontal room for two block elements to fit side by side, they will still  stack one on top of the other.</p>
-                <p class="task"><span class="task-no">Task 3</span> Create a layout comprised of a sequence of block elements, one going after the other. Adjust the height and/or width of at least one of them.</p>
             </section>
         </section>
+        <p class="task"><span class="task-no">Task 3</span> Create a layout comprised of a sequence of block elements, one going after the other. Adjust the height and/or width of at least one of them.</p>
     </section>
         <section>
         <h1>You can make an element whose default state displays <em>inline</em> instead display as a <em>block</em> element (and vice versa)</h1>
@@ -181,8 +181,8 @@
                     </div>
                 </div>
             </section>
-            <p class="task"><span class="task-no">Task 5</span> Create a layout comprised of inline-block elements.</p>
         </section>
+        <p class="task"><span class="task-no">Task 5</span> Create a layout comprised of inline-block elements.</p>
     </section>
 </section>
 <section>
@@ -230,13 +230,16 @@
             <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span class="pre-float float-right">think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span>
             <p>Now, a <span class="code">&#60;float: left;&#62;</span> style attribute:</p>
             <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span class="pre-float float-left">think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span>
+        </section>
             <p class="task"><span class="task-no">Task 8</span> Create a layout comprised an element floating amid other inline elements.</p>
+        <section class="examples borders">
+            <h1>Example</h1>
             <p>Now below is every word in the sentence put inside a <span class="code">&#60;div&#62;</span>, which is a block element. (By default, block elements have 100% widths.) Again, I made one of the elements green:</p>
             <div>I</div> <div>think</div> <div>therefore</div> <div>I</div> <div>am</div> <div>I</div> <div class="pre-float">think</div> <div>therefore</div> <div>I</div> <div>am</div> <div>I</div> <div>think</div> <div>therefore</div> <div>I</div> <div>am</div>
             <p>Let us float that green element to the right. Let's increase its height, too. When it forces itself to the right, other block elements overlap behind it:</p>
             <div>I</div> <div>think</div> <div>therefore</div> <div>I</div> <div>am</div> <div>I</div> <div class="pre-float float-right h-100">think</div> <div>therefore</div> <div>I</div> <div>am</div> <div>I</div> <div>think</div> <div>therefore</div> <div>I</div> <div>am</div>
-            <p class="task"><span class="task-no">Task 9</span> Create a layout comprised an element floating amid block elements.</p>
         </section>
+        <p class="task"><span class="task-no">Task 9</span> Create a layout comprised an element floating amid block elements.</p>
     </section>
 <p class="task"><span class="task-no">Task 10</span> Assemble all your tasks in one web page with a page title and subtitle that describes what this page is. Every example should have a heading that indicates what it is in example of.</p>
 </section>  

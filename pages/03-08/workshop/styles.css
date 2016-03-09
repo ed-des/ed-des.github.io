@@ -23,11 +23,13 @@ body > header, body > section {
 /* task */
 .task {
     font-size: .8em;
+    margin: 40px 0;
 }
 .task-no {
     background: coral;
     font-weight: bold;
     padding: 4px;
+    margin-right: 10px;
 }
 
 /* body header */
