@@ -26,7 +26,7 @@
     </header>
     <section>
         <h1>Text</h1>
-        <p>Strings of text always appear in an inline flow. That means that every word will appear to the right of the one before it until there is no space left on the line, at which point, the string of text will start again at left side of the line below. Left to right, top to bottom. This is the flow of <em>inline content</em>.</p>
+        <p>Strings of text always appear in an inline flow. That means that every word will appear to the right of the one before it until there is no more space on the line, at which point, the string of text will start again at left side of the line below. Left to right, top to bottom. This is the flow of <em>inline content</em>.</p>
         <p>But raw text alone doesn’t make for a great editorial layout. A good layout, like any web page, needs:</p>
         <ol>
             <li>Content to be able to be assembled in a variety of  layout orientations, say for example, a grid.</li>
@@ -60,7 +60,7 @@
         </ul>
         <section class="deepdive">
             <h1>Deep Dive</h1>
-            <p>Why would you want to one element inside another element? Many reasons. One is so that you can group elements together, and then design that group in a certain way. This “Deep Dive” box, for example, puts a header element and a paragraph element in a “parent” container. In CSS, the parent container was given a yellow container.</p>
+            <p>Why would you want to put one element inside another element? Many reasons. One is so that you can group elements together, and then design that group in a certain way. This “Deep Dive” box, for example, puts a header element and a paragraph element in a “parent” container. In CSS, the parent container was given a yellow container.</p>
             <p class="task"><span class="task-no">Task 1</span> Create  group of elements contained in a parent element, and attribute a style to the parent element.</p>
         </section>
     </section>
@@ -103,7 +103,7 @@
             <h1>Example</h1>
             <p>In this page’s HTML, every word in the sentence below was put inside a <span class="code">&#60;span&#62;</span> (and styled with a green border):</p>
             <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span> <span>I</span> <span>think</span> <span>therefore</span> <span>I</span> <span>am</span>
-            <p class="task"><span class="task-no">Task 2</span> Create a layout comprised of a sequence of inline elements, one going after the other.</p>
+            <p class="task"><span class="task-no">Task 2</span> Create a layout comprised of a sequence of inline elements, one after the other.</p>
         </section>
         <section class="deepdive">
             <h1>Deep Dive</h1>
@@ -126,7 +126,7 @@
             <li class="code">&#60;ul&#62;&#60;/ul&#62;</li>
             <li class="code">&#60;li&#62;&#60;/li&#62;</li>
         </ul>
-        <p>When you add block elements to a page, they will stack top-to-bottom. Each element will stretch horizontally to take up its own entire line. Thus, sibling content cannot appear to the left or right of the block element.</p>
+        <p>When you add block elements to a page, they will stack top-to-bottom. Each element will stretch horizontally to take up its own entire line. Thus, other inline or block content cannot appear to the left or right of the block element.</p>
         <section class="examples borders">
             <h1>Example</h1>
             <p>In this page’s HTML, every word in the sentence was put inside a <span class="code">&#60;div&#62;</span> (and styled with a green border):</p>
@@ -134,10 +134,10 @@
         </section>
         <section class="deepdive">
             <h1>Deep Dive</h1>
-            <p>A block element can adopt more “physical” properties. You can use CSS to change the container’s width and height, or, say, add a top and bottom margin.</p>
+            <p>A block element is better at adopting “physical”-like properties. You can use CSS to change the container’s width and height, or, say, add a top and bottom margin.</p>
             <section class="examples borders">
                 <h1>Example</h1>
-                <p>The first <strong>div</strong> element below was given no width, so it fills 100% of its parent container, by default. The second was given a 50% width in CSS to fill 50% of its parent container. The third was given a 100px width in CSS.</p>
+                <p>The first <strong>div</strong> element below was given no width, so it fills 100% of its parent container, by default. The second was given a 40% width in CSS to fill 40% of its parent container. The third was given a 100px width in CSS.</p>
                 <div>I</div> <div class="w-40p">think</div> <div class="w-100">therefore</div>
                 <p>Note: even when there is enough horizontal room for two block elements to fit side by side, they will still  stack one on top of the other.</p>
                 <p class="task"><span class="task-no">Task 3</span> Create a layout comprised of a sequence of block elements, one going after the other. Adjust the height and/or width of at least one of them.</p>
@@ -145,8 +145,8 @@
         </section>
     </section>
         <section>
-        <h1>You can make an element that by default displays as an <em>inline</em> element instead display as a <em>block</em> element (and vice versa)</h1>
-        <p>In CSS, all you have to do is add the <strong class="code">display: block;</strong> attribute to what would by default be an inline element, and the <strong class="code">display: inline;</strong> attribute to what would by default be a block element.</p>
+        <h1>You can make an element whose default state displays <em>inline</em> instead display as a <em>block</em> element (and vice versa)</h1>
+        <p>In CSS, add the <strong class="code">display: block;</strong> attribute to what would otherwise be an inline element, and the <strong class="code">display: inline;</strong> attribute to what would otherwise be a block element.</p>
         <section class="examples borders">
             <h1>Example</h1>
             <p>This example shows two <span class="code">div</span> elements, which display as block by default, display  inline instead.</p>
@@ -164,10 +164,10 @@
         <section class="deepdive">
             <h1>Deep Dive</h1>
             <p>You can make an element that behaves like both an inline and block element.</p>
-            <p>In CSS, all you have to do is add the <strong class="code">display: inline-block;</strong> attribute to the element. An <em>inline-block</em> element will be built as if it were a block element, but it will flow on the page as if it were an inline element.</p>
+            <p>In CSS, add the <strong class="code">display: inline-block;</strong> attribute to the element. An <em>inline-block</em> element will be built as if it were a block element, but it will flow on the page as if it were an inline element.</p>
             <section class="examples">
                 <h1>Example</h1>
-                <p>This example shows two inline block elements (with CSS-styled width and margin) positioned horizontally next yo each other.</p>
+                <p>This example shows two inline-block elements (with CSS-styled width and margin) positioned horizontally next to each other.</p>
                 <div class="sideby">
                     <div>
                         <div class="circle-img"></div>
@@ -192,10 +192,10 @@
     <p>Say you want to align the content on your page. By default, all content is left-aligned. Beyond that...</p>
     <section>
         <h1>For inline content</h1>
-        <p>To align inline content: you can order its parent container to align all content therin to the left, center, or right.</p>
+        <p>To align an inline element: you can give its parent container an attibute that aligns everything inside the parent left, center, or right.</p>
         <section class="examples borders">
             <h1>Example</h1>
-            <p>The example below shows two text sentences. Each sentence is contained in an inline, <span class="code">span</span> element. Both span elements are contained in a parent <span class="code">div</span> element. I gave the parent <span class="code">div</span> the style attribute of <span class="code">text-align: center;</span>. This centers all inline elements in the parent.</p>
+            <p>The example below shows two text sentences. Each sentence is contained in an inline, <span class="code">span</span> element. Both span elements are contained in a parent <span class="code">div</span> element. I gave the parent <span class="code">div</span> the style attribute of <span class="code">text-align: center;</span>. This centers both inline <span class="code">span</span> elements in the parent.</p>
             <div class="center-items">
                 <span class="span-box">I am.</span> 
                 <span class="span-box">You are.</span> 
@@ -205,21 +205,21 @@
     </section>
     <section>
         <h1>For block elements</h1>
-        <p>To align block content: you can order the element itself how it aught to align itself on the page. Commonly, people want to center a block element. This can be done by setting its left and right margin to "auto" (e.g. <span class="code">margin-left: auto; margin-right: auto;</span>)</p>
+        <p>To align a block element: you can give the element itself an attribute that tells it how it should align itself on the page. One common objective is centering a block element. This can be done by setting its left and right margins to "auto" (e.g. <span class="code">margin-left: auto; margin-right: auto;</span>)</p>
         <section class="examples borders">
             <h1>Example</h1>
-            <p>The example below shows one sentence. The sentence is contained in a block, <span class="code">div</span> element. (Because it is a block element, I could set a width and height for it). I gave it the style attribute of <span class="code">margin-left: auto; margin-right: auto;</span>. As a result, it centers itself in the parent.</p>
+            <p>The example below shows one sentence. The sentence is contained in a block, <span class="code">div</span> element. (Because it is a block element, I could set a width and height for it). I gave it the style attribute of <span class="code">margin-left: auto; margin-right: auto;</span>. As a result, it centers itself in its parent.</p>
             <div class="div-center">I think therefore I am.</div>
-            <p>What if I wanted to the raw text inside the <span class="code">div</span>to be text-aligned center? In this case, you can think of the <span class="code">div</span> as a parent element for the inline text content. I gave the parent <span class="code">div</span> the style attribute of <span class="code">text-align: center;</span>. Now, the <span class="code">div</span> is both centering itself in its parent, and it is centering all inline text inside it.</p>
+            <p>What if I wanted to the raw text inside the <span class="code">div</span>to be text-aligned center? In that case, you can think of the <span class="code">div</span> as a parent element for the inline text content. I gave the <span class="code">div</span> the style attribute of <span class="code">text-align: center;</span>. Now, the <span class="code">div</span> is both centering itself in its own parent, and it is centering all inline text inside it.</p>
             <div class="div-center center-items">I think therefore I am.</div> 
         </section>
         <p class="task"><span class="task-no">Task 7</span> Create a layout comprised a block element that is centered in its container.</p>
     </section>
     <section>
         <h1>Floating elements</h1>
-        <p>There is another way to align block and inline elements to the left or right. You can give the element the style attribute of <span class="code">float: left</span> or <span class="code">float: right</span>. This aligns it to the left or right side of its parent element. Giving an element the float attribute also does a couple other things:</p>
+        <p>There is another way to align block and inline elements to the left or right. You can give the element the style attribute of <span class="code">float: left</span> or <span class="code">float: right</span>. This aligns it to the left or right side within its parent element. Giving an element the float attribute also does a couple other things:</p>
         <ul>
-            <li>While it will keep its vertical position on the page, it will force itself to the right or left side of its parent container, no matter what other elements, inline or block, come before or after it.</li>
+            <li>While it will keep its original vertical position on the page, it will force itself to the right or left side of its own container, no matter what other elements, inline or block, are next to or below it.</li>
             <li>While it will not overlap with sibling inline elements, it will overlap with sibling block elements.</li>
         </ul>
         <section class="examples borders">
