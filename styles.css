@@ -143,6 +143,13 @@ a {
 	margin-bottom: 0;
 }
 
+/* image examples */
+.hw-screenshot {
+    padding: 0 40px;
+    width: 36%;
+    float: right;
+}
+
 /* footer */
 footer {
 	background: #efefef;
@@ -175,6 +182,11 @@ footer li:last-of-type {
 		width: 100%;
 		font-size: 1.2em;
 	}
+    .hw-screenshot {
+        padding: 0 40px;
+        width: 100%;
+        float: none;
+    }
 }
 
 /* Small screens */
