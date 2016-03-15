@@ -137,6 +137,11 @@ a {
 .info ul {
 	padding-left: 64px;
 }
+.info p.quote {
+    padding: 20px 80px;
+    color: gray;
+    box-sizing: border-box;
+}
 
 /* submitted */
 .submitted p {
