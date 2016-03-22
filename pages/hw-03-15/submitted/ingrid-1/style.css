@@ -1,0 +1,205 @@
+/*general*/
+
+body {
+    font-size: 18px;
+    background-image: url('nyc_wagner.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    image-resolution: from-image;
+    background-size: 2400px 1604px;
+    background-position: 20% 40%;
+    background-image: linear-gradient(transparent, #FFF) left repeat;
+}
+
+h1 {
+    margin-left: 150px;
+    margin-right: auto;
+    font-size: 120px;
+    /* color: #ff6600;*/
+    color: yellow;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 650px;
+}
+
+p {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    line-height: 1.5;
+    color: white;
+    z-index: 5000;
+}
+
+.column1 {
+    height: 700px;
+    overflow-x: scroll;
+}
+
+.column2 {}
+
+.question {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: italic;
+    color: #250e1f;
+    background-color: yellow;
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+
+/*SPECIFIC*/
+
+.byline {
+    font-weight: bold;
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    -webkit-column-span: 2;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subhead {}
+
+aside {
+    width: 300px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 840px;
+    margin-right: auto;
+    mix-blend-mode: normal;
+}
+
+.spanaside {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: italic;
+    text-align: left;
+    display: inline;
+    color: #250e1f;
+    background-color: yellow;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.credit {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+titlesect1 {
+    background: ;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 200px;
+}
+
+.caption {
+    display: block;
+}
+
+extrainfo {
+    background: ;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+/*IMAGES*/
+
+.sideimages {
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+#sideimages {
+    display: inline-block;
+    width: 5%;
+    float: left;
+    clear: left;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: -1000;
+    mix-blend-mode: screen;
+}
+
+#sideimages-inner {
+    display: block;
+    height: 5;
+    padding-top: 100%;
+}
+
+
+/*
+#overlay {
+    background: rgba(46, 6, 0, .75);
+    opacity: 0;
+    -webkit-transition: opacity .25s ease;
+}
+
+#sideimages:hover #overlay {
+    opacity: 1;
+}
+
+#grad1 {
+    width: 100%;
+    background: linear-gradient(to right, rgba(160, 233, 190, 0.01), rgba(160, 233, 190, 1));
+    height: 2400px;
+}*/
+
+#image {
+    display: inline-block;
+    width: 200%;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    mix-blend-mode: screen;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url('andre-wagner-ARS-tgd-02.jpg');
+}
+
+#image-inner {
+    display: block;
+    height: 10;
+    padding-top: 100%;
+}
+
+
+/*MOBILE*/
+
+@media (max-width:768px) {
+    h1,
+    p,
+    aside {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    aside {
+        font-size: 6em;
+    }
+    .image {
+        display: block;
+        width: 100%;
+        margin-top: 1em;
+    }
+}
