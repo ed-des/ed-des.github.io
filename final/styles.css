@@ -131,7 +131,7 @@ p.example-item {
     font-size: .9em;
     line-height: 1.5;
     margin-top: 0;
-    padding: 20px 60px 40px;
+    padding: 20px 40px 40px;
     background: #ffffff;
     overflow-y: scroll;
 }
@@ -255,12 +255,12 @@ footer li:last-of-type {
         margin-left: 0;
         border-left: 0;
     }
-    p.example-item {
-        padding: 20px 20px 40px;
-        width: 350px;
+    .examples, .steps {
+        height: 480px;
     }
-    .steps { 
-        height: 80vh;
+    p.example-item {
+        padding: 20px;
+        width: 350px;
     }
     .step-item {
         width: 350px;
@@ -282,6 +282,9 @@ footer li:last-of-type {
     }
     .article-item {
         margin-bottom: 20px;
+    }
+    .article-item img {
+        height: 400px;
     }
     footer ul {
 	    padding: 0 0 0 16px;
