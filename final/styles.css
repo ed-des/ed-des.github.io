@@ -19,7 +19,7 @@ h1, h2, h3 {
 }
 h1 {
     font-family: 'Inconsolata';
-    font-size: 4em;
+    font-size: 3.5em;
     color: #444444;
     font-weight: 400;
 }
@@ -42,15 +42,25 @@ p, ul {
     margin-right: 40px;
     max-width: 700px;
 }
-p.small, ul.small {
-    
-}
 ul {
     list-style-type: circle;
 }
 strong {
     font-weight: normal;
     color: #681CFF;
+}
+a {
+    color: #53E0BB
+}
+a:visited {
+    color: #53E0BB
+}
+a:hover {
+    color: #53E0BB
+    text-decoration: underline;
+}
+a:active {
+    color: #53E0BB
 }
 
 /* scrollbar */
@@ -70,6 +80,7 @@ strong {
 /* elements */
 .caption {
     position: absolute;
+    font-size: .9em;
     bottom: 0;
     left: 0;  
     padding: 5px;
@@ -133,10 +144,11 @@ p.example-item {
 .steps {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: flex-start;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 30px;
+    padding-top: 10px;
     margin-top: 40px;
     height: 80vh;
     overflow-x: scroll;
@@ -165,13 +177,13 @@ p.example-item {
 /* article content */
 .choose-article {
     background: #efefef;
-    padding-top: 20px;
-    margin-bottom: 40px;
+    padding-top: 10px;
 }
 .articles {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    align-items: flex-start;
     height: 80vh;
     overflow-x: scroll;
     padding-left: 40px;
@@ -187,24 +199,33 @@ p.example-item {
 }
 .article-item:hover {
     opacity: 1;
-    -ms-transform: translate(0, -5px); /* IE 9 */
-   	-webkit-transform: translate(0, -5px); /* Safari */
-    transform: translate(0, -5px);
+    -ms-transform: translate(0, -2px); /* IE 9 */
+   	-webkit-transform: translate(0, -2px); /* Safari */
+    transform: translate(0, -2px);
 }
 .article-item img {
-    height: 500px;
-    transition: .3s ease;
-}
-.article-item img:hover {
-    -ms-transform: scale(1.01); /* IE 9 */
-   	-webkit-transform: scale(1.01); /* Safari */
-    transform: scale(1.01);
+    height: 60vh;
 }
 
-/* student work */
-.student-work {
-    background: #efefef;
-    height: 100vh;
+/* footer */
+footer {
+	background: #efefef;
+	background: #ffffff;
+	border-top: 2px solid #efefef;
+	padding: 0 40px 12px 0;
+}
+footer ul {
+    max-width: 100%;
+}
+footer li {
+	display: inline-block;
+	font-family: 'Inconsolata';
+	font-weight: 800;
+	font-size: .7em;
+	padding-top: 10px;
+}
+footer li:last-of-type {
+	float: right;
 }
 
 /* MOBILE */
@@ -223,6 +244,18 @@ p.example-item {
     .step-item {
         width: 350px;
     }
-
-    
+    .example-item, .step-item, .article-item {
+        opacity: 1;
+    }
+    .example-item img:hover, .example-item:hover, .step-item:hover, .article-item:hover {
+        -ms-transform: scale(1); /* IE 9 */
+        -webkit-transform: scale(1); /* Safari */
+        transform: scale(1);
+        -ms-transform: translate(0, 0); /* IE 9 */
+        -webkit-transform: translate(0, 0); /* Safari */
+        transform: translate(0, 0);
+    } 
+    footer ul {
+	    padding: 0 0 0 16px;
+	}    
 }
