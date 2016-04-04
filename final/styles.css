@@ -164,6 +164,7 @@ p.example-item {
     padding-bottom: 30px;
     margin-top: 40px;
     height: 80vh;
+    max-height: 800px;
     overflow-x: scroll;
     transition: 3s ease;
 }
