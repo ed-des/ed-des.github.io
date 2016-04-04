@@ -102,8 +102,14 @@ a:active {
     align-items: center;
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 20px;
+    margin-top: 20px;
     height: 94vh;
     overflow-x: scroll;
+    transition: .3s ease;
+}
+.examples:hover {
+    background: #e1e1e1;
 }
 .example-item {
     margin: 5px 20px;
@@ -144,20 +150,23 @@ p.example-item {
 .steps {
     display: flex;
     flex-flow: column wrap;
-    justify-content: flex-start;
+    justify-content: center;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 30px;
-    padding-top: 10px;
     margin-top: 40px;
     height: 80vh;
     overflow-x: scroll;
+    transition: 3s ease;
+}
+.steps:hover {
+    background: #efefef;
 }
 .step-item {
     width: 550px;
     margin-right: 6px;
     padding: 0 40px 20px;
-    background: #efefef;
+    background: #ffffff;
     opacity: .25;
     transition: .3s ease;
     overflow-y: scroll;
@@ -176,18 +185,16 @@ p.example-item {
 
 /* article content */
 .choose-article {
-    background: #efefef;
+    background: #ffffff;
     padding-top: 10px;
 }
 .articles {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: flex-start;
-    height: 80vh;
     overflow-x: scroll;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 40px;
 }
 .article-item {
     background: #ffffff;
