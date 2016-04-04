@@ -207,7 +207,6 @@ p.example-item {
 .article-item {
     background: #ffffff;
     margin-right: 6px;
-    overflow: hidden;
     opacity: .25;
     transition: .3s ease;
     position: relative;
@@ -280,6 +279,9 @@ footer li:last-of-type {
     } 
     .articles {
         flex-wrap: wrap;
+    }
+    .article-item {
+        margin-bottom: 20px;
     }
     footer ul {
 	    padding: 0 0 0 16px;
