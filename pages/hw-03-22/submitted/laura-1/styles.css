@@ -19,6 +19,19 @@ h1, p, aside {
 
 /* SPECIFIC */
 
+/*ORANGE*/
+.st0:hover {
+    fill: #ee3a43;
+}
+/*PINK*/
+.st2:hover {
+    fill: #ffe716;
+}
+/*PEACH*/
+.st3:hover {
+    fill: #71cef5;
+}
+
 h1 {
     font-size: 4em;
 }
@@ -52,7 +65,7 @@ aside {
       /*border: solid red 1px;*/
 }
 .intro {
-    margin-top: 308px;
+    margin-top: -778px;
     /*margin-bottom: 56px;*/
 }
 
@@ -68,11 +81,12 @@ aside {
 .draw2 img {
   display: inline-block;
   position: absolute;
-
   width: 300px;
   right: 0px;
   top: 800px;
-
+}
+.draw2:hover {
+  fill: red;
 }
 
 .quote1 {
@@ -114,8 +128,9 @@ aside {
   left: 250px;
 }
 
-
-
+/*.question:hover {
+    color: #5869e2;
+}*/
 
 
 .question {
