@@ -1,0 +1,343 @@
+h1{
+	background-color:black;
+	color:white;
+	font-size:100px;
+	text-align:left;
+	margin:0;
+}
+p{
+
+	font-size:23px;
+	font-family: 'Questrial', sans-serif;  width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hello1{
+	
+	color:white;
+	background-color:black;
+	font-size:30px;
+	text-align: center;
+	font-family: 'Questrial', sans-serif;
+  margin:;
+
+}
+.hello1:after{
+	content:" ";
+	width: 300px;
+  	height: 30px;
+	display:block;	
+	position:absolute;
+  	float:left;
+  	background:black;
+  	border-style:outset;
+  	border-color:#323232;
+  	border-width:20px;
+  	opacity:0.6;
+  	float:left;
+  	transform:rotate(7deg);
+    z-index: -1; /* Displays pseudo element behind text */
+
+}
+
+
+
+.hello2{
+	color:white;
+	background-color:black;
+	font-size:30px;
+	text-align: center;
+	font-family: 'Questrial', sans-serif;
+}
+.hello2:after{
+	content:" ";
+	width: 300px;
+  	height: 30px;
+	display:block;	
+	position:absolute;
+  	float:left;
+  	background:black;
+  	border-style:outset;
+  	border-color:#323232;
+  	border-width:20px;
+  	opacity:0.6;
+  	float:left;
+  	transform:rotate(40deg);
+    z-index: -1; /* Displays pseudo element behind text */
+
+}
+.hello3{
+	color:white;
+	background-color:black;
+	font-size:30px;
+	text-align: center;
+	font-family: 'Questrial', sans-serif;
+}	
+.hello3:after{
+	content:" ";
+	width: 300px;
+  	height: 30px;
+	display:block;	
+	position:absolute;
+  
+  	background:black;
+  	border-style:outset;
+  	border-color:#323232;
+  	border-width:20px;
+  	opacity:0.6;
+  	transform:rotate(280deg);
+    z-index: -1; /* Displays pseudo element behind text */
+
+}
+aside{
+	float:right;
+	width:12%;
+	font-size:20pt;
+}
+
+.hello4{
+	color:white;
+	background-color:black;
+	font-size:30px;
+	text-align: center;
+	font-family: 'Questrial', sans-serif;
+}	
+.hello4:after{
+	content:" ";
+	width: 300px;
+  	height: 30px;
+	display:block;	
+	position:right;
+	float:right;
+  	background:black;
+  	border-style:outset;
+  	border-color:#323232;
+  	border-width:20px;
+  	opacity:0.6;
+  	
+  	transform:rotate(120deg);
+    z-index: -1; /* Displays pseudo element behind text */
+
+}
+.hello5{
+	color:white;
+	background-color:black;
+	font-size:30px;
+	text-align: center;
+	font-family: 'Questrial', sans-serif;
+}
+.hello5:before{
+	content:" ";
+	width: 300px;
+  	height: 30px;
+	display:block;	
+	position:absolute;
+  	float:right;
+  	background:black;
+  	border-style:outset;
+  	border-color:#323232;
+  	border-width:20px;
+  	opacity:0.6;
+  	transform:rotate(240deg);,
+    z-index: 0; /* Displays pseudo element behind text */
+
+}		
+.hello6{
+	color:white;
+	background-color:black;
+	font-size:30px;
+	text-align: center;
+	font-family: 'Questrial', sans-serif;
+}	
+.hello6:after{
+	content:" ";
+	width: 300px;
+  	height: 30px;
+	display:block;	
+	position:right;
+  	background:black;
+  	border-style:outset;
+  	border-color:#323232;
+  	border-width:20px;
+  	opacity:0.6;
+  	transform:rotate(130deg);
+    z-index: -1; /* Displays pseudo element behind text */
+
+}
+
+.hello7{
+	color:white;
+	background-color:black;
+	font-size:30px;
+	text-align: center;
+	font-family: 'Questrial', sans-serif;
+}	
+.hello7:after{
+	content:" ";
+	width: 300px;
+  	height: 30px;
+	display:block;	
+	position:center;
+  	float:right;
+  	background:black;
+  	border-style:outset;
+  	border-color:#323232;
+  	border-width:20px;
+  	opacity:0.6;
+  	transform:rotate(180deg);
+    z-index: -1; /* Displays pseudo element behind text */
+
+}	
+.hello8{
+	color:white;
+	background-color:black;
+	font-size:30px;
+	text-align: center;
+	font-family: 'Questrial', sans-serif;
+}	
+.hello8:after{
+	content:" ";
+	width: 300px;
+  	height: 30px;
+	display:block;	
+	position:absolute;
+  	float:right;
+  	background:black;
+  	border-style:outset;
+  	border-color:#323232;
+  	border-width:20px;
+  	opacity:0.6;
+  	transform:rotate(50deg);
+    z-index: -1; /* Displays pseudo element behind text */
+
+}
+.hello9{
+  color:white;
+  background-color:black;
+  font-size:30px;
+  text-align: center;
+  font-family: 'Questrial', sans-serif;
+} 
+.hello9:after{
+  content:" ";
+  width: 300px;
+    height: 30px;
+  display:block;  
+  position:right;
+    float:right;
+    background:black;
+    border-style:outset;
+    border-color:#323232;
+    border-width:20px;
+    opacity:0.6;
+    transform:rotate(30deg);
+    z-index: -1; /* Displays pseudo element behind text */
+
+}	
+.hello10{
+  color:white;
+  background-color:black;
+  font-size:30px;
+  text-align: center;
+  font-family: 'Questrial', sans-serif;
+}  
+.hello10:after{
+  content:" ";
+  width: 300px;
+    height: 30px;
+  display:block;  
+  position:right;
+    float:right;
+    background:black;
+    border-style:outset;
+    border-color:#323232;
+    border-width:20px;
+    opacity:0.6;
+    transform:rotate(75deg);
+    z-index: -1; /* Displays pseudo element behind text */
+
+}  
+.hello11{
+  color:white;
+  background-color:black;
+  font-size:30px;
+  text-align: center;
+  font-family: 'Questrial', sans-serif;
+}  
+.hello11:after{
+  content:" ";
+  width: 300px;
+    height: 30px;
+  display:block;  
+  position:right;
+    float:right;
+    background:black;
+    border-style:outset;
+    border-color:#323232;
+    border-width:20px;
+    opacity:0.6;
+    transform:rotate(220deg);
+    z-index: -1; /* Displays pseudo element behind text */
+
+}  
+.hello12{
+  color:white;
+  background-color:black;
+  font-size:30px;
+  text-align: center;
+  font-family: 'Questrial', sans-serif;
+}   
+
+.image-set {
+    text-align: center;
+    background-color:black;
+}
+
+
+.image-2up {
+    border: 1px solid black;
+    background: gray;
+    position: relative;
+    /*height:1000px;*/
+    width: 80%;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+/* ----- MOBILE ----- */
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    h1, p, aside {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    aside {
+        font-size: 50px; 
+    }
+    .image-2up {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .crystal-bg {
+        height: 400px;
+        background-position: 50% 0;
+    }
+    .image-2up img {
+        width: 100%;
+    }
+}
