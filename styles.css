@@ -149,10 +149,14 @@ a {
 }
 
 /* image examples */
-.hw-screenshot {
+.hw-screenshot-float {
     padding: 0 40px;
     width: 36%;
     float: right;
+}
+.hw-screenshot {
+    padding: 0 40px;
+    width: 36%;
 }
 
 /* footer */
