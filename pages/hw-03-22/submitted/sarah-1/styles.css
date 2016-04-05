@@ -67,12 +67,6 @@ h2 {
   margin-top:50px;
 }
 
-.firstimages3 {
-  width:90%;
-  margin-left:0px;
-  margin-right:0px;
-  margin-top:50px;
-}
 
 .and {
   height:500px;
@@ -143,18 +137,25 @@ h2 {
 }
 .imageone {
   background-color:gray;
-  height:100%;
-  margin:15px;
+  height:600px;
+  width:inherit;
+  margin-left:40px;
   margin-right:0px;
+  margin-top:30px;
+  margin-bottom:10px;
   display:inline-block;
 
 }
 
 .imagetwo {
   background-color:gray;
-  height:100%;
-  margin:15px;
-  margin-left:0px;
+  height:600px;
+  width:inherit;
+  margin-left:10px;
+  margin-right:0px;
+  margin-top:30px;
+  margin-bottom:10px;
+
   display:inline-block;
 
 }
@@ -550,32 +551,52 @@ transition: all 2s ease-in-out;
     margin-right: auto;
   }
 
-  .lead, .interview, .interview2 {
+.article,  .lead, .interview, .interview2 {
     width:80%;
-    font-size:33px;
-    line-height:45px;
+    font-size:13px;
+    line-height:20px;
     margin-left: auto;
   margin-right: auto;
   margin-top: auto;}
 
-  .questions {
-    font-size:40px;
-    line-height:48px;
-    width:85%; }
+.interview2 {
+  width:100%;
+}
 
-  .widespan, .wide, .animateparents, video {
-    width:100%;
+.subhead, .byline {
+  font-size:20px;
+  line-height: 25px;
+}
+
+  .questions {
+    font-size:20px;
+    line-height:28px;
+    width:80%; }
+
+ .animateparents, video {
+    width:80%;
     display:block;
     margin-left: auto;
     margin-right: auto;
+    text-align:center;
   }
+
+video {
+  display:none;
+}
+
+.widespan, .wide {
+  width: 100%;
+  box-sizing: border-box;
+}
 
   .quotebox {
     display:none;
+    box-sizing: border-box;
   }
 
   .caption, .endinfo {
-    font-size:18px;
+    font-size:12px;
     line-height: 25px;
   }
 
@@ -583,22 +604,75 @@ transition: all 2s ease-in-out;
   width:70%;
 }
   .squarequote {
-    width:85%;
+    width:80%;
+    height:inherit;
     margin-left: auto;
     margin-right: auto;
+    font-size:25px;
+    box-sizing: border-box;
   }
 
   .squarequote, .rectanglequote {
     background-color: #E5DCF7;
+    font-size:32px;
+    line-height: 42px;
+    margin-top:20px;
+
   }
   img {
     margin: 10px;
   }
 
+  .imageone, .imagetwo {
+    background-color:gray;
+    height:inherit;;
+    width:30%;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:30px;
+    margin-bottom:0px;
+    display:inline-block;
 
+  }
+
+.firstimages3 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.and {
+  display:none;
+}
   .mobile, .mobileparent{
     display:block;
     width:50%;
+  }
+
+  .names {
+    width:80%;
+    display:inline-block;
+    text-align:left;
+    margin-left: auto;
+    margin-right:auto;
+    font-family: Montserrat; sans-serif;
+    font-weight: 700;
+    font-size:45px;
+    vertical-align: bottom;
+    margin-top:50px;
+    background:#E5DCF7;
+    padding:50px;
+
+  }
+
+.endinfo {
+  margin-left: auto;
+  margin-right:auto;
+}
+
+  .imagethree {
+    margin:0px;
   }
 
 }
