@@ -224,7 +224,7 @@ p.example-item {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: 40px;
 }
 .article-item {
