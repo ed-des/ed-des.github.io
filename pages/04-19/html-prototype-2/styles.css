@@ -84,7 +84,7 @@ h1 {
     -ms-animation: snow 20s linear infinite;
     animation: snow 20s linear infinite;
     transition: .5s ease;
-    overflow: hidden;
+    overflow: scroll;
 }
 .status-bar {
     height: 14px;
