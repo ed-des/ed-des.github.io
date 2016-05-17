@@ -1,19 +1,18 @@
 
 body {
   margin: 0;
-  /*background: linear-gradient(white 100%, cyan, #ffe6e6);
-background-color: white;*/
-background: linear-gradient(to bottom, white -20%, rgb(235, 235, 235) 80%);
+  background: linear-gradient(to bottom, white -20%, rgb(235, 235, 235) 80%);
   color: black, #00f0ff;
   font-family: 'Karla', sans-serif;
   font-size: 24px;
   text-align: left;
   /*transform: skew(2deg,-20deg);*/
+  /*margin-left: 10%;*/
 
 }
 
 * {
-   /*border: red solid 2px;*/
+   /*border: red solid 1px;*/
 }
 
 h1  {
@@ -108,12 +107,12 @@ p {
   line-height: 3;
   margin-left: 220px;
 }
-
+/*
 .three {
   font-size: 1.8em;
   line-height: 3;
-  margin-left: 220px;
-}
+  margin-left: 290px;
+}*/
 
 .four {
   font-size: 3em;
@@ -175,23 +174,45 @@ span {
   left: -200px;
 }
 
+.emily:hover {
+  color: transparent;
+  text-shadow: 0px 0px 8px silver;
+  transition: 2s ease;
+}
+
+.track {
+  border: 1px dashed transparent;
+  border-image: linear-gradient( transparent 1%, rgb(4, 182, 123) 50%, #3acfd5 100%);
+  border-image-slice: 1;
+  width: 0px;
+  height: 130px;
+  transition: 2s ease;
+  opacity: 0.4;
+  margin: 0;
+}
+
+.emily:hover {
+  color: transparent;
+  text-shadow: 0px 0px 8px silver;
+  transition: 2s ease;
+}
+
 .first.emily {
   margin-top: 40px;
+  opacity: .6;
+  color: grey;
   font-size: 1em;
   width: 300px;
-  left: 0px;
+  left: 2px;
 }
 
 .emily.big {
   font-size: 3.4em;
   width: 400px;
-  left: 0px;
-}
-
-.emily.big:hover {
-  color: transparent;
-  text-shadow: 0px 0px 8px silver;
-  transition: 2s ease;
+  position: relative;
+  left: -310px;
+  padding-left: 350px;
+  padding-right: 350px;
 }
 
 .emily.middle {
@@ -200,21 +221,50 @@ span {
   opacity: 1;
 }
 
+/*.bottom-3 {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  border: blue solid 4px;
+}*/
+
 .emily.last {
-  margin-top: 40px;
-  font-size: 1em;
-  width: 600px;
+  margin: 40px 0 0 0;
   opacity: .9;
-  left: -100px;
   color: grey;
+  font-size: 1.5em;
+  width: 850px;
 }
 
-.emily.right {
-  font-size: .7em;
+
+.emily.small {
+  font-size: .5em;
+  /*margin-left: 200px;*/
+  color: transparent;
+  text-shadow: 0px 0px 6px silver;
+  transition: 2s ease;
+  margin: 0px 30px 0 0;
+  padding: 0px;
+  display: inline-block;
+  width: 260px;
+  opacity: .9;
+  vertical-align: top;
+}
+
+.three {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  width: 1000px;
+  position: relative;
+  left: -250px;
+  font-size: 1.8em;
+  line-height: 2;
+  margin-left: 290px;
+}
+
+.emily.small:hover {
   opacity: 1;
-  width: 360px;
-  float: right;
-  margin-left: 200px;
+  text-shadow: 0px 0px 0px grey;
 }
 
 .alex.first {
@@ -227,9 +277,27 @@ span {
   font-family: 'Karla', sans-serif;
 }
 
+#it-is {
+  position: relative;
+  font-size: 1.3em;
+  bottom: 1312px;
+  left: -30px;
+  opacity: .4;
+  text-shadow: 0 0 2px rgb(4, 182, 123);
+  /*text-shadow: 0 0 4px grey;*/
+  color: transparent;
+  letter-spacing: 2px;
+}
+
 .alex.last {
   position: relative;
+  left: 10px;
   top: 260px;
+}
+
+.alex.last2 {
+  position: relative;
+  top: 620px;
 }
 
 .quote {
@@ -280,7 +348,28 @@ span {
 .track-list {
   font-size: .7em;
   width: 200px;
+  transition: 2s ease;
+  z-index: 4;
 }
+
+.track-list:hover {
+  color: transparent;
+  opacity: .4;
+  text-shadow: 0px 0px 6px rgb(58, 207, 213);
+  transition: 2s ease;
+}
+
+.track-list:hover ~ .track-list{
+  color: transparent;
+  text-shadow: 0px 0px 6px teal;
+  transition: 2s ease;
+}
+
+/*.track-list:hover ~ .emily {
+  color: transparent;
+  text-shadow: 0px 0px 8px silver;
+  transition: 2s ease;
+}*/
 
 .happy.track {
   height: 1300px;
@@ -297,46 +386,67 @@ span {
   margin-left: 285px;
 }
 
+.coat.track{
+  position: relative;
+  top: 55px;
+}
+
+.coat.track-list{
+  position: relative;
+  top: 55px;
+}
+
 .love.track{
   margin-left: 705px;
   margin-top: -190px;
+  position: relative;
+  top: 180px;
+  right: 200px;
 }
 
 .love.track-list {
   margin-top: 16px;
   margin-left: 705px;
+  position: relative;
+  top: 180px;
+  right: 200px;
 }
-
-
 
 .cried.track{
   margin-left: -260px;
   margin-top: 60px;
   position: relative;
-  top: 400px;
+  top: 370px;
+  left: 620px;
+  /*height: 300px;*/
 }
 
 .cried.track-list {
   margin-top: 206px;
   margin-left: -261px;
   position: relative;
-  top: 216px;
+  top: 186px;
+  left: 620px;
   z-index: 4;
 }
 
-/*.curve {
-  width:1000px; height:100px;
-  border:solid 2px #000;
-  border-color: grey transparent transparent transparent;
-  border-radius: 99%/100px 20px 0 0;
-  position: absolute;
-  top: 80%;
-  left: 30%;
-  transform: rotate(20deg);
-  z-index: -1;
-}*/
+.karla-opacity-75 {
+  opacity: .8;
+  font-family: 'Karla', sans-serif;
+  font-weight: normal;
+  color: black;
+  letter-spacing: normal;
+  font-size: 1em;
+  width: 200px;
+  text-transform: none;
+}
 
-.track {
+.opacity-75 {
+  opacity: .7;
+  margin: 0;
+}
+
+/*.track {
   border: 1px dashed transparent;
   border-image: linear-gradient( transparent 1%, rgb(4, 182, 123) 50%, #3acfd5 100%);
   border-image-slice: 1;
@@ -345,7 +455,7 @@ span {
   transition: 2s ease;
   opacity: 0.4;
   margin: 0;
-}
+}*/
 
 #container:hover .track {
   opacity: 1;
@@ -360,18 +470,6 @@ span {
   transition: 2s ease;
   border: dotted blue 2px;
 }*/
-
-.circle {
-  /*background-color: none, rgba(250, 250, 120, .9);
-  width: 400px;
-  height: 200px;
-  position: absolute;
-  margin: 10px 100px;
-  margin-left: -400px;
-  border-radius: 50%;
-  z-index: -1;
-  transform: rotate(7deg);*/
-}
 
 .square {
   background-color: none, rgba(20, 20, 200,.2);
