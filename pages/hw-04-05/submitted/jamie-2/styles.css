@@ -111,9 +111,15 @@ h1, p, aside{
 }
 */
 
+.gold-bckgd{
+    width:100vw;
+    background: darkgoldenrod;
+    height:350px;
+    padding-top: 20px;
+}
 .by{
     
-    color:darkgoldenrod;
+    color:white;
     font-family: 'Patua One', cursive;
     font-size: 20px;
     text-align: center;

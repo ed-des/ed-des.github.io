@@ -3,6 +3,16 @@ a:link {
   color: #FF005D;
 }
 
+section {
+  font-weight: bold;
+
+}
+
+
+div {
+  slkdfjslkj
+
+}
 a:visited {
   color: #FF005D;
 }
@@ -373,6 +383,10 @@ p {
   line-height: 25px;
 }
 
+.phonecaption {
+  margin-top:-50px;
+}
+
 .joshappear {
   color:black;
   z-index:-10;
@@ -480,6 +494,7 @@ video {
   width:100%;
   box-sizing: border-box;
   overflow:hidden;
+  margin:0px;
 }
 
 .mobileparent {
@@ -507,6 +522,7 @@ video {
   background: #FFFFFF;
   padding:10px;
   z-index:10px;
+  margin-left: 10px;
 }
 
 .center {
@@ -633,7 +649,7 @@ video {
 
   .byline {
     font-size:15px;
-    line-height: 12px;
+    line-height: 5px;
   }
 
   .image3 {
@@ -670,6 +686,7 @@ video {
   .caption, .endinfo {
     font-size:12px;
     line-height: 25px;
+    margin-bottom: 30px;
   }
 
   .squarequote {

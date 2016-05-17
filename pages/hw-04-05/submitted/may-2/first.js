@@ -1,3 +1,4 @@
+//
 $(".a").hover( hoverIn1, hoverOut1 );
 
   function hoverIn1() {
@@ -20,3 +21,21 @@ $(".a").hover( hoverIn1, hoverOut1 );
     console.log("hoverout1");
 
   }
+
+
+
+// $(".image") .hover( hoverIn1, hoverOut1 );
+//
+//   function hoverIn1() {
+//     $(".image").css("z-index","100");
+//
+//     console.log("hoverIn1");
+//   }
+//
+//   function hoverOut1() {
+//
+//   $(".image").css("z-index","-10");
+//
+//   console.log("hoverOut1");
+//
+// }

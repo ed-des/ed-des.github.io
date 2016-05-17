@@ -103,7 +103,10 @@ text-transform: lowercase;
   padding-top: 10px;
   padding-bottom: 30px;
   margin-top: -650px;
+  padding-left: 0;
+  padding-right: 0;
   visibility: hidden;
+  box-sizing: border-box;
 }
 
 .headerdes {
@@ -112,7 +115,7 @@ text-transform: lowercase;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 160px;
-  margin-right: auto;
+  margin-right: 0;
   margin-top: -15px;
   text-align: center;
   margin-left: -30px;
@@ -132,6 +135,7 @@ text-transform: lowercase;
   margin-bottom: 30px;
   text-align: center;
   margin-left: 20px;
+  box-sizing: border-box;
 }
 
 .question {
@@ -430,11 +434,18 @@ a {
 }
 
 .videobackground {
-  background-color: black;
+  background-color: #310914;
   width: 100%;
-  padding-top: 25px;
+  padding-top: 2%;
   padding-bottom: 10px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.videobackground div {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .alternative-image {
@@ -471,6 +482,7 @@ a {
 
 .top {
   margin-bottom: 85px;
+  padding-top: 1%;
 }
 
 /*=== Trigger  ===*/
@@ -690,8 +702,6 @@ animation-delay: 3.3s;
 
 
 
-
-
 /* Mobile */
 @media (max-width: 1300px) {
   .background {
@@ -738,6 +748,7 @@ animation-delay: 3.3s;
 
 .background {
   display: block;
+  box-sizing: border-box;
 }
 
 }
@@ -749,6 +760,7 @@ animation-delay: 3.3s;
 
   .background {
     visibility: visible;
+    box-sizing: border-box;
   }
 }
 
@@ -868,6 +880,7 @@ margin-left: 0px;}
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  padding: 0;
 }
 
 p {
@@ -961,6 +974,7 @@ p {
     text-align: center;
     margin-left: 0px;
     text-indent: 0px;
+    margin-right: 0px;
 }
 
 .headerdes {
@@ -1117,7 +1131,7 @@ p {
   }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 570px), (max-device-width: 480px) {
   .san {display:none;}
 
 
@@ -1170,6 +1184,8 @@ display: block;}
 .umbrella {
   margin-top: -70px;
   margin-bottom: 250px;
+  width: 90vw;
+  box-sizing: border-box;
 }
 
 .box {margin: none;
@@ -1179,3 +1195,14 @@ height: 0px;}
 
 .box p {width: 0px;
 height: 0px;}
+
+.background {
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 400px;
+  overflow-x: hidden;
+}
+}

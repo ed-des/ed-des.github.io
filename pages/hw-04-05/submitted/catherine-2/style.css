@@ -146,13 +146,17 @@ h2{
 
 .sun{
   display: none;
-  width: 400px;
-
   position: absolute;
   top: 50px;
-  left: 468px;
-
+  width: 100%;
 }
+.sun img {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width: 400px;
+}
+
 
 .div_img{
   margin-top: 170px;
@@ -198,7 +202,10 @@ h2{
 
 
 .div_img1:hover + .sun{
-  display: inline-block;
+  display: block;
+}
+.sun:hover {
+  display: block;
 }
 
 .div_img1:hover{
@@ -663,6 +670,10 @@ transform: scale(2);
     margin-right: auto;
     margin-top: -50px;
     width: 100%;
+  }
+
+  .div_img1:hover + .sun{
+    display: none;
   }
 
   .intro{
