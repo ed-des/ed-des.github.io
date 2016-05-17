@@ -391,13 +391,13 @@ body{overflow-x: hidden;}
   }
 
 .question{
-  margin-left: 65px;
-  width: 350px;
+  margin-left: 80px;
+  width: 300px;
   font-size: 20px;}
 
 .paragraph {
-  margin-left: 65px;
-  width: 350px;
+  margin-left: 80px;
+  width: 300px;
   font-size: 9px;
   line-height: 1.2;
 }
@@ -423,7 +423,7 @@ body{overflow-x: hidden;}
 }
 .img2 {
   position: relative;
-  margin-top: 1100px;
+  margin-top: 1300px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -433,7 +433,7 @@ body{overflow-x: hidden;}
 
 .quote2 div {
   margin-left: 50px;
-  margin-top: -450px;
+  margin-top: -500px;
   font-size: 35px;
   width: 400px
 }
@@ -486,14 +486,14 @@ body{overflow-x: hidden;}
   margin-left: -30px;}
 
 .quote4 div{
-  margin-top: 770px;
+  margin-top: 850px;
   margin-left: 5px;
   font-size: 35px;
   width: 400px;
 }
 
 .qa6 {
-  margin-right: 50px;
+  margin-right: 40px;
   margin-top: -400px;}
 
 .qa6 div{
@@ -527,7 +527,7 @@ body{overflow-x: hidden;}
 }
 .qa7{
   margin-top: -300px;
-  margin-left: -50px;
+  margin-left: -40px;
 }
 
 .quote6 div{
@@ -539,7 +539,7 @@ body{overflow-x: hidden;}
 
 .qa8 {
   margin-top: 10px;
-  margin-right: 50px;
+  margin-right: 40px;
 }
 
 iframe {
