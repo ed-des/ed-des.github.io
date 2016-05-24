@@ -103,7 +103,7 @@ p {
 .loginFrame {
   width: 600px;
   z-index: 41;
-  height: 754px;
+  height: 753px;
   border: 1px solid gold;
   margin: auto;
   /*z-index: 40;*/
@@ -125,19 +125,19 @@ p {
   top: -264px;
   left: 0px;
   width: 71px !important;
-  height: 47px;
+  height: 45px;
 }
 
 .minicolors-swatch {
   width: 71px !important;
-  height: 47px !important;
+  height: 45px !important;
   opacity: 0;
 
 }
 
 .minicolors-swatch-color {
   width: 71px !important;
-  height: 47px;
+  height: 49px;
   index: 51;
 }
 
@@ -146,7 +146,7 @@ p {
   height: 26px;
   background-color: gold;
   position: relative;
-  top: 626px;
+  top: 625px;
   left: 365px;
   font-size: 1.1em;
   padding: 10px;
@@ -401,6 +401,7 @@ h3 > b {
   background-position: center;
   flex-grow: 50%;
   height: 90vh;
+  margin-top: 6vh !important;
 }
 
 /*img {
@@ -409,6 +410,7 @@ h3 > b {
 
 .anatomy p {
   vertical-align: middle;
+  margin-left: 12vw;
 }
 
 .nodeMap {
@@ -512,6 +514,7 @@ a {
 
 .widget p {
   vertical-align: middle;
+  margin-right: 10vw;
 }
 
 .highlight {
@@ -540,7 +543,7 @@ a {
   order: 90;
   display: flex;
   padding-top: 6vh;
-  padding-bottom: 6vh;
+  padding-bottom: 16vh;
 }
 
 .personalPic {
@@ -555,7 +558,7 @@ a {
 }
 
 .personal p {
-  margin-right: 15vw;
+  margin-right: 12vw;
 }
 
 .colophon {
