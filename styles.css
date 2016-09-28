@@ -256,4 +256,14 @@ footer li:last-of-type {
 /* --- PRINT --- */
 
 @media print {
+    body {
+        font-size: .8em;
+    }
+    p, ul {
+        max-width: 72vw;
+    }
+    .header div {
+		float: right;
+		padding-left: 40px;
+	}
 }
