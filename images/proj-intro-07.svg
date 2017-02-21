@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1780px" height="362px" viewBox="0 0 1780 362" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Desktop HD Copy 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#53E0BB" offset="28.6232462%"></stop>
+            <stop stop-color="#53E0BB" stop-opacity="0.93" offset="72.1599968%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="process-timeline" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-6">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="993" y="138" width="447" height="24"></rect>
+            <rect id="Rectangle-Copy-5" fill="url(#linearGradient-1)" x="349" y="198" width="747" height="24"></rect>
+            <rect id="Rectangle-Copy-6" fill="url(#linearGradient-1)" x="723" y="262" width="420" height="24"></rect>
+            <text id="reader-experience-de" font-family="Verdana" font-size="16" font-weight="normal" letter-spacing="-0.300000012" fill="#FFFFFF">
+                <tspan x="1118.54531" y="155">reader experience design</tspan>
+            </text>
+            <text id="writing" font-family="Verdana" font-size="16" font-weight="normal" letter-spacing="-0.300000012" fill="#FFFFFF">
+                <tspan x="695.999219" y="215">writing</tspan>
+            </text>
+            <text id="art/media-production" font-family="Verdana" font-size="16" font-weight="normal" letter-spacing="-0.300000012" fill="#FFFFFF">
+                <tspan x="850.917969" y="279">art/media production</tspan>
+            </text>
+            <rect id="Rectangle-Copy-3" fill="url(#linearGradient-1)" x="22" y="76" width="1639" height="24"></rect>
+            <text id="editorial" font-family="Verdana" font-size="16" font-weight="normal" letter-spacing="-0.300000012" fill="#FFFFFF">
+                <tspan x="705.2875" y="93">editorial</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

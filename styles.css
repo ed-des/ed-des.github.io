@@ -146,6 +146,141 @@ a {
     box-sizing: border-box;
 }
 
+/* collapsible item */
+.collapsible > * {
+    display: none;
+}
+.collapsible.expand > * {
+    display: block;
+}
+.collapsible > header {
+    display: block;
+    padding-bottom: 1rem;
+}
+.collapsible > header h1 {
+    padding-top: 0;
+}
+.collapsible > header:hover {
+    cursor: pointer;
+    /* background: rgba(104, 28, 255, .09);*/
+}
+    .collapsible > header:hover h1 {
+        text-decoration: underline;
+    }
+.collapsible > header h1:before {
+    content: '+ ';
+}
+.collapsible.expand > header h1:before {
+    content: '- ';
+}
+
+.collapsible > .examples,
+.collapsible > .steps {
+    display: none;
+}
+.collapsible.expand > .examples,
+.collapsible.expand > .steps {
+    display:flex;
+}
+
+/* horiz scroll examples */
+.examples {
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: space-around; 
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    margin-top: 20px;
+    height: 94vh;
+    overflow-x: scroll;
+    transition: .3s ease;
+}
+.examples:hover {
+    background: #e1e1e1;
+}
+.example-item {
+    margin: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    max-width: 500px;
+    opacity: .25;
+    transition: .3s ease;
+}
+p.example-item {
+    font-size: .9em;
+    line-height: 1.5;
+    margin-top: 0;
+    padding: 20px 40px 40px;
+    background: #ffffff;
+    overflow-y: scroll;
+}
+.example-item img {
+    height: 240px;
+    transition: .3s ease;
+}
+.example-item img:hover {
+    -ms-transform: scale(1.01); /* IE 9 */
+   	-webkit-transform: scale(1.01); /* Safari */
+    transform: scale(1.01);
+}
+.example-item:hover {
+    opacity: 1;
+    -ms-transform: translate(0, -5px); /* IE 9 */
+   	-webkit-transform: translate(0, -5px); /* Safari */
+    transform: translate(0, -5px);
+}
+
+/* horiz pan examples */
+
+.examples.pan {
+    align-items: flex-start;
+    background: #e1e1e1;
+    margin-top: 0;
+    height: inherit;
+    padding-top: 0;
+    padding-bottom: 5%;
+}
+.info .examples.pan p {
+    padding: 0;
+}
+.examples.pan .example-item {
+    max-width: none;
+    background: white;
+    margin: 0;
+}
+.examples.pan .example-item img {
+    height: inherit;
+}
+
+/* steps */
+.steps {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 40px;
+    height: 100vh;
+    overflow-x: scroll;
+    transition: 3s ease;
+    background: #efefef;
+}
+.step-item {
+    margin-right: 6px;
+    margin-bottom: 40px;
+    background: #ffffff;
+    opacity: .25;
+    transition: .3s ease;
+}
+.step-item:hover {
+    opacity: 1;
+}
+.step-item img {
+    width: 350px;
+}
+
 /* submitted */
 .submitted p {
 	margin-bottom: 0;
