@@ -1,0 +1,244 @@
+body {
+    font-family: 'Inconsolata';
+    font-size: 17px;
+    line-height: 1.25em;
+    padding: 0 10px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+    background: #1e5799;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #ff00ff 0%, #000fff 90%, #2989d8 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ff00ff 0%, #000fff 90%, #2989d8 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ff00ff 0%, #2989d8 75vh, #2989d8 77vh, #a5cdff 98.5vh);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=0);
+    /* IE6-9 */
+}
+
+
+/*   h1 = TITLE   */
+
+h1,
+h2 {
+    font-family: 'Overpass Mono';
+}
+
+h3,
+h4 {
+    font-family: 'Karla';
+}
+
+h1 {
+    font-size: 94px;
+    line-height: 1em;
+    -webkit-margin-before: 0;
+    margin-top: 67px;
+}
+
+h1,
+h2 {
+    font-family: 'Overpass Mono';
+}
+
+.author {
+    bottom: 50px;
+    /* vh unit = % of height of window */
+    font-size: 28px;
+    position: absolute;
+    /* position: absolute positions in relation to window so it doesn't push against elements */
+    font-family: 'Inconsolata';
+}
+
+.author-notes {
+    /* vh unit = % of height of window */
+    font-size: 28px;
+    position: absolute;
+    bottom: 15px;
+    font-size: 15px;
+    line-height: 1.25em;
+}
+
+.down-arrow {
+    font-size: 50px;
+    text-align: right;
+    animation: MoveUpDown 1s linear infinite;
+    position: absolute;
+    right: 0px;
+}
+
+.down-arrow a {
+    text-decoration: none;
+    color: #0000ff;
+}
+
+@keyframes MoveUpDown {
+    0% {
+        bottom: 45px;
+    }
+    50% {
+        bottom: 26px;
+    }
+    100% {
+        bottom: 45px;
+    }
+}
+
+
+/*   h2 = SECTION HEADINGS, AUTHOR   */
+
+h2 {
+    line-height: 1.2em;
+    margin-top: 2.25em;
+    font-weight: 700;
+    font-size: 30px;
+    border-top: 2px solid black;
+    padding-top: 30px;
+}
+
+h2 .de-emph {}
+
+.syllabus {
+    margin-top: 62vh;
+    padding-top: 74px;
+    border-top: 2px solid black;
+    font-size: 40px;
+}
+
+ul {
+    -webkit-padding-start: 40px;
+}
+
+.nonlist {
+    list-style: none;
+    line-height: 1.35em;
+    font-size: 20px;
+    /*
+margin-top: -.5em;
+margin-bottom: -.5em; 
+*/
+}
+
+.nonlist li {
+    -webkit-margin-before: .25em;
+}
+
+
+/*   h3 = QUESTION HEADINGS   */
+
+h3 {
+    margin-top: 2em;
+    margin-bottom: -.5em;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2em;
+}
+
+
+/*  h4 = notes, this is how    */
+
+h4 {
+    -webkit-margin-before: 1.5em;
+    -webkit-margin-after: 1.5em;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: -10px;
+    font-weight: 600;
+    font-family: 'Inconsolata';
+}
+
+
+/*  h5 = PART 1, PART 2 */
+
+.part {
+    margin-left: 75px;
+}
+
+.part h5 {
+    margin-top: 0;
+    margin-left: -75px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: -10px;
+    letter-spacing: 0;
+}
+
+.part p {
+    -webkit-margin-before: .1em;
+    margin-top: -1.3em;
+}
+
+.censored {
+    padding-right: 50px;
+    height: 10px;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid black;
+}
+
+.readings li {
+    margin-left: 15px;
+    list-style-type: none;
+    text-indent: -25px;
+    -webkit-margin-after: .25em;
+}
+
+.readings li:before {
+    content: "—";
+    padding-right: 15px;
+    font-weight: 100;
+}
+
+.extra-readings li.and {
+    font-size: 17px;
+    margin: 10px 0 10px 0;
+    color: #000;
+}
+
+.big {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #0000ff;
+}
+
+.notes {
+    bottom: 15px;
+    font-size: 14px;
+    line-height: 1.3em;
+    margin: 30px 0 30px 0;
+}
+
+.illustration {
+    text-align: center;
+}
+
+ol li {
+    -webkit-margin-after: .5em;
+}
+
+.plus {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+    font-weight: 700;
+    color: #0000ff;
+}
+
+.roles {
+    padding-top: 74px;
+    border-top: 2px solid black;
+    font-size: 40px;
+}
+
+.roles-list {
+    margin-left: 40px;
+}
+
+.roles-list h5 {
+    margin-left: -40px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: -10px;
+    letter-spacing: 0;
+}

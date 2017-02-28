@@ -1,0 +1,29 @@
+body {
+    font-size: 12pt;
+    font-family: 'Rubik', sans-serif;
+    color: black;
+    padding: 20px 20px 20px 20px;
+}
+
+h1 {
+    font-size: 28pt;
+    color: crimson;
+    font-family: 'Vollkorn', serif;
+}
+
+h2 {
+    font-size: 16pt;
+    font-family: 'Vollkorn', serif;
+}
+
+h3 {
+    font-size: 12pt;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}

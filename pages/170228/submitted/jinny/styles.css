@@ -1,0 +1,147 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video {
+    margin:0; 
+    padding:0; 
+    border:0; 
+    outline:0; 
+    font-size:100%; 
+    vertical-align:baseline; background:transparent;
+}
+
+body{
+	margin:20px;
+	font-family: font-family: 'PT Serif', serif;
+	font-size: 18px;
+	line-height:1.23;
+	background:#00278c;
+	color:#b2b2b2;
+}
+
+div{
+	padding-bottom:20px;
+}
+
+h1, h3{
+	font-family: 'Arimo', sans-serif;
+	font-weight:900;
+	margin-bottom:20px;
+	margin-top:20px;
+	color:lightpink;
+}
+
+h1{
+	font-size:50px;
+	font-weight:700;
+	color:white;
+	text-transform:uppercase;
+}
+
+p{
+	margin:10px;
+}
+
+
+/*lists*/
+
+ol, ul{
+	text-decoration: none;
+	margin: 30px;
+	margin-left:40px;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+	padding-bottom: 15px;
+}
+
+
+/*titles*/
+
+div.title{
+	margin-bottom:50px;
+	
+}
+
+div.title p{
+	font-size:15px;
+	margin-bottom:0;
+}
+
+
+/*image*/
+
+div.image{
+	border: solid 2px white;
+	padding:20px;
+	color:white;
+	background-color:lightpink;
+	margin:40px;
+}
+
+/*important(font-size does not change)*/
+.important{
+	color:lightpink;
+	font-family:'Arimo', sans-serif;
+}
+
+/*blank space*/
+.blank{
+	background-color:#b2b2b2;
+}
+
+/*chair*/
+span.chair{
+	padding-left:100px;
+}
+
+/*forms*/
+.form1, .form2{
+	display:block;
+	border:solid 1px white;
+	margin:20px;
+	padding:20px;
+	margin-top:100px;
+	background:lightpink;
+	color:white;
+}
+
+/*answer*/
+input{
+	width:25%;
+	display:block;
+	float:right;
+	padding:10px;
+	margin:0;
+}
+
+/*text answers*/
+input.text{
+	width:100%;
+	float:left;
+	margin-top:10px;
+}
+
+/*yes or no*/
+.y, .n{
+	display:block;
+	float:right;
+	margin:0;
+	padding:0;
+	width:20%;
+	padding-right:25px;
+}
+
+/*submit*/
+.submit{
+	color:white;
+	font-family: 'PT Serif', serif;
+	padding:5px;
+	border: solid 1px white;
+	background:pink
+}

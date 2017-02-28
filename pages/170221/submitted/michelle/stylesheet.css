@@ -1,0 +1,47 @@
+body {
+    font-size: 12pt;
+    font-family: 'Hind', sans-serif;
+    color: black;
+    padding: 20px 20px 20px 20px;
+}
+
+h1 {
+    font-size: 20pt;
+    color: black;
+    font-family: 'Crete Round', serif;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 14pt;
+     font-family: 'Amiko', sans-serif;
+}
+
+h3 {
+    font-size: 12pt;
+    font-family: 'Amiko', sans-serif;
+}
+
+body2 {
+    font-size: 9pt;
+    font-family: 'Amiko', sans-serif;
+}
+
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+.bold {
+    font-style: bold;
+}
+.blue {
+    color: blue;
+    font-size: 9pt;
+}
+.red {
+    color: red;
+}

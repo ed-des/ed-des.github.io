@@ -1,0 +1,111 @@
+body{
+/*    background:#ccffff;*/
+    font-family: 'Source Serif Pro', serif;/*using this serif font for the whole body text*/
+    margin: 70px 15px 40px 15px;/*margin of the top, right, bottom, left*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#adfcff+0,aad3ff+100 */
+    background: #adfcff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #adfcff 0%, #aad3ff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #adfcff 0%,#aad3ff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #adfcff 0%,#aad3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#adfcff', endColorstr='#aad3ff',GradientType=0 ); /* IE6-9 */
+
+}
+p, ol{ /* for the overall paragraph and ordered list*/
+    color: #17385b; /*dark blue color for the text*/
+    line-height: 22px;/*leading for the text in pixels*/
+}
+
+h1, h2, h4, h5, h6{ /*for headings using san serif and pinnk*/
+    font-family: 'Rubik', sans-serif; 
+        color:#f44271;
+}
+h1{ /*font thickness, font size, leading and tracking for title*/
+    font-weight: 500; 
+    font-size: 55px;
+    line-height: 55px;
+    letter-spacing: 0.2px;
+}
+
+h2{ 
+    font-family: 'Source Serif Pro', serif;/*changed "J. Ball" to serif type*/
+    font-size: 20px; 
+    padding-left: 3px;/*to generate a bit more space*/
+    text-align: left;
+    line-height: 0.8;
+}
+
+span.noteauthor{ /*created this class to use different fonts, size, thickness, color, tracking and leading than "J. Ball"*/
+    font-family: 'Rubik', sans-serif; 
+    font-size:13px;
+    font-weight:400;
+    color:#f44271;
+    letter-spacing: 0.1px;
+}
+
+h4{ /*font thickness, font size, leading & tracking for for Syllabus*/
+    font-weight:400;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    padding-top: 30px;/*to create a bigger gap from top part*/
+}
+
+span.method{
+    font-weight:500; /*bold the word "Dream Method"*/
+}
+
+h5{ /*font thickness, font size and tracking for for headings*/
+    font-weight:500;
+    font-size: 18px;
+    letter-spacing: 0.1px;
+}
+span.period{ /*to adjust the boldness of the time*/
+    font-weight: 600;
+    text-decoration: underline; /*underline*/
+}
+
+h6{ /*headings throughout the syllabus*/
+    font-weight:500;
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    line-height: 22px;
+}
+
+.note{ /*to create hierachy for the notes part (smaller than text)*/
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.1px;
+    padding-bottom: 20px;
+}
+
+div.frame{ /*to create rectangle border around the text*/
+    border: 1px solid; /*the rectangle outline*/
+    padding-left: 15px; /*so it wouldn't go too close to the left side*/
+}
+
+.theatre{ /*adjust leading and tracking between each "h" letters*/
+    letter-spacing: 6px;
+    line-height: 30px;
+}
+
+span.find{/*for the "¶" */
+    font-weight: 700; /* to make it more visible, bold */
+    font-family: 'Rubik', sans-serif; /*using san serif*/
+    padding-left: 90px; /*move it to the right */
+}
+
+.letters{ /*for A. and B. List*/
+list-style-type: upper-alpha; /*listing alphabets */
+}
+
+span.space{ /*to create more space in the [ ]*/
+    letter-spacing: 5px;
+}
+
+.line{ /*use a different font to be able to create smooth continuous lines*/
+    font-family: 'helvetica', sans-serif;
+}
+
+.roles{ /*to highlight the roles in exhibition*/
+    font-weight: 700; /*bold*/
+    text-decoration: underline; /*underline*/
+}

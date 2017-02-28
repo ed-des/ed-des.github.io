@@ -1,0 +1,111 @@
+body{
+	font-family: 'Cardo', serif;
+	color: #0500b2;
+	font-size: 16px;
+
+	background: #ffe5e5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#ffe5e5, #ffe36b;) /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffe5e5, #ffe36b;) /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffe5e5, #ffe36b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffe5e5, #ffe36b); /* Standard syntax */
+
+}
+
+.first{   
+	font-size: 50px;
+	font-weight: 800;
+	font-style: italic;
+	color: #cc0002;
+	margin: 600px 0px 400px 100px;
+
+}
+
+.author{
+	margin: 0px 0px 600px 200px;
+}
+
+p.tiny{
+	font-size: 8.5px;
+	color: #ff4f51;
+}
+
+h3{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0px 0px 0px 100px;
+}
+
+/*to make space under "class will be structured" slightly larger*/
+h3.classwill{
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+/*THESE MARGIN SETTINGS ARE THE DEFAULT*/
+.opener{
+	margin: 0px 50px 2000px 50px;
+}
+
+p{
+	margin: 75px 0px 60px 0px;
+}
+
+.parts{
+	margin: 0px 50px 1800px 50px;
+}
+
+/*h5 is parts 1 & 2 headers*/
+h5{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+p.times {
+	margin: 0px 0px 0px 35px;
+}
+
+/*all those questions starting with what is, styled in small caps*/
+p.whats{
+	margin: 20px 0px 0px 0px;
+}
+
+h6{
+	margin: 100px 0px 0px 0px;
+	font-weight: bold;
+}
+
+.readinglist{
+	margin: 0px 50px 50px 50px
+}
+
+em{
+	font-size: 14px;
+	margin: 0px 0px 0px 20px;
+}
+
+.readings{
+	margin: 0px 50px 1800px 30px;
+}
+.bottom{
+	margin: 0px 50px 100px 50px;
+	font-size: 16px;
+}
+
+.r{
+	font-size: 100px;
+	text-decoration: underline;
+	font-style: italic;
+	text-align: right;
+	margin: 0 50px 0 0;
+}
+/*Below is formatting for R5 Page*/
+
+.questions{
+	line-height: 600%;
+	margin: 0px 0px 0px 50px;
+	padding: 600px 0px 1900px 0px;
+}
+
+
+

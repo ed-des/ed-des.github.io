@@ -1,0 +1,87 @@
+hr { /* horizontal line*/
+    border-color: black; /*line color*/
+    margin-bottom: 35px; /*spacing between lines*/
+    border-width: 1px; /*line width*/
+    width: 80%; /*line length*/
+}
+
+h1, h2 {
+   font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+}
+h1 {
+    font-size: 54px;
+    text-align: center;
+}
+h2 {
+    font-size: 30px;
+    padding-top:30px;
+}
+h3 {
+    font-family: 'Merriweather', serif;
+    font-weight:700;
+    font-size: 18px;
+    text-align: center;
+    margin-top:-7.5px;
+}
+h4 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    padding-top: 15px;
+}
+p, ol {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+ol {
+    padding-left:15px;
+}
+ol.spacinglist {
+    line-height:160%;
+}
+h5 {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    line-height: 140%;
+    margin-top:-5px;
+}
+h6 {/* this section of code is no longer relevant, but I'm keeping it anyways just in case I ever to reintroduce an h6 */
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-align:center;
+    line-height: 5%;
+}
+h2,h3,h4,h5 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.bigpadding { /*spacing for P sign in box*/
+    padding-left: 80px;
+}
+.tracking {
+    letter-spacing: 1px;
+}
+
+body { /*gradient bg*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8ddff+0,ddf2ff+50,e2ffee+100 */
+background: #f8ddff; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #f8ddff 0%, #ddf2ff 50%, #e2ffee 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #f8ddff 0%,#ddf2ff 50%,#e2ffee 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #f8ddff 0%,#ddf2ff 50%,#e2ffee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8ddff', endColorstr='#e2ffee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+div.outline {
+    border: 0.5px solid;
+    padding-left: 75px;
+    fill: white;
+}
+div.bottomspace {
+    padding-top: 5px;
+}

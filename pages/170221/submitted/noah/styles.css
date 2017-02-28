@@ -1,0 +1,286 @@
+body {
+    z-index: -100;
+    margin:0px;
+    width:100%;
+    font-family: helvetica neue, helvetica, arial, sans-serif;
+    font-size: 24px;
+    color:blue;
+
+}
+
+p, navtxt {
+    margin-left:4vw;
+    margin-right:4vw;
+}
+
+a {
+/*    color:#002ea7;*/
+    text-decoration: none;
+}
+
+/*all fonts*/
+.titlebig {
+    color:blue;
+    padding: 7vh 0vw 7vh 0vw;
+    font-family: helvetica neue, helvetica, arial, sans-serif;
+    font-size: 19vmin;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.jesse {
+    font-family: helvetica neue, helvetica, arial, sans-serif;
+    font-size: 13vmin;
+/*    font-style: italic;*/
+    text-align: center;
+    letter-spacing: -.5px;
+    color:black;
+}
+
+.note {padding: 30px 0px 0px 0px;}
+
+.subtitle {
+    padding:8vh 12vw ;
+    line-height: 1.1;
+    font-family: didot;
+    font-style: italic;
+    font-size: 36px;
+    text-align: left;
+    padding-right: 30px;
+    color:red;
+}
+
+/*simple classes for colors*/
+
+.sblue {
+    color: blue;
+}
+.syellow {
+    color:yellow;
+}
+.swhite {
+    color:white;
+}
+.sred {
+    color:red;
+}
+
+.sblack {
+    color:black;
+}
+
+/*sparts = schedule parts*/
+.sparts {
+    font-size:24px;
+/*    color:#ddd;*/
+/*    background:blue;*/
+}
+
+.faqs {
+    font-family:helvetica neue, helvetica, sans-serif;
+/*    color:black;*/
+/*    background: yellow;*/
+    padding:4vh 4vw 0vh 4vw;
+    margin: 4vw 2vw 4vw 2vw;
+    font-size: 24px;
+}
+
+.expect {
+    padding-bottom: 20px;
+}
+
+
+h1,h2,h3 {
+    font-family: didot;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    line-height:1;
+    margin:0px;
+}
+
+h2,h3 {
+    font-size:36px;
+    text-transform:none;
+    padding: 10vh 0px 0px 0px;
+}
+
+h3,h4 {
+    margin-left:4vw;
+    margin-right:4vw;
+    font-weight: normal;
+}
+
+h4 {
+    margin: 5vw 2vw 0vw 2vw;
+    font-size: 30px;
+    text-align: center;
+    padding: 2.5vh 0vh 2.5vh 0vh;
+}
+
+ul.readings {
+    padding: 30px 0px 0px 0px;
+    list-style-type: none;    
+}
+
+/*titlecard formats the intro portion with the title*/
+.titlecard {
+    background:#fff;
+    padding: 0vw 3vw 0vw 3vw;
+    font-family: didot;
+    z-index: 30;
+    top:0px;
+    position: absolute;
+    height: 100vh;
+}
+
+/*navigation*/
+.bar {
+    position: fixed;
+    top:0px;
+    z-index: 3;
+    background:#fff;
+    height: 45px;
+    width: 100%;
+    opacity: .75;
+}
+
+.bartxt {
+    color:red;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 14px;
+    padding:0vw;
+    text-align: right;
+    opacity: 1;
+    z-index: 3;
+}
+
+.nav {
+    position: fixed;
+    top:0px;
+    padding-top: 45px;
+    z-index: 2;
+    background:#eee;
+    height: 100vh;
+    width: 100%;
+    opacity: .9;
+    visibility: hidden;
+}
+
+.navtxt, .navtxt2, .navtxt3, .navtxt4, .navtxt5 {
+    color:blue;
+    font-size: 6vh;
+    padding:3.33vh;
+    text-align: center;
+    z-index: 3;
+    line-height: 2;
+    margin: 0px;
+}
+
+.navtxt {
+    color:black;
+    background:#eee;
+}
+
+.navtxt2 {
+    color:red;
+    background:#ddd;
+}
+
+.navtxt3 {
+    color:blue;
+    background:#ccc;
+}
+
+.navtxt4 {
+    color:yellow;
+    background:#bbb;
+}
+
+.navtxt5 {
+    color:white;
+    background:#aaa;
+}
+
+.show {
+    visibility: visible;
+}
+
+.hide {
+    visibility: visible;
+}
+
+/*this is the formatting for all div secions*/
+
+.intro {
+    color:black;
+    background:#eee;
+    margin-top: 100vh;
+    padding-bottom: 80px;
+
+}
+
+.schedule {
+    color:red;
+    background:#ddd;
+    padding-bottom: 80px;
+
+}
+
+/*this is a system for formatting the schedule that would be better for desktop*/
+/*
+dt {
+    margin-left:2vw;
+    margin-right:2vw;
+    text-align: center;
+    width:90px;
+    margin-top: 20px;
+}
+dd {
+    margin-left:2vw;
+    margin-right:2vw;
+    padding-left:110px;
+    margin-top:-23.5px;
+}*/
+
+/*this is the schedule formatting for mobile*/
+dl {margin: 0px;}
+
+dt {
+    margin-left:4vw;
+    margin-right:4vw;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+}
+dd {
+    margin-left:4vw;
+    margin-right:4vw;
+    font-size: 24px;
+}
+
+.questions {
+    background:#ccc;
+    padding-bottom: 80px;
+}
+
+.readings {
+    color:yellow;
+    background:#bbb;
+    padding-bottom: 80px;
+}
+
+/*this the the formatting for readings*/
+ul {
+    margin: 0vw 5vw 0vw 5vw;
+    padding:0px;
+}
+
+li {padding-bottom: 10px;}
+
+.expectations {
+    color:white;
+    background:#aaa;
+    padding-bottom: 80px;
+    margin:0px;
+}
