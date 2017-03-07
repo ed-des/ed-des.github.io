@@ -1,13 +1,4 @@
 /*
-colors
-background: #ffe5a0
-headings: #32938c
-text: #594753
-author & lines: #61b7b1
-*/
-
-
-/*
 
 * { 
   border: 0.5px solid grey;
@@ -15,110 +6,384 @@ author & lines: #61b7b1
 */
 
 
-
 body {
-    background: #ffe5a0; /* pale yellow background */
-    color: #594753; /* dark purple-grey text */
-    margin: 50px 20px 50px 20px;
+	background: #FFFBE7;
+	/* pale yellow background */
+	color: #594753;
+	/* dark purple-grey text */
 }
 
-p, ol { 
-    font-family: 'Abhaya Libre', serif;
-    font-weight: 500;
-    font-size: 18px;
+
+/*TITLE SCREEN*/
+
+div.title-screen {
+	background-color: orangered;
+	width: 100vw;
+	height: 100vh;
+	position: static;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+	margin-top: -8px;
 }
 
-h1, h2, h3, h4, p.dream { 
-    font-family: 'Roboto', sans-serif;
-    color: #32938c; /* teal headings */
+h1 {
+	/* title */
+	font-family: 'Bungee Hairline', sans-serif;
+	font-weight: 600;
+	font-size: 60px;
+	letter-spacing: 0.5px;
+	line-height: 0.85;
+	position: absolute;
+	left: 15px;
+	top: 230px;
+    /* back and forth animation */
+	background: linear-gradient(90deg, #FFFBE7, #ffcaba, #fca6fc, #ffcaba, #FFFBE7);
+	background-size: 60% 70%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	animation: Gradient 3s linear infinite;
 }
 
-h1 {  /* title */
-    font-weight: 600;
-    font-size: 40px;
-    letter-spacing: 0.5px;
-    margin-bottom: -5px;
+@keyframes Gradient {
+    0% {background-position:0% 50%;}
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%;}
 }
 
-h2 {  /* author */
-    text-align: right;
-    font-weight: 500;
-    font-size: 18px;
-    color: #61b7b1; /* lighter teal author */
-    line-height: 0.75;
+h2 {
+	/* author */
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 20px;
+	position: absolute;
+	left: 20px;
+	top: 570px;
+	color: #FFFBE7;
+	letter-spacing: 0.8px;
 }
 
-p.subauthor{  /* bracketed stuff after author */
-    font-size: 10px;
-    font-weight: 400;
-    text-align: right;
-    color: #61b7b1;
-    letter-spacing: 0.3px;
-    margin-top: -5px;
+
+/*arrow and animation*/
+
+a.arrow:link {
+	color: #FFFBE7;
+	font-size: 20px;
+	position: absolute;
+	left: 20px;
+	top: 620px;
+	animation-name: ColorChange;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
 }
 
-h3, p.dream {  /* section heading (syllabus r5 r6) */
-    font-size: 22px;
-    font-weight: 400;
+a.arrow:visited {
+	color: #FFFBE7;
+}
+
+a.arrow:hover {
+	color: black;
+}
+
+@keyframes ColorChange {
+	0% {color: #FFFBE7;}
+	25% {color: pink;}
+	50% {color: aqua;}
+	100% {color: #fff45b;}
+}
+
+p.line-author {
+	position: relative;
+	text-align: right;
+	color: orangered;
+	right: 45px;
+	top: -10px;
+	font-family: 'Bungee Hairline', sans-serif;
+}
+
+p.subauthor {
+	/* bracketed stuff after author */
+	font-size: 12px;
+	font-weight: 400;
+	text-align: right;
+	margin-right: 0px;
+	margin-top: -20px;
+	color: #594753;
+	letter-spacing: 0.3px;
+	line-height: 1.1;
+}
+
+
+/*MENU*/
+
+hr.top {
+	margin: 25px 12px 25px 15px;
+	width: 90%;
+}
+
+hr.second-top {
+	margin: -20px 12px 45px 15px;
+	width: 90%;
+}
+
+span.hide {
+	visibility: hidden;
+}
+
+div.menu {
+	padding-top: 15px;
+	padding-left: 20px;
+	margin-bottom: 60px;
+	line-height: 0.4;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+span.number {
+	/* numbers in contents */
+	font-family: 'Bungee Hairline', sans-serif;
+	color: orangered;
+	font-size: 14px;
+}
+
+p.line {
+	color: orangered;
+	position: relative;
+	font-family: 'Bungee Hairline', sans-serif;
+}
+
+a:link {
+	/* links in contents */
+	color: #594753;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #594753;
+}
+
+a:hover {
+	color: orangered;
+}
+
+
+/*PARAGRAPHS*/
+
+p, ol {
+	font-family: 'Abhaya Libre', serif;
+	font-weight: 400;
+	font-size: 18px;
+	padding: 0px 22px 0px 22px;
+}
+
+h3, h4, p.dream {
+	/* section headings */
+	font-family: 'Roboto', sans-serif;
+	color: #594753;
+	font-weight: 400;
+	padding-left: 10px;
+}
+
+h3 {
+	/* section heading (syllabus r5 r6) */
+	font-size: 22px;
+	font-weight: 400;
+	padding-top: 0px;
+}
+
+span.syllabus {
+	font-weight: 300;
+	font-size: 20px;
+	letter-spacing: 1.2px;
+}
+
+span.dream, p.dream {
+	/* bolder than body */
+	font-weight: 500;
+	letter-spacing: 1.2px;
+	font-size: 20px;
+}
+
+p.p-line {
+	color: orangered;
+	font-family: 'Bungee Hairline', sans-serif;
+	padding-left: 40px;
+	margin: -15px 0px -15px 0px;
+	font-size: 28px;
+}
+
+p.heading-structure {
+	padding-top: 10px;
+}
+
+h4 {
+	/* subheadings within text */
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+	line-height: 20px;
+	padding-top: 25px;
+}
+
+h4.part {
+    padding-top: 0px;
+}
+
+h4.question-part {
     padding-top: 20px;
-    letter-spacing: 0.8px;
 }
 
-span.dream, p.dream {  /* bolder than body */
-    font-weight: 500;
-    letter-spacing: 0.8px;
+span.time {
+	color: orangered;
+	font-family: 'Bungee Hairline', sans-serif;
+	font-size: 16px;
 }
 
-h4 {  /* subheadings within text */
-    font-size: 15px;
-    font-weight: 500;
-    letter-spacing: 1.5px;
-    line-height: 20px;
-    padding-top: 25px;
+p.note {
+	/* note - smaller type */
+	font-size: 12px;
+    padding-bottom: 5px;
 }
 
-p.note {  /* note - smaller type */
-    font-size: 16px;
-    padding-bottom: 20px;
+span.title-note {
+	color: orangered;
 }
 
 p.chairs {
-    letter-spacing: 5px;
-    line-height: 28px;
+	letter-spacing: 5px;
+	line-height: 28px;
 }
 
-span.para {  /* position of ¶ next to the chairs */
-    padding-left: 90px;
+span.para {
+	/* position of ¶ next to the chairs */
+	padding-left: 90px;
 }
 
-div.outline {  /* border of chairs h h h h */
-    border: 0.5px solid;
-    padding-left: 20px;
+div.outline {
+	/* border of chairs h h h h */
+	border: 0.5px solid;
+	padding-left: 20px;
+	margin: 0px 20px 0px 20px;
 }
 
-hr {  /* horizontal lines */
-    border-color: #61b7b1;  /* lighter teal */
-    margin-bottom: 18px;  /* line-height of lines */
-    border-width: 1px;  /* thickness of lines */
+hr {
+	/* horizontal lines */
+	border-color: orangered;
+	margin-bottom: 18px;
+	/* line-height of lines */
+	border-width: 1px;
+	/* thickness of lines */
+	width: 85%;
 }
 
-span.answer {  /* the [ ] and Y N */
-    letter-spacing: 5px;
+span.answer {
+	/* the [ ] and Y N */
+	letter-spacing: 5px;
+}
+
+p.first-role {
+	font-weight: 600;
+	text-decoration: underline;
+	letter-spacing: 0.3px;
 }
 
 p.roles {
-    padding-top: 20px;
-    font-weight: 600;
-    text-decoration: underline;
-    letter-spacing: 0.3px;
+	padding-top: 20px;
+	font-weight: 600;
+	text-decoration: underline;
+	letter-spacing: 0.3px;
 }
 
+div.block {
+	/*lighter yellow background block for question/answer*/
+	background-color: #fff5ad;
+	padding: 5px 15px 15px 15px;
+	margin: 20px 15px 15px 15px;
+	color: #594753;
+	animation: BlockChange 3s linear infinite;
+}
 
-div.block {  /*lighter yellow background block for question/answer*/
-    background-color: #fff5b2;
-    padding: 0 15px 5px 15px;
+p.block-text {
+	padding-top: 15px;
+}
+
+@keyframes BlockChange {
+	0% {background: #fff5ad;}
+	25% {background: #ffebad;}
+	50% {background: #ffdead;}
+	75% {background: #ffebad;}
+	100% {background: #fff5ad;}
 }
 
 ol {
-    list-style-position: outside;
+	list-style-position: outside;
+	margin-left: 15px;
+}
+
+details {
+	display: block;
+	color: orangered;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	padding: 20px 0px 0px 20px;
+	cursor: pointer;
+}
+
+summary {
+    padding-left: 25px;
+}
+
+
+.block-one, .block-two, .block-three, .block-four, .block-five, .block-six, .block-seven, .block-eight {
+    background-color: #fff9dd;
+	width: 95.5vw;
+	position: static;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+    padding: 5px 8px 10px 8px;
+}
+
+div.block-two {
+    background-color: #fff6d3;
+}
+
+div.block-three {
+    background-color: #fff4c9;
+}
+
+div.block-four {
+    background-color: #ffefc1;
+}
+
+div.block-five {
+    background-color: #ffecb7;
+}
+
+details.block-six {  /* r5 */
+    background-color: #fff1a3;
+    padding: 15px 8px 15px 8px;
+}
+
+div.block-seven {
+    background-color: #ffe8aa;
+}
+
+details.block-eight {  /* r6 */
+    background-color: #ffef9b;
+    padding: 15px 8px 15px 8px;
+}
+
+div.block-nine {
+    background-color: #ffe5a3;
+	width: 95.5vw;
+    height: 1150px;
+	position: static;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+    padding: 5px 8px 60px 8px;
+}
+
+h4.question-one {
+    padding-top: 5px;
 }

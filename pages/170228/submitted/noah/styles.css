@@ -2,7 +2,8 @@ body {
     z-index: -100;
     margin:0px;
     width:100%;
-    font-family: helvetica neue, helvetica, arial, sans-serif;
+    font-family: bookmania;
+    font-weight: 100;
     font-size: 24px;
     color:blue;
 
@@ -19,65 +20,41 @@ a {
 }
 
 /*all fonts*/
-.titlebig {
-    color:blue;
-    padding: 7vh 0vw 7vh 0vw;
-    font-family: helvetica neue, helvetica, arial, sans-serif;
-    font-size: 19vmin;
-    letter-spacing: -1px;
+.titlebig, .jesse {
+    color:black;
+    padding: 30px 0px 80px 0px;
+    font-family: nimbus sans extd;
+    font-weight: 100;
+    font-size: 90px;
     text-align: center;
 }
 
 .jesse {
-    font-family: helvetica neue, helvetica, arial, sans-serif;
-    font-size: 13vmin;
-/*    font-style: italic;*/
-    text-align: center;
-    letter-spacing: -.5px;
-    color:black;
+    padding: 100px 0px 0px 0px
 }
 
 .note {padding: 30px 0px 0px 0px;}
 
 .subtitle {
-    padding:8vh 12vw ;
-    line-height: 1.1;
-    font-family: didot;
-    font-style: italic;
-    font-size: 36px;
+    padding: 0px 0px 0px 36px;
+    line-height: 1.2;
+    text-indent: -9px;
+    font-family: bookmania;
+    font-size: 28px;
     text-align: left;
-    padding-right: 30px;
-    color:red;
-}
-
-/*simple classes for colors*/
-
-.sblue {
-    color: blue;
-}
-.syellow {
-    color:yellow;
-}
-.swhite {
-    color:white;
-}
-.sred {
-    color:red;
-}
-
-.sblack {
     color:black;
 }
 
+
 /*sparts = schedule parts*/
 .sparts {
+    font-family: nimbus sans extd;
     font-size:24px;
 /*    color:#ddd;*/
 /*    background:blue;*/
 }
 
 .faqs {
-    font-family:helvetica neue, helvetica, sans-serif;
 /*    color:black;*/
 /*    background: yellow;*/
     padding:4vh 4vw 0vh 4vw;
@@ -91,10 +68,9 @@ a {
 
 
 h1,h2,h3 {
-    font-family: didot;
-    font-weight: normal;
+    font-family: nimbus sans extd;
+    font-weight: 100;
     text-align: center;
-    text-transform: uppercase;
     line-height:1;
     margin:0px;
 }
@@ -125,9 +101,7 @@ ul.readings {
 
 /*titlecard formats the intro portion with the title*/
 .titlecard {
-    background:#fff;
-    padding: 0vw 3vw 0vw 3vw;
-    font-family: didot;
+    background:#ddd;
     z-index: 30;
     top:0px;
     position: absolute;
@@ -136,16 +110,18 @@ ul.readings {
 
 /*navigation*/
 .bar {
+    font-family: nimbus sans extd;
     position: fixed;
     top:0px;
     z-index: 3;
     background:#fff;
-    height: 45px;
+    height: 47px;
     width: 100%;
     opacity: .75;
 }
 
 .bartxt {
+    font-family: nimbus sans extd;
     color:red;
     font-size: 16px;
     text-transform: uppercase;
@@ -157,24 +133,28 @@ ul.readings {
 }
 
 .nav {
+    font-family: nimbus sans extd;
+    display:flex;
+    flex-flow: column;
+    justify-content: space-between;
     position: fixed;
     top:0px;
-    padding-top: 45px;
+    padding-top: 47px;
     z-index: 2;
     background:#eee;
-    height: 100vh;
     width: 100%;
+    height: 620px;
     opacity: .9;
     visibility: hidden;
 }
 
 .navtxt, .navtxt2, .navtxt3, .navtxt4, .navtxt5 {
+    font-family: nimbus sans extd;
     color:blue;
     font-size: 6vh;
-    padding:3.33vh;
     text-align: center;
     z-index: 3;
-    line-height: 2;
+    line-height: 124px;
     margin: 0px;
 }
 
@@ -194,7 +174,7 @@ ul.readings {
 }
 
 .navtxt4 {
-    color:yellow;
+    color:green;
     background:#bbb;
 }
 
@@ -253,6 +233,7 @@ dt {
     text-align: center;
     padding: 15px 0px 15px 0px;
 }
+
 dd {
     margin-left:4vw;
     margin-right:4vw;
@@ -265,7 +246,7 @@ dd {
 }
 
 .readings {
-    color:yellow;
+    color:green;
     background:#bbb;
     padding-bottom: 80px;
 }

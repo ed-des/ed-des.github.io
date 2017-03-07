@@ -1,266 +1,404 @@
 <!DOCTYPE html>
+
+<html>
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700|Source+Serif+Pro:400,600" rel="stylesheet"> <!--link to Google Fonts-->
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="My Name"> 
-    <title>DREAM METHOD</title>
-    <link rel="stylesheet" href="styles.css"> <!--it tells index to find a file called styles.css-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700|Source+Serif+Pro:400,600|Roboto+Mono:400,500,700" rel="stylesheet"><!--link to Google Fonts-->
+	<meta charset="UTF-8">
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	<meta content="My Name" name="na">
+
+	<title>DREAM METHOD</title>
+	<link href="styles.css" rel="stylesheet"><!--it tells index to find a file called styles.css-->
+	<meta content="width=device-width, initial-scale=1" name="viewport">
 </head>
+
 <body>
-<div><!--to create division-->
     
-    <h1> Dream Method</h1> 
-    <!--using h1, h2, h3 etc to define different headings-->
-        
-    <h2> J. Ball <br> <span class = "noteauthor"> [materials and useful practices <br> taken from <em>LaBerge, Hervey, Wangyal</em>] </span></h2><!-- use span to be able to adjust the visual elements to be different from J.Ball later on in styles.css-->
+<!--GRADIENT SECTION STARTS HERE-->
+<!--Title, Heading, Author and Subauthor-->
+	<div class="gradient">
+		<h1>"Dream Method"</h1>
+
+		<h2>DREAM METHOD</h2>
+
+		<h3>J. Ball<br>
+		<span class="sub-author">[materials and useful practices<br>
+		taken from <em>LaBerge, Hervey, Wangyal</em>]</span></h3>
+		<!-- use span to be able to adjust the visual elements to be different from J.Ball in styles.css-->
+	</div>
+<!--GRADIENT SECTION ENDS HERE-->
+	
+<!--DROPDOWN MENU STARTS HERE-->
+	<div class="dropdown">
+		<button class="dropbtn" onclick="dropMenu()">∇</button>
+
+		<div class="dropdown-content" id="myDropdown">
+			<a href="#intro">Introduction</a> 
+            <a href="#schedule">Schedule</a> 
+            <a href="#faq">FAQ</a> 
+            <a href="#readings">Readings</a>
+            <a href="#expectations">Expectations</a>
+            <a href="#R5&R6">R5 & R6</a>
+            <a href="#ex-roles">Roles</a>
+		</div>
+	</div>
+<!--DROPDOWN MENU ENDS HERE-->
+
+<!--PICTOGRAM SECTION STARTS HERE-->
+<!--Pink moving star-->
+	<div class="pink-star">&#9733</div>
+
+<!--Three darkblue clouds-->
+	<div class="img-section">
+		<div class="img-col">
+			<div class="img-image"><img class="img-cloud" src="images/cloud-back.png">
+			</div>
+		</div>
+
+		<div class="img-col">
+			<div class="img-image"><img class="img-cloud" src="images/cloud-back.png">
+			</div>
+		</div>
+
+		<div class="img-col">
+			<div class="img-image"><img class="img-cloud" src="images/cloud-back.png">
+			</div>
+		</div>
+	</div>
+<!--PICTOGRAM SECTION ENDS HERE-->
     
-    <h4> Syllabus:  <span class = "method">Dream Method </span></h4>
-        
-        <p> The class will be divided into two portions. The main portion will be conducted from 1-3pm on Fridays. The second portion will be conducted from 3-4pm. The difference between the portions will be explained below.</p>
-        <!--body text-->
+<!--HEADING-->
+	<h4>Syllabus: <span class="syllabus">Dream Method</span></h4>
+    
+<div>  
+<!--SUBHEADING-->
+	<a id="intro" name="intro">INTRODUCTION</a>
 
-        <p> Students should endeavor to be punctual. Excessive lateness will be viewed harshly. I am told that two full and unexplained absences constitute a failure.</p>
+<!--PARAGRAPHS START HERE-->
+        <p>The class will be divided into two portions. The main portion will be conducted from 1-3pm on Fridays. The second portion will be conducted from 3-4pm. The difference between the portions will be explained below.</p>
 
-        <p> The substance of the class is a combination of three elements: guidance, performance, and camaraderie. Guidance exists in the form of the weekly exercise, its description, and in meetings between the professor and the student to discuss the student’s progress. Performance exists in the exhibitions that the students will put on. Camaraderie exists in the business of the dream associates, described elsewhere.</p>
+        <p>Students should endeavor to be punctual. Excessive lateness will be viewed harshly. I am told that two full and unexplained absences constitute a failure.</p>
 
-        <p> Students will be divided into 3 groups of 5. Each week, one group will conduct an exhibition based upon their dreamwork. The exhibition need not be a group-effort. It can be merely a matter of consecutive appearances.</p>
+        <p>The substance of the class is a combination of three elements: guidance, performance, and camaraderie. Guidance exists in the form of the weekly exercise, its description, and in meetings between the professor and the student to discuss the student’s progress. Performance exists in the exhibitions that the students will put on. Camaraderie exists in the business of the dream associates, described elsewhere.</p>
+
+        <p>Students will be divided into 3 groups of 5. Each week, one group will conduct an exhibition based upon their dreamwork. The exhibition need not be a group-effort. It can be merely a matter of consecutive appearances.</p>
 </div>
     
-<div>
-        <p> The class will be structured in the following manner:</p> 
-         
-    <h5> Part 1</h5>
-         
-        <p> <span class = "period">1 – 2pm:</span> Group exhibition of works created.</p>
-        <!--use span to be able to adjust the font weight of the time later on in styles.css-->
-         
-        <p><span class = "period">2 – 2.30pm:</span> Meet with your two associates to discuss issues/methods.</p>
-         
-        <p><span class = "period"> 2.30 – 3pm:</span> Discussion of the following week’s objectives and methods.</p>
-    
-    <h5> Part 2</h5><!--using the same h5 for both Part 1 and Part 2 to keep consistency-->
-         
-        <p><span class = "period"> 3 – 4pm: </span> During this time I will meet individually with the members of the class. These meetings will last 10 minutes. I will meet with one group at each class session, and that group will be the group that has just presented. At these meetings, the individual student’s progress will be discussed. Obstacles, such as there may be, may be brought to light. Each student will bring the completed R5 forms from the previous weeks for me to examine. The R5 form is mandatory. It is the record and proof of the work being attempted.</p>
+	<hr> <!--section divider-->
 
-    <h6> WHAT ARE GROUP EXHIBITIONS?</h6><!--new heading (h6) for a new heading category-->
-         
-        <p> In group exhibitions, the material you are accruing from your dreams will be employed in the creation of some kind of performance. A person can read from a story, can sing, can act, can do a false-interview, can mime, can exhibit drawings, film, etc. The work must be original, and generated from the students’ dreams specifically for this dream class. No prior work is acceptable. Students can use dream material to create a collaboration. All 5 students could collaborate on a single piece for instance.</p>
-         
-        <p> The exhibitions are not a matter of obtaining people’s judgment on work. No one in the class will or should criticize the student for his/her work. It is merely a matter of using dream material fruitfully and expeditiously.</p>
+<div>
+<!--SUBHEADING-->
+	<a id="schedule" name="schedule">SCHEDULE</a>
+
+	   <p>The class will be structured in the following manner:</p>
+
+<!--BORDER STARTS HERE-->
+	<div class="yellowbox">
+		
+    <h5>Part 1</h5>
+
+		<p><span class="period">1 – 2pm:</span> Group exhibition of works created.</p>
+		<!--use span to be able to adjust the font weight of the time later in styles.css-->
+
+		<p><span class="period">2 – 2.30pm:</span> Meet with your two associates to discuss issues/methods.</p>
+
+		<p><span class="period">2.30 – 3pm:</span> Discussion of the following week’s objectives and methods.</p>
+
+		<h5>Part 2</h5>
+		<!--using the same h5 for both Part 1 and Part 2 to keep consistency-->
+
+		<p><span class="period">3 – 4pm:</span> During this time I will meet individually with the members of the class. These meetings will last 10 minutes. I will meet with one group at each class session, and that group will be the group that has just presented. At these meetings, the individual student’s progress will be discussed. Obstacles, such as there may be, may be brought to light. Each student will bring the completed R5 forms from the previous weeks for me to examine. The R5 form is mandatory. It is the record and proof of the work being attempted.</p>
+	</div>
+</div>
+<!--BORDER ENDS HERE-->
     
-        <p> You could, for instance, dress as a character from a dream and sit in a chair facing away from the class while reading aloud. Eye contact need not be involved. One could go so far as to specify that his/her performance will be given in the dark, or blindfolded.</p>
-         
-    <h6> WHAT ARE INDIVIDUAL MEETINGS?</h6>
-    <!--Using the same heading (h6) to keep consistency of the font, colors, leading etc.-->
-         
-        <p> The nature of this dream work involves the application of particular methods to the student’s life. In individual meetings, students will speak to me about how they are integrating the methods into their lives. Also, they will speak to me about the particulars of their attempts to use dream-generated imagery and content in literature, art, film, etc.</p>
-         
-    <h6> WHAT IS THE DISCUSSION OF THE FOLLOWING WEEK’S OBJECTIVES?</h6>
-         
-        <p> During this time I will outline for the class the particular method that we will be attempting to apply during that week, and answering any questions that people might have about that technique. Questions about the previous week’s technique can be brought up on a person-by-person basis during individual meetings.</p>
-         
-    <h6> WHAT IS THE ACTUAL INTENT OF THE COURSE?</h6>
-         
-        <p> The intent of the course is that the student will, at course’s end, be recalling their dreams every night, be possessed of a book filled with such recorded dreams, and furthermore be able to become conscious or lucid during dreaming.</p>
-         
-        <p> Ideally, the person will gain the ability to lucid dream at will. This requires a great deal of dedication, however, and it is more likely that by the end of the semester, the students will have obtained for themselves the experience of having lucid-dreamed several times, and will continue to do so every so often as long as the intent remains.</p>
-         
-        <p> Concerns on the part of students should be addressed to: </p>
-         
-    <h6> LIST OF READINGS</h6>
-         
-        <p> <strong>Jung, C.G.</strong> <em>Memories, Dreams, Reflections.</em></p> 
-        <!--Using <strong> to make the text bold and <em> for the letters to become italics-->
-         
-        <p> <strong>Van De Castle, Robert L.</strong> <em>Our Dreaming Mind.</em></p>
-         
-        <p> <strong>Jouvet, Michel.</strong> <em>The Paradox of Sleep.</em></p>
-         
-        <p> <strong>Freud, Sigmund.</strong> <em>Interpretation of Dreams.</em></p>
-         
-        <p> <strong>Campbell, Joseph.</strong> <em>The Hero With a Thousand Faces.</em></p>
-         
-        <p> <strong>Graves, Robert.</strong> <em>The White Goddess.</em></p>
-         
-        <p> <strong>Wangyal. Tenzin (Rinpoche).</strong> <em>The Tibetan Yogis of Dream and Sleep.</em></p>
-         
-        <p class="note"> <strong>NOTE:</strong> <br> Readings will not be discussed in class. These books are included not because I favor the particular thoughts or methods in them, but because I believe the reading of them will be useful and suggestive to those working with dreams. Students should read these books during the semester. They need not read them in any particular order.</p> 
-        <!--adding a class for this section to be able to make the font size of NOTE: and the rest of the parts different from each other. Also, using <br> to break the lines between NOTE: and Readings.-->
-         
-        <p> The two books principally crucial to the method we will utilize are:</p>
-         
-        <p> <em>Hervey de Saint-Denys.</em> Dreams and How to Guide Them.</p>
-         
-        <p> And</p>
-         
-        <p> <em>LaBerge.</em> Exploring the World of Lucid Dreams.</p>
-         
-        <p> Do not buy these books!</p>
-         
-        <p> I do not encourage the student to purchase these books during the class. When the class is finished, most certainly I would advocate that. They will be useful in order to cement and continue your dream-practice.</p>
-         
-        <p> However, I don’t want students to get ahead of themselves. We will proceed step by step through methods espoused by LaBerge, methods found in the book named above. I will provide the materials as they become necessary. Were the students to be on his/her own, he/she might not give the early exercises the time and intention they require.</p>
-         
-        <p> So, yes, buy these last two books, but not until December of 2014. Or, buy them now, but try not to get ahead of what we are attempting in class.</p>
-         
+	<hr>
+    
+<div>
+<!--SUBHEADING-->
+	<a id="faq" name="faq">FAQs</a>
+
+	<h6>WHAT ARE GROUP EXHIBITIONS?</h6> <!-- H6 for minor headings-->
+
+        <p>In group exhibitions, the material you are accruing from your dreams will be employed in the creation of some kind of performance. A person can read from a story, can sing, can act, can do a false-interview, can mime, can exhibit drawings, film, etc. The work must be original, and generated from the students’ dreams specifically for this dream class. No prior work is acceptable. Students can use dream material to create a collaboration. All 5 students could collaborate on a single piece for instance.</p>
+
+        <p>The exhibitions are not a matter of obtaining people’s judgment on work. No one in the class will or should criticize the student for his/her work. It is merely a matter of using dream material fruitfully and expeditiously.</p>
+
+        <p>You could, for instance, dress as a character from a dream and sit in a chair facing away from the class while reading aloud. Eye contact need not be involved. One could go so far as to specify that his/her performance will be given in the dark, or blindfolded.</p>
+
+	<h6>WHAT ARE INDIVIDUAL MEETINGS?</h6>
+	<!--Using the same heading (h6) to keep consistency of the font, colors, leading etc.-->
+
+	    <p>The nature of this dream work involves the application of particular methods to the student’s life. In individual meetings, students will speak to me about how they are integrating the methods into their lives. Also, they will speak to me about the particulars of their attempts to use dream-generated imagery and content in literature, art, film, etc.</p>
+
+	<h6>WHAT IS THE DISCUSSION OF THE FOLLOWING WEEK’S OBJECTIVES?</h6>
+
+	    <p>During this time I will outline for the class the particular method that we will be attempting to apply during that week, and answering any questions that people might have about that technique. Questions about the previous week’s technique can be brought up on a person-by-person basis during individual meetings.</p>
+
+	<h6>WHAT IS THE ACTUAL INTENT OF THE COURSE?</h6>
+
+        <p>The intent of the course is that the student will, at course’s end, be recalling their dreams every night, be possessed of a book filled with such recorded dreams, and furthermore be able to become conscious or lucid during dreaming.</p>
+
+        <p>Ideally, the person will gain the ability to lucid dream at will. This requires a great deal of dedication, however, and it is more likely that by the end of the semester, the students will have obtained for themselves the experience of having lucid-dreamed several times, and will continue to do so every so often as long as the intent remains.</p>
+</div>
+    
+    <hr>
+    
+<div>
+<!--SUBHEADING-->
+	<a id="readings" name="readings">LIST OF READINGS</a>
+
+<!--BORDER STARTS HERE-->
+	<div class="yellowbox">
+		<p><strong>Jung, C.G.</strong> <em>Memories, Dreams, Reflections.</em></p>
+		<!--Using <strong> to make the text bold and <em> for the letters to become italics-->
+
+		<p><strong>Van De Castle, Robert L.</strong> <em>Our Dreaming Mind.</em></p>
+
+		<p><strong>Jouvet, Michel.</strong> <em>The Paradox of Sleep.</em></p>
+
+		<p><strong>Freud, Sigmund.</strong> <em>Interpretation of Dreams.</em></p>
+
+		<p><strong>Campbell, Joseph.</strong> <em>The Hero With a Thousand Faces.</em></p>
+
+		<p><strong>Graves, Robert.</strong> <em>The White Goddess.</em></p>
+
+		<p><strong>Wangyal. Tenzin (Rinpoche).</strong> <em>The Tibetan Yogis of Dream and Sleep.</em></p>
+
+		<p class="note"><strong>NOTE:</strong><br>
+		Readings will not be discussed in class. These books are included not because I favor the particular thoughts or methods in them, but because I believe the reading of them will be useful and suggestive to those working with dreams. Students should read these books during the semester. They need not read them in any particular order.</p>
+		<!--adding a class for this section to be able to make the font size of NOTE: and the rest of the parts different from each other. Also, using <br> to break the lines between NOTE: and Readings.-->
+	</div>
+</div>
+<!--BORDER ENDS HERE-->
+    
+<div>
+        <p>The two books principally crucial to the method we will utilize are:</p>
+
+        <p><em>Hervey de Saint-Denys.</em> Dreams and How to Guide Them.</p>
+
+        <p>And</p>
+
+        <p><em>LaBerge.</em> Exploring the World of Lucid Dreams.</p>
+
+        <p>Do not buy these books!</p>
+
+        <p>I do not encourage the student to purchase these books during the class. When the class is finished, most certainly I would advocate that. They will be useful in order to cement and continue your dream-practice.</p>
+
+        <p>However, I don’t want students to get ahead of themselves. We will proceed step by step through methods espoused by LaBerge, methods found in the book named above. I will provide the materials as they become necessary. Were the students to be on his/her own, he/she might not give the early exercises the time and intention they require.</p>
+
+        <p>So, yes, buy these last two books, but not until December of 2014. Or, buy them now, but try not to get ahead of what we are attempting in class.</p>
+
         <p class="note">[ed. note -- this page was from previous iteration of class -- when the class was indeed in a classroom. Our situation this semester (ballroom) is different. I preserve this page for your amusement.]</p>
-         
-    <h6> REGARDING THE SITUATION OF THE CLASS</h6>
-         
-        <p> I had wanted for the class to be in a theatre, and that we would therefore be able to have our exhibitions properly, with fanfare and aplomb. As it happens, it seems this many not be possible. Therefore, we will attempt to do our best to make our classroom into a theatre of some sort.</p>
-         
-        <p> All the chairs will point in the same direction, save one</p>
 </div>
-<div class = "frame"><!--adding a Class for this div to be able to create a rectangle border around the chairs.-->
     
-        <p class = "theatre"> h h h h h <br> h h h h h <span class = "find">¶ </span><br> h h h h h <br> h h h h h </p>
-        <!--creating a class so I can adjust the tracking and leading between the hs. Also use <br> to break the different rows of h and create the class "find" to be able to move ¶ to the right side-->
-    
-</div>
-        
-        <p> Yes, one chair and in it you will go.</p>
-         
-        <p> But what is the manner of interaction? What behavior is expected?</p>
+	<hr>
     
 <div>
-    <h6>THIS IS HOW</h6>
-    <ol><!--ordered list-->
+<!--SUBHEADING-->
+	<a id="expectations" name="expectations">EXPECTATIONS</a>
+
+        <p>Regarding the situation of the class, I had wanted for the class to be in a theatre, and that we would therefore be able to have our exhibitions properly, with fanfare and aplomb. As it happens, it seems this many not be possible. Therefore, we will attempt to do our best to make our classroom into a theatre of some sort.</p>
+
+        <p>All the chairs will point in the same direction, save one</p>
+
+	<div class="frame"><!--adding a Class for this div to be able to create a rectangle border around the chairs-->
+
+		<p class="chairs">h h h h h<br>
+		h h h h h <span class="paragraph">¶</span><br>
+		h h h h h<br>
+		h h h h h</p>
+		<!--creating a class so I can adjust the tracking and leading between the hs. Also use <br> to break the different rows of h and create the class "find" to be able to move ¶ to the right side-->
+	</div>
+
+        <p>Yes, one chair and in it you will go.</p>
+
+        <p>But what is the manner of interaction? What behavior is expected?</p>
+
+    <h6>THIS IS HOW</h6><!--minor heading-->
         
-        <li> We won’t say much unless we’re asked to.</li> <!--list for numbers-->
+		<ol><!--ordered list-->
 
-        <li> We will go along in a most friendly and gentle way with whatever designs the person proposes (he or she who is exhibiting).</li>
-    </ol>  
-         
-        <p> You are in this class because you chose it.</p>
+			<li>We won’t say much unless we’re asked to.</li>
+            <!--list for numbers-->
 
-        <p> If you don’t feel you can commit to working hard, please choose another course. I mean to actually attempt to have the members of this class:</p>
-    
-    <ol class = "letters"> <!--create class for list of A. and B. later-->
-        
-        <li> begin to dream lucidly;</li>
+			<li>We will go along in a most friendly and gentle way with whatever designs the person proposes (he or she who is exhibiting).</li>
+		</ol>
 
-        <li> create work from their dream material.</li>
-             </ol>
-        <p> Individuals who are not interested in working hard to obtain those goals should excuse themselves.</p>
+        <p>You are in this class because you chose it.</p>
 
-        <p> +</p>
 
-        <p> The work that we will  be doing here is largely invisible. It is work that you will do for yourself and by yourself. No one else can know, for instance, how often you are stopping yourself during the day to see if you are awake or dreaming. If you are diligent, and do this often, you will begin to see the results. If you are not, you won’t.</p>
+        <p>If you don’t feel you can commit to working hard, please choose another course. I mean to actually attempt to have the members of this class:</p>
 
-        <p> In the matter of our exhibitions, you can use the other members of your section as you go about preparing. The time during the week, between classes, is to be spent performing the week’s exercise, recording dreams, and mining your dream-content for creative purposes.</p>
-</div>
-    
-<div>
-    <h6> R5</h6>
-         
-        <p> No. of Dreams Recorded: <span class = "space">[   ]</span></p><!--create span class to be able to add more space in the brackets-->
+		<ol class="a-b">
+			<!--create class for list of A. and B. later-->
 
-        <p> No. of Words Written in Recording (estimate): <br> <span class = "space">[   ]</span></p>
+			<li>begin to dream lucidly;</li>
 
-             <p class = line>_______________________________________</p>
-             <!--the dash (to create the line) of the font I am using doesn't connect very smoothly, so I decided to use the dash from Helvetica instead-->
+			<li>create work from their dream material.</li>
+		</ol>
 
-        <p> No. of Dreams Analyzed for Dream Signs: <span class = "space">[   ]</span></p>
+        <p>Individuals who are not interested in working hard to obtain those goals should excuse themselves.</p>
 
-        <p> Dream Sign Most Prevalent:</p>
+        <p>+</p>
 
-            <p class = line>_______________________________________</p>
-        <p> Concerns, Worries, Difficulties:</p>
-            <p class = line>_______________________________________</p> 
-            <p class = line>_______________________________________</p>
-            <p class = line>_______________________________________</p> 
-            <p class = line>_______________________________________</p>
+        <p>The work that we will be doing here is largely invisible. It is work that you will do for yourself and by yourself. No one else can know, for instance, how often you are stopping yourself during the day to see if you are awake or dreaming. If you are diligent, and do this often, you will begin to see the results. If you are not, you won’t.</p>
 
-         <p> Attempting to Wake Yourself Multiple Times? <br> Y   N</p>
-
-         <p> No. of Times This Week’s Exercise Attempted:<br> <span class = "space">[   ]</span></p>
-         <p> Success? Y   N</p>
-
-         <p> Explain: </p>
-
-            <p class = line>_______________________________________</p> 
-            <p class = line>_______________________________________</p>
-            <p class = line>_______________________________________</p> 
-            <p class = line>_______________________________________</p>
-
-         <p> Miscellaneous:</p>
-
-            <p class = line>_______________________________________</p> 
-            <p class = line>_______________________________________</p>
-            <p class = line>_______________________________________</p> 
-            <p class = line>_______________________________________</p>
-
-         <p> Are You Asleep Now? Y   N</p>      
+        <p>In the matter of our exhibitions, you can use the other members of your section as you go about preparing. The time during the week, between classes, is to be spent performing the week’s exercise, recording dreams, and mining your dream-content for creative purposes.</p>
 </div>
 
+	<hr>
+
 <div>
+
+<!--R5 and R6 section-->
+<!--created hidden sections for R5 & R6-->
+<!--R5 STARTS HERE-->
+	<details>
+		<summary><a id="R5&R6" name="R5&R6">R5</a></summary>
+
+    <div class="gradient-box"> <!--to diffrentiate from other parts-->
+        
+        <p>No. of Dreams Recorded: <span class="space">[ ]</span></p><!--create span class to be able to add more space in the brackets-->
+
+        <p>No. of Words Written in Recording (estimate):<br>
+        <span class="space">[ ]</span></p>
+
+        <p class="line">_________________________________</p>
+        <!--the dash (to create the line) of the font I am using doesn't connect very smoothly, so I decided to use the dash from Helvetica instead-->
+
+        <p>No. of Dreams Analyzed for Dream Signs: <span class="space">[ ]</span></p>
+
+        <p>Dream Sign Most Prevalent:</p>
+
+        <p class="line">_________________________________</p>
+
+        <p>Concerns, Worries, Difficulties:</p>
+
+        <p class="line">_________________________________</p>
+        <p class="line">_________________________________</p>
+        <p class="line">_________________________________</p>
+        <p class="line">_________________________________</p>
+
+        <p>Attempting to Wake Yourself Multiple Times?<br>
+			Y N</p>
+
+        <p>No. of Times This Week’s Exercise Attempted:<br>
+        <span class="space">[ ]</span></p>
+
+        <p>Success? Y N</p>
+
+        <p>Explain:</p>
+
+        <p class="line">_________________________________</p>
+        <p class="line">_________________________________</p>
+        <p class="line">_________________________________</p>
+        <p class="line">_________________________________</p>
+
+        <p>Miscellaneous:</p>
+
+        <p class="line">_________________________________</p>
+        <p class="line">_________________________________</p>
+        <p class="line">_________________________________</p>
+        <p class="line">_________________________________</p>
+
+        <p>Are You Asleep Now? Y N</p>
+        
+<!--minor heading-->
     <h6>INSTRUCTIONS OF THE USE OF DREAM ASSOCIATES</h6>
 
+<!--numbered list-->
         <ol><!--created an ordered number list for instructions-->
-                
-            <li> You will meet with your two dream associates each week in class.</li>
-            <li> One of the three will go first. That individual will tell a dream to the other two.</li>
-            <li> He/she will then give a filled out R6 form to each of the two associates.</li>
-            <li> The two associates will mull over it and attempt to isolate dream signs, or comment on any peculiarities or wonders.</li>
-            <li> The second will go.</li>
-            <li> The third will go.</li>
-            <li> A brief interlude will exist wherein associates may discuss any difficulties that they had performing the week’s exercise. Questions may be raised which can be asked of the professor following the meeting of the dream associates.</li>
-                
-         </ol>
+            <li>You will meet with your two dream associates each week in class.</li>
 
-            <p> The utility of the dream associates is three-fold.</p>
+            <li>One of the three will go first. That individual will tell a dream to the other two.</li>
 
-            <p> In the first place, it creates an added forum for intentionality, thereby aiding dream-recall, and the creation of dream-momentum.</p>
+            <li>He/she will then give a filled out R6 form to each of the two associates.</li>
 
-            <p> In the second place, it creates a location wherein associates may support each other in this difficult work.</p>
+            <li>The two associates will mull over it and attempt to isolate dream signs, or comment on any peculiarities or wonders.</li>
 
-            <p> In the third place, it allows the intuition of one associate to come to the aid of another.</p>
-</div>
+            <li>The second will go.</li>
+
+            <li>The third will go.</li>
+
+            <li>A brief interlude will exist wherein associates may discuss any difficulties that they had performing the week’s exercise. Questions may be raised which can be asked of the professor following the meeting of the dream associates.</li>
+        </ol>
+
+        <p>The utility of the dream associates is three-fold.</p>
+
+        <p>In the first place, it creates an added forum for intentionality, thereby aiding dream-recall, and the creation of dream-momentum.</p>
+
+        <p>In the second place, it creates a location wherein associates may support each other in this difficult work.</p>
+
+        <p>In the third place, it allows the intuition of one associate to come to the aid of another.</p>
+        
+    </div>
+	</details>
+<!--R5 ENDS HERE-->
+
+<!--R6 STARTS HERE-->
+	<details>
+		<summary><a id="R5&R6" name="R5&R6">R6</a></summary>
+
+    <div class="gradient-box">
+        
+        <p>Choose a dream from your week of dream recordings. Write it out in a manner wherein sharing does not cause you discomfort. If space is insufficient, attach a page.</p>
+
+        <p class="line">_________________________________</p>
+        <p class="line">_________________________________</p>
+        <p class="line">_________________________________</p>
+        <p class="line">_________________________________</p>
+
+        <p>Space for Dream Associates to isolate dream-signs, peculiarities, wonders.</p>
+
+        <p class="line">_________________________________</p>
+        <p class="line">_________________________________</p>
+        <p class="line">_________________________________</p>
+        <p class="line">_________________________________</p>
+    </div>
+	</details>
+<!--R6 ENDS HERE-->
+	
+    <hr>
 
 <div>
-        <h6> R6</h6>
+<!--SUBHEADING-->
+	<a id="ex-roles" name="ex-roles">ROLES FOR EXHIBITIONS</a>
 
-            <p> Choose a dream from your week of dream recordings. Write it out in a manner wherein sharing does not cause you discomfort. If space is insufficient, attach a page.</p>
+	<div class="yellowbox">
+		<p class="roles">Ringleader</p>
+		<!--create a class for roles to be able to underline and bold them in styles.css later-->
 
-            <p class = line>_______________________________________</p> 
-            <p class = line>_______________________________________</p>
-            <p class = line>_______________________________________</p> 
-            <p class = line>_______________________________________</p>
+		<p>The ringleader will introduce the members of his/her group during the exhibition. He/she will ease the audience and see that all is taken care of to ensure an appropriately wondrous performance.</p>
 
-            <p> Space for Dream Associates to isolate dream-signs, peculiarities, wonders.</p>
+		<p class="roles">Handbill Maker</p>
 
-            <p class = line>_______________________________________</p> 
-            <p class = line>_______________________________________</p>
-            <p class = line>_______________________________________</p> 
-            <p class = line>_______________________________________</p>
+		<p>The handbill maker will prepare the handbill for the exhibition and hand it out to the members of the audience at the exhibition’s start. He or she will be emailed the information necessary to the creation of the handbill, or be brought that information by the class prior to the exhibition, at the very latest by the class preceding the exhibition. Do not put your handbill maker in a bad spot by failing to email him/her the title of your performance.</p>
 
-        <h6> ROLES FOR EXHIBITIONS</h6>
+		<p class="roles">Stage Manager</p>
 
-            <p class="roles"> Ringleader</p>
-            <!--create a class for roles to be able to underline and bold them in styles.css later-->
+		<p>The stage manager will see to it that the seating is appropriately done. He/she will arrange for any odd or unorthodox seating that a particular performance may require. He/she will see to lighting, etc.</p>
 
-            <p> The ringleader will introduce the members of his/her group during the exhibition. He/she will ease the audience and see that all is taken care of to ensure an appropriately wondrous performance.</p>
+		<p class="roles">Theater Critic</p>
 
-            <p class="roles"> Handbill Maker</p>
+		<p>The theater critic will write a brief (three sentence) description of each performance, which will be entered into the log via email.</p>
 
-            <p> The handbill maker will prepare the handbill for the exhibition and hand it out to the members of the audience at the exhibition’s start. He or she will be emailed the information necessary to the creation of the handbill, or be brought that information by the class prior to the exhibition, at the very latest by the class preceding the exhibition. Do not put your handbill maker in a bad spot by failing to email him/her the title of your performance.</p>
+		<p class="roles">Lackeys</p>
 
-            <p class="roles"> Stage Manager</p>
+		<p>The remaining individuals will constitute a group of lackeys who will perhaps replace the above Ringleader, Handbill Maker, Stage Manager or Theater Critic, should it prove necessary.</p>
 
-            <p > The stage manager will see to it that the seating is appropriately done. He/she will arrange for any odd or unorthodox seating that a particular performance may require. He/she will see to lighting, etc.</p>
+		<p class="note"><strong>NOTE:</strong><br>
+		All the above individuals will be, in addition to their roles, giving a performance. Each group will, as is mentioned elsewhere, making an exhibition once every three weeks.</p>
+	</div>
 
-            <p class="roles"> Theater Critic</p>
+<!--darkblue cloud-->
+	<div class="img-section">
+		<div class="img-col">
+			<div class="img-image"><img class="img-cloud1" src="images/cloud-back.png">
+			</div>
+		</div>
+	</div>
 
-            <p> The theater critic will write a brief (three sentence) description of each performance, which will be entered into the log via email.</p>
-
-            <p class="roles"> Lackeys</p>
-
-            <p> The remaining individuals will constitute a group of lackeys who will perhaps replace the above Ringleader, Handbill Maker, Stage Manager or Theater Critic, should it prove necessary.</p>
-
-                <p class="note"> <strong>NOTE:</strong> <br> All the above individuals will be, in addition to their roles, giving a performance. Each group will, as is mentioned elsewhere, making an exhibition once every three weeks.</p>
 </div>
-
 </body>

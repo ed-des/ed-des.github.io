@@ -31,17 +31,32 @@
 	<div>
 		<p>The Class will be structured in the following manner.</p>
 		
-		<ul>
-			<p>Part 1</p>
-			<li>1:00–2:00 — Group exhibition of works created.</li>
-			<li>2:00–2:30 — Meet with your two associates to discuss issues/methods.</li>
-			<li>2:30–3:00 — Discussion of the following week’s objectives and methods.</li>
-		</ul>
-		<ul>
-			<p>Part 2</p>
-			<li>3:00–4:00 — During this time I will meet individually with the members of the class. These meetings will last 10 minutes. I will meet with one group at each class session, and that group will be the group that has just presented. At these meetings the individual student’s progress will be discussed. Obstacles, such as there may be, may be brought to light. Each student will ring the completed R5 forms from the previous weeks for me to examine. The R5 form is mandatory. It is the record and proof of the work being attempted.</li>
-		</ul>
-	</div>
+		
+		<div class="schedule">
+			<h3 class="title">Part 1</h3>
+			<div class="schedule-col">
+			<div class="schedule-time">1:00 – 2:00</div>
+			<div class="schedule-info">Group exhibition of works created.</div>
+		</div>
+			
+		<div class="schedule-col">
+			<div class="schedule-time">2:00 – 2:30</div>
+			<div class="schedule-info">Meet with your two associates to discuss issues/methods</div>	
+		</div>
+			
+		<div class="schedule-col">
+			<div class="schedule-time">2:30 – 3:00</div>
+			<div class="schedule-info">Discussion of the following week’s objectives and methods</div>
+		</div>
+			
+		<h3 class="title">Part 2</h3>
+			<div class="schedule-col">
+			<div class="schedule-time">3:00 – 4:00</div>
+			<div class="schedule-info">During this time I will meet individually with the members of the class. These meetings will last 10 minutes. I will meet with one group at each class session, and that group will be the group that has just presented. At these meetings the individual student’s progress will be discussed. Obstacles, such as there may be, may be brought to light. Each student will ring the completed R5 forms from the previous weeks for me to examine. The R5 form is mandatory. It is the record and proof of the work being attempted.</div>
+			</div>
+		</div>
+		
+	
 	
 <!--questions-->
 	<div> 
@@ -79,13 +94,13 @@
 	<div>
 		<h3>LIST OF READINGS</h3>
 		<ul>
-			<li>Jung, C. G. <i>Memories, Dreams, Reflections.</i></li>
-			<li>Van De Castle, Robert L. <i>Our Dreaming Mind.</i></li>
-			<li>Jouvet, Michel. <i>The Paradox of Sleep.</i></li>
-			<li>Freud, Sigmund. <i>Interpretation of Dreams.</i></li>
-			<li>Campbell, Joseph.  <i>The Hero With a Thousand Faces.</i></li>
-			<li>Graves, Robert. <i>The White Goddess.</i></li>
-			<li>Wangyal, Tenzin (Rinpoche). <i>The Tibetan Yogis of Dream and Sleep.</i></li>
+			<li>Jung, C. G. <br><i>Memories, Dreams, Reflections.</i></li>
+			<li>Van De Castle, Robert L. <br><i>Our Dreaming Mind.</i></li>
+			<li>Jouvet, Michel. <br><i>The Paradox of Sleep.</i></li>
+			<li>Freud, Sigmund. <br><i>Interpretation of Dreams.</i></li>
+			<li>Campbell, Joseph.  <br><i>The Hero With a Thousand Faces.</i></li>
+			<li>Graves, Robert. <br><i>The White Goddess.</i></li>
+			<li>Wangyal, Tenzin (Rinpoche). <br><i>The Tibetan Yogis of Dream and Sleep.</i></li>
 		</ul>
 	</div>
 
@@ -167,55 +182,55 @@
 		<h1>R5</h1>
 			
 			<form action="/action_page.php">
+				<div class = "questions">
 				No. of Dream Recorded:
-				<input type="radio">
-				<br>
-				<br>
-				No. of Words Writen in Recording (estimate):<input type="radio">
+				<input type="number" class = "number"></div>
+				
+				<div class = "questions"><span>No. of Words Writen in Recording (estimate):</span><input type="number" class = "number"></div>
+
+				<div class = "questions">
+				<span>No. of Dreams Analyzed for Dream Signs:</span><input type="number" class = "number">
+				</div>
+
+				<div class = "questions">Dream Sign Most Prevalent:<br>
 				<textarea rows="1" cols="38"></textarea>
-				<br>
-				<br>
-				No. of Dreams Analyzed for Dream Signs:<input type="radio">
-				<br>
-				<br>
-				Dream Sign Most Prevalent: 
-				<textarea rows="1" cols="38"></textarea>
-				<br>
-				<br>
-				Concerns, Worries, Difficulties:
+				</div>
+
+				<div class = "questions">Concerns, Worries, Difficulties:<br>
 				<textarea rows="4" cols="38"></textarea>
-				<br>
-				<br>
-				Attempting to Wake Yourself Multiple Times?<br>
-				<span class = "y"><input type = "radio">Y</span>
-				<br>
-				<span class = "n"><input type = "radio">N</span>
-				<br>
-				<br>
-				No. of Times This Week’s Exercise Attempted:
-				<input type="radio">
-				<br>
-				<br>
-				Success?
-				<br>
-				<span class = "y"><input type = "radio">Y</span>
-				<br>
-				<span class = "n"><input type = "radio">N</span>
-				<br>
-				<br>
-				Explain:
+				</div>
+
+				<div class = "questions">Attempting to Wake Yourself Multiple Times?
+				<span class = "answer">
+				<input type = "radio" name="y/n">Y
+				<input type = "radio" name="y/n">N
+				</span>
+				</div>
+
+				<div class = "questions">No. of Times This Week’s Exercise Attempted:
+				<input type="number" class = "number"></div>
+				
+				<div class ="questions">Success?
+				<span class = "answer"><input type = "radio" name="y/n2">Y
+				<input type = "radio" name="y/n2">N</span>
+				</div>
+				
+				<div class="questions">
+				Explain:<br>
 				<textarea rows="4" cols="38"></textarea>
-				<br>
-				<br>
-				Miscellaneous:
+				</div>
+				
+				<div class="questions">
+				Miscellaneous:<br>
 				<textarea rows="4" cols="38"></textarea>
+				</div>
+				
+				<div class="questions">
 				Are You Asleep Now?
-				<br>
-				<span class = "y"><input type = "radio">Y</span>
-				<br>
-				<span class = "n"><input type = "radio">N</span>
-				<br>
-				<br>
+				<span class = "answer"><input type = "radio" name="y/n3">Y
+				<input type = "radio" name="y/n3">N</span>
+				</div>
+
 				<input type="submit" value="Submit" class = "submit">
 				<br>
 				<br>
@@ -246,14 +261,15 @@
 	<div class = "form2">
 		<h1>R6</h1>
 		<form>
-			Choose a dream from your week of dream recordings. Write it out in a manner wherein sharing does not cause you discomfort. If space is insufficient, attach a page.
+			<div class="questions">Choose a dream from your week of dream recordings. Write it out in a manner wherein sharing does not cause you discomfort. If space is insufficient, attach a page.<br>
 			<textarea rows="7" cols="38"></textarea>
-			<br>
-			<br>
-			Space for Dream Associates to isolate dream-signs, peculiarities, wonders.
+			</div>
+			
+			<div class="questions">
+			Space for Dream Associates to isolate dream-signs, peculiarities, wonders.<br>
 			<textarea rows="7" cols="38"></textarea>
-			<br>
-			<br>
+			</div>
+				
 			<input type="submit" value="Submit" class = "submit">
 			<br>
 			<br>

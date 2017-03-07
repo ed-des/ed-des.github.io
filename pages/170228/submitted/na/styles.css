@@ -1,72 +1,139 @@
+/*to check the grid*/
+/*
+* { 
+  border: 0.5px solid grey;
+}
+*/
+
+/*TOP GRADIENT SECTION*/
+.gradient{
+    background: linear-gradient(180deg, #FD9F1F, #ff00ba, #1FC8FF, #18ED18, #FD9F1F, #ff00ba);
+    background-size: 100% 500%;
+    animation: colorwheel 15s linear infinite;
+    margin-top: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+    margin-right:calc(50% - 50vw);
+    height: 100vh;
+}
+
+/*body text font, screen margin and background color*/
 body{
-/*    background:#ccffff;*/
     font-family: 'Source Serif Pro', serif;/*using this serif font for the whole body text*/
-    margin: 70px 15px 40px 15px;/*margin of the top, right, bottom, left*/
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#adfcff+0,aad3ff+100 */
-    background: #adfcff; /* Old browsers */
-    background: -moz-linear-gradient(top,  #adfcff 0%, #aad3ff 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #adfcff 0%,#aad3ff 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #adfcff 0%,#aad3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#adfcff', endColorstr='#aad3ff',GradientType=0 ); /* IE6-9 */
-
+    margin: 0px 15px 40px 25px;/*margin of the top, right, bottom, left*/
+    background: #fffce8;
 }
-p, ol{ /* for the overall paragraph and ordered list*/
+
+/* specifics for body text*/
+p, ol{ 
     color: #17385b; /*dark blue color for the text*/
-    line-height: 22px;/*leading for the text in pixels*/
+    line-height: 22px;/*leading in pixels*/
+    margin-left: 5px;/*to add a little indent for body text*/
 }
 
-h1, h2, h4, h5, h6{ /*for headings using san serif and pinnk*/
+/*for headings using san serif and pink color type*/
+h1, h2, h4, h5, h6{ 
     font-family: 'Rubik', sans-serif; 
         color:#f44271;
 }
-h1{ /*font thickness, font size, leading and tracking for title*/
-    font-weight: 500; 
+
+/*TOP HEADING*/
+h1{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 150px;
+    padding-top: 30px;
+    animation-name: toptitle;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;   
+}
+
+/*to animate the color of the HEADING*/
+@keyframes toptitle {
+    0%   {color: #ffe100;}
+    25%  {color: deeppink;}
+    50%  {color: #ffe100;}
+    100% {color: deeppink;}
+}
+
+/*font thickness, font size, leading and tracking for MAIN HEADING*/
+h2{ 
+    font-weight: 400; 
     font-size: 55px;
     line-height: 55px;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.5px;
+    color:#17385b;
+    padding-left: 20px;
 }
 
-h2{ 
+/*AUTHOR*/
+h3{ 
     font-family: 'Source Serif Pro', serif;/*changed "J. Ball" to serif type*/
     font-size: 20px; 
-    padding-left: 3px;/*to generate a bit more space*/
+    padding-left: 25px;/*to generate a bit more space*/
     text-align: left;
-    line-height: 0.8;
+    line-height: 1;
+    padding-bottom: 200px;
+    color: #134a84;
 }
 
-span.noteauthor{ /*created this class to use different fonts, size, thickness, color, tracking and leading than "J. Ball"*/
+/*SUBAUTHOR*/
+span.sub-author{ /*created this class to use different fonts, size, thickness, color, tracking and leading than "J. Ball"*/
     font-family: 'Rubik', sans-serif; 
     font-size:13px;
     font-weight:400;
-    color:#f44271;
-    letter-spacing: 0.1px;
+    color:#134a84;
+    letter-spacing: 0.2px;
 }
 
+/*SYLLABUS HEADING*/
 h4{ /*font thickness, font size, leading & tracking for for Syllabus*/
     font-weight:400;
     font-size: 24px;
     letter-spacing: 0.1px;
-    padding-top: 30px;/*to create a bigger gap from top part*/
 }
 
-span.method{
+span.syllabus{
     font-weight:500; /*bold the word "Dream Method"*/
 }
 
-h5{ /*font thickness, font size and tracking for for headings*/
+/*DROPDOWN MENU SECTIONS*/
+a{
+    font-weight:500;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    line-height: 22px;
+    color:#f44271;
+    font-family: 'Rubik', sans-serif; 
+    text-decoration: underline;
+}
+
+/*YELLOW BORDERS/BOXES*/
+.yellowbox{
+    border: 1px solid #ffe100;
+    padding: 0px 15px 10px 15px;
+    background: #ffe100;
+    margin: 20px 0px 30px 0px;   
+}
+
+/*PART 1 & PART 2 HEADINGS*/
+h5{ /*font thickness, font size and tracking*/
     font-weight:500;
     font-size: 18px;
     letter-spacing: 0.1px;
 }
+
+/*TIME SCHEDULE*/
 span.period{ /*to adjust the boldness of the time*/
     font-weight: 600;
-    text-decoration: underline; /*underline*/
+    font-family: 'Roboto Mono', monospace;
 }
-
+/*MINOR HEADINGS*/
 h6{ /*headings throughout the syllabus*/
     font-weight:500;
     font-size: 16px;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.4px;
     line-height: 22px;
 }
 
@@ -74,28 +141,57 @@ h6{ /*headings throughout the syllabus*/
     font-size: 12px;
     line-height: 1.3;
     letter-spacing: 0.1px;
-    padding-bottom: 20px;
+    padding: 20px 0px 20px 0px;   
 }
 
+/*YELLOW BOX SPECIFICALLY FOR THE CHAIRS*/
 div.frame{ /*to create rectangle border around the text*/
-    border: 1px solid; /*the rectangle outline*/
+    border: 1px solid #ffe100; /*the rectangle outline*/
     padding-left: 15px; /*so it wouldn't go too close to the left side*/
+    background: #ffe100;
 }
 
-.theatre{ /*adjust leading and tracking between each "h" letters*/
+/*the CHAIRS diagram*/
+.chairs{ /*adjust leading and tracking between each "h" letters*/
     letter-spacing: 6px;
     line-height: 30px;
+    font-family: 'Roboto Mono', monospace;
+    animation-name: chairs-box;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
 }
 
-span.find{/*for the "¶" */
+/*to animate the color of the box*/
+@keyframes chairs-box {
+    0%   {color: #ffe100;}
+    25%  {color: lightgoldenrodyellow;}
+    50%  {color: #ffe100;}
+    100% {color: lightgoldenrodyellow;}
+}
+
+/*Paragraph sign*/
+span.paragraph{/*for the "¶" */
     font-weight: 700; /* to make it more visible, bold */
     font-family: 'Rubik', sans-serif; /*using san serif*/
     padding-left: 90px; /*move it to the right */
 }
 
-.letters{ /*for A. and B. List*/
-list-style-type: upper-alpha; /*listing alphabets */
+/*A & B LIST*/
+.a-b{ 
+list-style-type: upper-alpha; /*listing alphabets */}
+
+/*GRADIENT BOX FOR R5 & R6*/
+.gradient-box{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fff0a8+0,ffeacc+50,ccfcff+99 */
+    background: #fff0a8; /* Old browsers */
+    background: -moz-linear-gradient(top, #fff0a8 0%, #ffeacc 50%, #ccfcff 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fff0a8 0%,#ffeacc 50%,#ccfcff 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fff0a8 0%,#ffeacc 50%,#ccfcff 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff0a8', endColorstr='#ccfcff',GradientType=0 ); /* IE6-9 */
+    padding: 25px 15px 25px 15px;
+     margin: 20px 0px 30px 0px;
 }
+
 
 span.space{ /*to create more space in the [ ]*/
     letter-spacing: 5px;
@@ -105,7 +201,131 @@ span.space{ /*to create more space in the [ ]*/
     font-family: 'helvetica', sans-serif;
 }
 
+/*ROLES FOR EXHIBITION*/
 .roles{ /*to highlight the roles in exhibition*/
-    font-weight: 700; /*bold*/
-    text-decoration: underline; /*underline*/
+    font-weight: 500; /*bold*/
+    font-family: 'Rubik', sans-serif;
+    color:#f44271;
+}
+
+/*DIVIDER LINE BETWEEN SECTIONS*/
+hr{
+    border-color:#ffcc00;
+    margin:40px 0px 40px 0px;
+    border-width: 3px;
+}
+
+/*DROPDOWN MENU SECTION*/
+/* The container of the dropdown <div>*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 70px;
+    padding-top: 20px;
+}
+
+/* Dropdown button*/
+.dropbtn {
+    background-color: #f44271;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    padding: 16px;
+    width: 330px;
+    display: inline-block;
+    position: relative; 
+}
+
+/* Dropdown Content (the hidden part unless clicked on)*/
+.dropdown-content {
+    display: none;
+    border:none;
+    position: absolute;
+    background-color: #fff7f7;
+    min-width: 330px;
+    z-index: 1;
+    padding: 20px 0px 20px 0px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #f44271;
+    font-family: 'Source Serif Pro', serif;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+}
+
+/* to change the color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #fccfdb}
+
+.show {display:block;}
+
+/* show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* links in contents */
+a:link { color: #17385b;}
+
+a:visited {color: #17385b;}
+
+a:hover {color: #f44271;}
+
+/* change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #f44271;   
+}
+
+/*PICTOGRAM section */
+/*CLOUD IMAGES*/
+.img-section{
+    display:flex;
+    flex-direction:column; 
+    align-items:center;
+    
+}
+.img-col {
+    width: 30%;
+}
+
+.img-cloud {
+    width:95%;
+    height:auto;
+    display:flex;
+    justify-content:space-around;
+    padding-bottom: 80px;
+    margin-top: -50px;
+}
+
+/*Cloud at the end*/
+.img-cloud1 {
+    width:95%;
+    height:auto;
+    display:flex;
+    justify-content:space-around;
+}
+
+/*PINK MOVING STAR ICON*/
+.pink-star {
+    font-size: 50px;
+    animation-name: star;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+    color: #f44271;
+    position:relative;
+    padding-left: 50px;
+}
+/*to animate the movement of the star*/
+@keyframes star {
+    0%   {top: 0px;}
+    25%  {top: 100px;}
+    50%  {top: 50px;}
+    75%  {top: 100px;}
+    100% {top: 0px;}
 }

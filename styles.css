@@ -56,7 +56,6 @@ a {
     list-style: circle;
 }
     .class-links a {
-        color: gray;
         text-decoration: none;
     }
 
@@ -276,6 +275,7 @@ p.example-item {
     overflow-x: scroll;
     transition: 3s ease;
     background: #efefef;
+    width: 100%;
 }
 .step-item {
     margin-right: 6px;

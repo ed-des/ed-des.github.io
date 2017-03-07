@@ -1,28 +1,63 @@
 body{
 	font-family: 'Cardo', serif;
 	color: #0500b2;
-	font-size: 16px;
-
 	background: #ffe5e5; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#ffe5e5, #ffe36b;) /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#ffe5e5, #ffe36b;) /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#ffe5e5, #ffe36b); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#ffe5e5, #ffe36b); /* Standard syntax */
-
 }
 
-.first{   
+.dream-method{   
 	font-size: 50px;
 	font-weight: 800;
 	font-style: italic;
 	color: #cc0002;
-	margin: 600px 0px 400px 100px;
-
+	margin: 500px 0px 1000px 200px;
 }
 
 .author{
-	margin: 0px 0px 600px 200px;
+	display: flex;
+	margin: 500px 0px 1000px 50px;
 }
+
+.j-ball{
+	font-size: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.taken-from{
+	font-size: 25px;
+	color: #ff4f51;
+	padding-left: 20px;
+	line-height: 115%;
+}
+
+/*EX-3 IMAGES SIDE BY SIDE*/
+/*.ex-section{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.ex-col{
+}
+
+.ex-img{
+	height: 50px;
+	width: 50px;
+	background: red;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.ex-pineapple{
+	width: 100%;
+	height: auto;*/
+}
+/*END EX 3 IMAGES*/
 
 p.tiny{
 	font-size: 8.5px;
@@ -76,6 +111,7 @@ h6{
 }
 
 .readinglist{
+	color: #cc0002;
 	margin: 0px 50px 50px 50px
 }
 
@@ -101,8 +137,15 @@ em{
 }
 /*Below is formatting for R5 Page*/
 
+.first{
+	font-size: 50px;
+	font-weight: 800;
+	font-style: italic;
+	color: #cc0002;
+	margin: 600px 0px 1200px 200px;
+}
+
 .questions{
-	line-height: 600%;
 	margin: 0px 0px 0px 50px;
 	padding: 600px 0px 1900px 0px;
 }

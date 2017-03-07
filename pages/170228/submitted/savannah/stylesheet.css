@@ -5,21 +5,188 @@ body {
     padding: 20px 20px 20px 20px;
 }
 
+.title {
+    font-size: 42pt;
+    color: cornflowerblue;
+    font-weight: 700;
+}
+
 h1 {
     font-size: 28pt;
-    color: crimson;
-    font-family: 'Vollkorn', serif;
+    font-family: 'Rubik', sans-serif ;
 }
 
 h2 {
     font-size: 16pt;
-    font-family: 'Vollkorn', serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    
 }
 
 h3 {
     font-size: 12pt;
+    color: cornflowerblue;
 }
 
+hr {
+    border: 0;
+    width: 60%;
+    background-color: cornflowerblue;
+    height: 3px;
+}
+
+.lines {
+    border: 0;
+    width: 90%;
+    background-color: black;
+    height: 1px;  
+    margin-top: 30px;
+}
+
+/*navigation section---failure---*/
+/*
+li {
+	display:inline-block;
+	float: left;
+	margin-right: 1px;
+}
+
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: "Rubik", sans-serif;
+	color: #fff;
+	background: #2f3036;
+	text-decoration: none;
+}
+
+li:hover a {
+	background: #19c589;
+}
+
+@media screen and (max-width : 760px){
+    li {
+		margin-bottom: 1px;
+	}
+    ul li, li a {
+		width: 100%;
+	}
+    .show-menu {
+		display:block;
+	}
+}
+
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #19c589;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+*/
+
+/*stats section*/
+.number {
+    font-size: 30pt;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+.stat-caption {
+    font-size: 9pt;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+.stat-col {
+    width: 30%;
+    text-align: center;
+}
+
+.stat-container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    border: 3px solid cornflowerblue;
+/*pineapple bg*/
+/*  background-image: url(http://vignette3.wikia.nocookie.net/aonoexorcist/images/f/fb/Pineapple.png/revision/latest?cb=20141210014032);
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size: 100%;*/
+}
+
+/*example image section*/
+.ex-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ex-image {
+    height: auto;
+    width: 70px;
+}
+
+.ex-dreamcatcher {
+    height: auto;
+    width: 70px;
+}
+
+/*time section*/
+.time-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.time-plus {
+    margin: 10px 10px 10px 10px;
+}
+
+.times {
+    font-size: 30pt;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    color: cornflowerblue;
+}
+
+.time-description {
+    font-size: 12pt;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+/*checkbox section*/
+.checkbox {
+    width: 120px;
+	height: 40px;
+	background: white;
+	margin: 10px 60px;
+}
+
+/*text classes*/
 .italic {
     font-style: italic;
 }
@@ -27,3 +194,4 @@ h3 {
 .underline {
     text-decoration: underline;
 }
+

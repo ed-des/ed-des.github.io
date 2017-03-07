@@ -1,8 +1,7 @@
 body {
     font-family: 'Inconsolata';
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.25em;
-    padding: 0 10px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
     background: #1e5799;
     /* Old browsers */
@@ -16,17 +15,86 @@ body {
     /* IE6-9 */
 }
 
+.body-padding {
+    padding: 0 10px;
+}
+
+
+/*  NAV BAR   */
+
+#nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    padding: 20px 0 0 0;
+    background: #bad9ff;
+    border-top: 1px solid black;
+    color: black;
+    text-align: center;
+    z-index: 150;
+    font-size: 20px;
+    color: #0000ee;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 1s;
+    -webkit-transition: all 0.1s;
+}
+
+.nav-hidden {
+    display: none;
+}
+
+.nav-expanded {
+    background: rgba(255, 255, 255, .95) !important;
+    transition: all 1s;
+    -webkit-transition: all 0.1s;
+}
+
+.nav-links {
+    position: fixed;
+    z-index: 100;
+    bottom: -525px;
+    left: 0;
+    width: 100%;
+    display: block;
+    background: rgba(255, 255, 255, .95);
+    padding: 10px 20vw;
+    transition: bottom 1s;
+    -webkit-transition: bottom 0.1s;
+}
+
+.show {
+    display: block;
+    bottom: 60px;
+    transition: bottom 1s;
+    -webkit-transition: bottom 0.1s;
+}
+
+.nav-links a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #0000ee;
+    font-weight: 700;
+    font-family: 'Inconsolata';
+}
+
+
+/*  CSS FOR TITLE SCREEN    */
+
 
 /*   h1 = TITLE   */
 
-h1,
-h2 {
+h1 {
     font-family: 'Overpass Mono';
 }
 
+h2,
 h3,
 h4 {
-    font-family: 'Karla';
+    font-family: 'Roboto Mono';
 }
 
 h1 {
@@ -34,20 +102,20 @@ h1 {
     line-height: 1em;
     -webkit-margin-before: 0;
     margin-top: 67px;
-}
-
-h1,
-h2 {
-    font-family: 'Overpass Mono';
+    transform: scaleY(2.35) translateY(30px);
 }
 
 .author {
     bottom: 50px;
-    /* vh unit = % of height of window */
+    font-family: 'Overpass Mono';
     font-size: 28px;
     position: absolute;
-    /* position: absolute positions in relation to window so it doesn't push against elements */
     font-family: 'Inconsolata';
+    line-height: 1.2em;
+    margin-top: 2.25em;
+    font-weight: 700;
+    font-size: 30px;
+    padding-top: 1em;
 }
 
 .author-notes {
@@ -61,13 +129,31 @@ h2 {
 
 .down-arrow {
     font-size: 50px;
-    text-align: right;
-    animation: MoveUpDown 1s linear infinite;
+    right: 10px;
     position: absolute;
-    right: 0px;
+    animation: MoveUpDown 1s linear infinite;
+    animation: MoveUpDown 1s linear infinite;
 }
 
-.down-arrow a {
+.back-top {
+    text-align: center;
+    padding-bottom: 80px;
+    z-index: 0;
+}
+
+.up-arrow {
+    font-size: 90px;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    position: relative;
+    transform: rotate(180deg);
+    animation: MoveUpDown 1s linear infinite;
+    animation: MoveUpDown 1s linear infinite;
+}
+
+.down-arrow a,
+.up-arrow a,
+.back-top a {
     text-decoration: none;
     color: #0000ff;
 }
@@ -89,20 +175,26 @@ h2 {
 
 h2 {
     line-height: 1.2em;
-    margin-top: 2.25em;
-    font-weight: 700;
-    font-size: 30px;
-    border-top: 2px solid black;
-    padding-top: 30px;
+    font-weight: 500;
+    font-size: 32px;
+    padding-top: 60px;
+    -webkit-margin-after: 0px;
 }
 
-h2 .de-emph {}
+.book-name {
+    color: #ee00ee;
+}
 
 .syllabus {
     margin-top: 62vh;
-    padding-top: 74px;
+    padding-top: 60px;
     border-top: 2px solid black;
     font-size: 40px;
+    line-height: .9em;
+}
+
+.syllabus-demph {
+    font-size: 20px;
 }
 
 ul {
@@ -127,10 +219,10 @@ margin-bottom: -.5em;
 /*   h3 = QUESTION HEADINGS   */
 
 h3 {
-    margin-top: 2em;
-    margin-bottom: -.5em;
-    font-weight: 700;
-    font-size: 24px;
+    margin-top: 1.3em;
+    margin-bottom: -.25em;
+    font-weight: 500;
+    font-size: 20px;
     line-height: 1.2em;
 }
 
@@ -142,7 +234,8 @@ h4 {
     -webkit-margin-after: 1.5em;
     text-transform: uppercase;
     font-size: 20px;
-    margin-bottom: -10px;
+    line-height: 1.2em;
+    margin-bottom: -5px;
     font-weight: 600;
     font-family: 'Inconsolata';
 }
@@ -169,12 +262,15 @@ h4 {
 }
 
 .censored {
-    padding-right: 50px;
+    padding-right: 80px;
     height: 10px;
     margin-top: 10px;
     color: rgba(0, 0, 0, 0);
-    border-bottom: 1px solid black;
+    background: black;
 }
+
+
+/*  LIST OF READINGS    */
 
 .readings li {
     margin-left: 15px;
@@ -189,16 +285,47 @@ h4 {
     font-weight: 100;
 }
 
+
+/*
 .extra-readings li.and {
     font-size: 17px;
     margin: 10px 0 10px 0;
     color: #000;
 }
+*/
 
-.big {
-    font-size: 17px;
+.extra-books-flexbox {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: auto;
+}
+
+.book-img-container {
+    width: 120px;
+    margin: 0 7px;
+}
+
+.book-img {
+    width: 100%;
+}
+
+.book-img-caption {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.2em;
+}
+
+.book-img-and {
+    align-self: center;
+}
+
+.emph-word {
     text-transform: uppercase;
-    color: #0000ff;
+    font-style: italic;
 }
 
 .notes {
@@ -208,8 +335,21 @@ h4 {
     margin: 30px 0 30px 0;
 }
 
-.illustration {
-    text-align: center;
+.chair-illustration {
+    border: 1px solid black;
+    padding: 20px 40px;
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.pilcrow {
+    float: right;
+    margin-top: -65px;
+}
+
+ol {
+    margin-left: -10px;
 }
 
 ol li {
@@ -219,8 +359,8 @@ ol li {
 .plus {
     text-align: center;
     font-size: 25px;
-    margin-top: 2.5em;
-    margin-bottom: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     font-weight: 700;
     color: #0000ff;
 }
@@ -241,4 +381,86 @@ ol li {
     font-size: 15px;
     margin-bottom: -10px;
     letter-spacing: 0;
+}
+
+
+/*      FORMS       */
+
+button.form-accordion {
+    font-family: 'Inconsolata';
+    border: 1px solid black;
+    background: transparent;
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #0000ee;
+    transition: background-color 0.1s linear;
+    -webkit-transition: background-color 0.1s linear;
+}
+
+button.form-accordion.active {
+    background-color: #0000ee;
+    color: white;
+    border-bottom: 0;
+    transition: background-color 0.1s linear;
+    -webkit-transition: background-color 0.1s linear;
+}
+
+.R5 {
+    margin-top: 1em;
+}
+
+.R6 {
+    margin-top: 10px;
+}
+
+div.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    -webkit-transition: max-height 0.5s ease-out;
+}
+
+form {
+    border: 1px solid black;
+    padding: 5px 10px 10px 10px;
+}
+
+.panel h2 {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+input,
+textarea {
+    background: transparent;
+    border: 1px dotted #000;
+    font-family: 'Inconsolata';
+    font-size: 14px;
+    padding: 2px 5px;
+}
+
+input[type="small"] {
+    width: 100px;
+}
+
+input[type="submit"] {
+    border: 1px solid black;
+    color: #0000ee;
+    padding: 5px 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+input[type="submit"]:active {
+    background-color: #0000ee;
+    color: #fff;
+}
+
+textarea {
+    width: calc(100% - 10px);
+    margin: auto;
 }

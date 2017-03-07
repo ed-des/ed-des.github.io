@@ -8,14 +8,106 @@
     <title>Dream Method Syllabus (Kirthank) </title>
     <link rel="stylesheet" href="styles.css"> <!-- Telling index to look for a file called 'styles' to use-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js "></script> 
 </head>
 
+<style>
+    a:link {
+    color:black;
+}
+a:visited {
+    color:black;
+}
+a:hover {
+    color:blue;
+}
+a:active {
+    color: blue;
+}
+</style>
+
 <body>
-<!-- h1=title h2=headers h3=author h4=subheaders h5=subtitle -->
+     
+    
+    <div class="title-screen">
+		<!--title, author, heading-->
+		<h6>Dream Method</h6>
+        <h1>・</h1>
+        <h1>・</h1>
+        <a class="downarrow" href="#title">&#8711</a>
+<!--
+        a href says it will link to the "name", and it applies it to the symbol inside <a>
+-->
+	</div>
+    
+    <!-- h1=title h2=headers h3=author h4=subheaders h5=subtitle -->
+
+    
+    
+    
+<!--bar at the top to show/hide navigation-->
+    <div class="bar">
+        <p class="bartxt">contents</p>
+    </div>
+
+    
+<!--navigation-->
+    <div class="nav">
+        <a href="#title" class='linknav'>
+            <p class="navtxt">Introduction</p>
+        </a>
+        
+        <a href="#questions">
+            <p class="navtxt2">Questions</p>
+        </a>
+        
+        <a href="#readings">
+            <p class="navtxt3">Readings</p>
+        </a>
+        
+        <a href="#expectations">
+            <p class="navtxt4">Expectations</p>
+        </a>
+        
+        <a href="#forms">
+            <p class="navtxt5">Forms</p>
+        </a>
+        
+        <a href="#roles">
+            <p class="navtxt6">Roles</p>
+        </a>
+    </div>
+
+<!--script for hiding and showing navigation    -->
+
+    <script>
+			$(".bar").click(function() {
+				$(".nav").toggleClass("show");
+			});
+    </script>
+    
+    <script>
+			$(".nav").click(function() {
+				$(this).toggleClass("show");
+			});
+    </script>
+ <!-- -------------------------------------- -->  
+    
+    
+    
+    
+    
+    <div>
+        <a name='title'>
+<!--naming the div using a allows for the link to be effective-->
+            <img class="ximage" src="gif1.gif" alt="trelawneygif">
+        </a> 
+<!--by having image within a, the link will lead straight to the top of the image-->
+    </div>
     <div>
         <h1>Dream Method</h1> 
         <h3>J. Ball</h3>
-        <h5>[materials and useful practices taken from LaBerge, Hervey, Wangyal]</h5>
     </div>
     <div>
         <h2>SYLLABUS ::: DREAM METHOD</h2>
@@ -31,6 +123,15 @@
         <h4>Part 2</h4>
         <p><strong>3–4:</strong> During this time I will meet individually with the members of the class. These meetings will last 10 minutes. I will meet with one group at each class session, and that group will be the group that has just presented. At these meetings, the individual student’s progress will be discussed. Obstacles, such as there may be, may be brought to light. Each student will bring the completed R5 forms from the previous weeks for me to examine. The R5 form is mandatory. It is the record and proof of the work being attempted.</p>
     </div>
+    
+    
+    
+    <div>
+        <a name='questions'>
+            <img class="ximagewithin" src="gif2.gif" alt="anothergoofygif">
+        </a>
+    </div>
+    
     <div>
         <h2>WHAT ARE GROUP EXHIBITIONS?</h2>
         <p>In group exhibitions, the material you are accruing from your dreams will be employed in the creation of some kind of performance. A person can read from a story, can sing, can act, can do a false-interview, can mime, can exhibit drawings, film, etc. The work must be original, and generated from the students’ dreams specifically for this dream class. No prior work is acceptable. Students can use dream material to create a collaboration. All 5 students could collaborate on a single piece for instance.</p>
@@ -51,6 +152,15 @@
         <p>Ideally, the person will gain the ability to lucid dream at will. This requires a great deal of dedication, however, and it is more likely that by the end of the semester, the students will have obtained for themselves the experience of having lucid-dreamed several times, and will continue to do so every so often as long as the intent remains.</p>
         <p><strong><span class='tracking'>CONCERNS</span></strong> on the part of students should be addressed to:</p>
     </div>
+   
+    
+    
+    
+    <div>
+        <a name='readings'>
+            <img class="ximagewithin" src="gif3.gif" alt="anothergoofygif">
+        </a>
+    </div>
     <div>
         <h2>LIST of READINGS</h2>
         <p>Jung, C.G. <em>Memories, Dreams, Reflections.</em></p>
@@ -60,7 +170,7 @@
         <p>Campbell, Joseph. <em>The Hero With a Thousand Faces.</em></p>
         <p>Graves, Robert. <em>The White Goddess.</em></p>
         <p>Wangyal. Tenzin (Rinpoche). <em>The Tibetan Yogis of Dream and Sleep.</em></p>
-        <p><strong><span class='tracking'>NOTE:</span></strong> Readings will <!-- NEEDS UNDERLINE--><strong>not</strong> be discussed in class. These books are included not because I favor the particular thoughts or methods in them, but because I believe the reading of them will be useful and suggestive to those working with dreams. Students should read these books during the semester. They need not read them in any particular order.</p>
+        <p><span class='notetext'><strong><span class='tracking'>NOTE:</span></strong> Readings will <strong>not</strong> be discussed in class. These books are included not because I favor the particular thoughts or methods in them, but because I believe the reading of them will be useful and suggestive to those working with dreams. Students should read these books during the semester. They need not read them in any particular order.</span></p>
         <p>The two books principally crucial to the method we will utilize are:</p>
         <p>Hervey de Saint-Denys: Dreams and How to Guide Them</p>
         <p>And</p>
@@ -70,6 +180,14 @@
         <p>However, I don’t want students to get ahead of themselves. We will proceed step by step through methods espoused by LaBerge, methods found in the book named above. I will provide the materials as they become necessary. Were the students to be on his/her own, he/she might not give the early exercises the time and intention they require.</p>
         <p>So, yes, buy these last two books, but not until December of 2014. Or, buy them now, but try not to get ahead of what we are attempting in class.</p>
         <p>[ed. note -- this page was from previous iteration of class -- when the class was indeed in a classroom. Our situation this semester (ballroom) is different. I preserve this page for your amusement.]</p>
+    </div>
+    
+    
+    
+    <div>
+        <a name='expectations'>
+            <img class="ximagewithin" src="gif4.gif" alt="anothergoofygif">
+        </a>
     </div>
     <div>
         <h2>REGARDING THE SITUATION OF THE CLASS</h2>
@@ -99,53 +217,45 @@
             <li>create work from their dream material.</li>
         </ol>
         <p>Individuals who are not interested in working hard to obtain those goals should excuse themselves.</p>
-        <p>+</p>
+        <p class='centering'>+</p>
         <p>The work that we will  be doing here is largely invisible. It is work that you will do for yourself and by yourself. No one else can know, for instance, how often you are stopping yourself during the day to see if you are awake or dreaming. If you are diligent, and do this often, you will begin to see the results. If you are not, you won’t.</p>
         <p>In the matter of our exhibitions, you can use the other members of your section as you go about preparing. The time during the week, between classes, is to be spent performing the week’s exercise, recording dreams, and mining your dream-content for creative purposes.</p>
     </div>
+    
+    
+    
+    
     <div>
-        <h2>R5</h2>
+        <a name='forms'>
+            <img class="ximagewithin" src="gif5.gif" alt="anothergoofygif">
+        </a>
+    </div>
+     
+    <details> <!-- form drop down list -->
+        <summary>R5</summary>
         <p>No. of Dreams Recorded: [   ]</p>
         <p>No. of Words Written in Recording (estimate): [   ]</p>
-    </div>
-    <div class='bottomspace'>
-        <hr>
-    </div>
-    <div>
+        <hr class='topline'>
         <p>No. of Dreams Analyzed for Dream Signs: [   ]</p>
         <p>Dream Sign Most Prevalent: </p>
-    </div>
-    <div class='bottomspace'>
-        <hr>
-    </div>
-    <div>
+        <hr class='topline'>
         <p>Concerns, Worries, Difficulties: </p>
-    </div>
-    <div class='bottomspace'>
+        <hr class='topline'>
         <hr>
         <hr>
-        <hr>
-    </div>
-    <div>
         <p>Attempting to Wake Yourself Multiple Times? Y   N</p>
         <p>No. of Times This Week’s Exercise Attempted: [   ]</p>
         <p>Success? Y   N</p>
         <p>Explain:</p> 
-    </div>
-    <div class='bottomspace'>
+        <hr class='topline'>
         <hr>
         <hr>
-        <hr>
-    </div>
-    <div>
         <p>Miscellaneous:</p> 
-    </div>
-    <div class='bottomspace'>
+        <hr class='topline'>
         <hr>
-        <hr>
-    </div>
-    <div>
-        <p>Are You Asleep Now? Y   N</p>
+        <p class='bottomline'>Are You Asleep Now? Y   N</p>
+    </details>
+    
         <h4><span class='tracking'>INSTRUCTIONS</span> for the use of <span class='tracking'>DREAM-ASSOCIATES</span></h4>
         <ol class='spacinglist'>
             <li>You will meet with your two dream associates each week in class.</li>
@@ -160,12 +270,11 @@
         <p>In the first place, it creates an added forum for intentionality, thereby aiding dream-recall, and the creation of dream-momentum.</p>
         <p>In the second place, it creates a location wherein associates may support each other in this difficult work.</p>
         <p>In the third place, it allows the intuition of one associate to come to the aid of another.</p>
-    </div>
-    <div>
-        <h2>R6</h2>
+    
+    <details class="formtwo">
+        <summary>R6</summary>
         <p>Choose a dream from your week of dream recordings. Write it out in a manner wherein sharing does not cause you discomfort. If space is insufficient, attach a page.</p>
-    </div>
-    <div class='bottomspace'>
+        <hr class='topline'>
         <hr>
         <hr>
         <hr>
@@ -173,13 +282,8 @@
         <hr>
         <hr>
         <hr>
-        <hr>
-    </div>
-    <div>
         <p>Space for Dream Associates to isolate dream-signs, peculiarities, wonders. </p>
-    </div>
-    <div class='bottomspace'>
-        <hr>
+        <hr class='topline'>
         <hr>
         <hr>
         <hr>
@@ -187,6 +291,15 @@
         <hr>
         <hr>
         <hr>        
+    </details>
+    
+    
+    
+    
+    <div>
+        <a name='roles'>
+            <img class="ximagewithin" src="gif6.gif" alt="anothergoofygif">
+        </a>
     </div>
     <div>
         <h2>ROLES for EXHIBITIONS</h2>
@@ -200,7 +313,7 @@
         <p>The theater critic will write a brief (three sentence) description of each performance, which will be entered into the log via email (to _____________)</p>
         <h4>Lackeys</h4>
         <p>The remaining individuals will constitute a group of lackeys who will perhaps replace the above Ringleader, Handbill Maker, Stage Manager or Theater Critic, should it prove necessary.</p>
-        <p><strong><span class='tracking'>NOTE:</span></strong> All the above individuals will be, in addition to their roles, giving a performance. Each group will, as is mentioned elsewhere, making an exhibition once every three weeks.</p>
+        <p class='extraspace'><span class='notetext'><strong><span class='tracking'>NOTE:</span></strong> All the above individuals will be, in addition to their roles, giving a performance. Each group will, as is mentioned elsewhere, making an exhibition once every three weeks.</span></p>
     </div>
 </body>
 

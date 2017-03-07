@@ -1,66 +1,134 @@
-body {
-    font-size: 50; 
-    color: black; 
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fefcea+0,f1da36+100;Gold+3D */
-background: #fefcea; /* Old browsers */
-background: -moz-linear-gradient(top, #fefcea 0%, #f1da36 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #fefcea 0%,#f1da36 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #fefcea 0%,#f1da36 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
-padding-top: 20px;
+Body {
+     margin: 20px;
+    
+       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d456ea+0,ef017c+100 */
+        background: #d456ea; /* Old browsers */
+        background: -moz-linear-gradient(top,  #d456ea 0%, #ef017c 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #d456ea 0%,#ef017c 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #d456ea 0%,#ef017c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d456ea', endColorstr='#ef017c',GradientType=0 ); /* IE6-9 */
+    
 
-}
 
-p { 
-    font-family: 'Open Sans', sans-serif;
-    font-size: 10pt;
-    color: blue;
-    line-height: 16pt
-}
+/*   h1 = TITLE   */
+} 
 
-h1, h2, {
-    line-height: 5.5pt;
-    font-family: 'Lobster', cursive;
-    font-size: 65px;
-    color:bisque;
+h1,
+h2{
+    
+    font-family: 'Ultra', sans-serif;
+    line-height: 1.25em;
+    font-size: 35px 
     
 }
-li { 
-    font-family: 'bitter'; serif;
-    font-size: 10pt;
-    color: blue;
+{ 
+    font-size: 10px
+    line-height: 1.25em;
+    font-weight: 100;
     
-}
-li2 {
-    font-family:'bitter', serif;
-    font-size: 15pt
-    color:black
-    
+        
 }
 h2 {
-    line-height: 5.5pt;
-    font-size: 20pt;
-    color: bisque;
+    font-size: 35;
+    line-height: 1.2em;
+    margin-top: 2.25em;
+    font-weight: 100;
+    font-size: 30px;
+    padding-top: 30px;
+}
+h3{
+    font-size: 13px;
+    font-family:'Shrikhand',cursive;
+    line-height: 2em;
+    border-top: 2px solid black;
+}
+
+ul {
+    -webkit-padding-start: 5px;
     
 }
-h3 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15pt;
-    color: bisque;
+
+.nonlist {
+    list-style: lower-alpha;
+    line-height: 2em;
+    font-size: 20px;
 }
-h5 {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 25pt;
-    color: salmon
+
+h4{
+    font-family: 'Ultra', serif; 
+    line-height: 2em;
+    font-size: 15px
 }
-div {}
+h5{
+    
+    font-family:'Ultra', serif;
+    font-size: 30px;
+    
+}
+h6{
+   font-size: 13px;
+    font-family:'Shrikhand',cursive;
+    line-height: 2em;
+     
+}
+/*boxed stuff*/
+.boxed {
+    border: 3px solid black;
+    outline: inherit;
+}
 
+    
+/*  subheaders  */
+h7{
+    font-size: 20px;
+    font-family:'Shrikhand',cursive;
+   
+}
+/*captions*/
+h8{
+    font-family:'Cutive', serif;
+    font-size: 7pt;
+     
+}
 
-font-family: 'Open Sans', sans-serif;
-font-family: 'Bitter', serif;
-font-family: 'Lobster', cursive;
-font-family: 'Roboto Mono', monospace;
-font-family: 'Source Code Pro', monospace;
-font-family: 'Patua One', cursive;
-
-
+/* stat section */
+.stat-section {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.stat-col { 
+    /* border: 8pt solid;*/
+    width: 50%;
+    text-align: center;
+}
+.stat-caption {
+    color: gray;
+}
+.stat-number {
+    font-size: 10px;
+}
+.ex-section {
+    flex-direction: 20%;
+    justify-content: 20%;
+}
+.ex-col {
+    
+}
+.ex-image {  
+    height: 90px;
+    width: 90px;
+    overflow: inherit;
+}
+.ex-fish {
+    width: 110%;
+}
+    
+ font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Shrikhand', cursive;
+font-family: 'Ultra', serif;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Fascinate Inline', cursive;
+font-family: 'Cutive', serif;
+font-family: 'Permanent Marker', cursive;

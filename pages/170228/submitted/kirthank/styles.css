@@ -4,15 +4,72 @@ hr { /* horizontal line*/
     border-width: 1px; /*line width*/
     width: 80%; /*line length*/
 }
+hr.topline {
+    margin-top: 35px;
+}
 
-h1, h2 {
+
+
+a.downarrow {
+    position: absolute;
+    left: 45vw;
+    top: 550px;
+    font-size: 54px;
+    padding-top: 30px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+    margin-top:-50px;
+    animation: colorarrow 2s linear infinite;
+}
+
+@keyframes colorarrow {
+    0% {color:black;}
+    50% {color:blue;}
+    100% {color: black;}
+}
+    
+h1, h2, h6 {
    font-family: 'Fjalla One', sans-serif;
     font-weight: normal;
 }
 h1 {
     font-size: 54px;
     text-align: center;
+    padding-top: 0px;
 }
+
+
+
+ /*form*/
+details {
+    margin-top:60px;
+    background-color: #e6f9ff;
+    background-blend-mode:darken;
+}
+
+details.formtwo {
+    margin-top:35px;
+   margin-bottom: 20px;
+    padding-bottom: 1px;
+}
+
+summary {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    margin-top:30px;
+    padding-left:10px;
+}
+
+.bottomline {
+    padding-bottom: 15px;
+}
+
+
+
+
 h2 {
     font-size: 30px;
     padding-top:30px;
@@ -23,12 +80,14 @@ h3 {
     font-size: 18px;
     text-align: center;
     margin-top:-7.5px;
+    margin-bottom: -10px;
 }
 h4 {
     font-family: 'Merriweather', serif;
     font-weight: 700;
     padding-top: 15px;
 }
+
 p, ol {
     font-family: 'Merriweather', serif;
     font-weight: 300;
@@ -37,6 +96,22 @@ p, ol {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+p.centering {
+    color: blue;
+    text-align: center;
+    font-size: 24px;
+}
+
+p.extraspace {
+    padding-bottom: 80px;
+}
+
+.notetext {
+    font-size: 12px;
+    line-height: 100%;
+}
+
 ol {
     padding-left:15px;
 }
@@ -51,12 +126,13 @@ h5 {
     line-height: 140%;
     margin-top:-5px;
 }
-h6 {/* this section of code is no longer relevant, but I'm keeping it anyways just in case I ever to reintroduce an h6 */
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
-    font-size: 16px;
+h6 {
+    font-size: 110px;
+    line-height: 110%;
     text-align:center;
-    line-height: 5%;
+    font-weight:900;
+    padding-top:20px;
+    margin-bottom:0px;
 }
 h2,h3,h4,h5 {
     padding-left: 10px;
@@ -77,11 +153,144 @@ background: -webkit-linear-gradient(-45deg,  #f8ddff 0%,#ddf2ff 50%,#e2ffee 100%
 background: linear-gradient(135deg,  #f8ddff 0%,#ddf2ff 50%,#e2ffee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8ddff', endColorstr='#e2ffee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
+/*For chair box */
 div.outline {
     border: 0.5px solid;
     padding-left: 75px;
-    fill: white;
 }
+
 div.bottomspace {
     padding-top: 5px;
+}
+
+div.title-screen {
+	width: 100vw;
+	height: 100vh;
+	position: static;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+	margin-top: -256px;
+    background: linear-gradient(45deg, #d8fdff 20%,#ffd8f5 50%,#f8ffe0 80%);
+	background-size: 300% 300%;
+	-webkit-animation: Gradient 40s ease infinite;
+	-moz-animation: Gradient 20s ease infinite;
+	animation: Gradient 20s ease infinite;
+}
+	    
+@-webkit-keyframes Gradient {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+@-moz-keyframes Gradient {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+@keyframes Gradient { 
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+
+.ximage {
+    width:100vw;
+    margin-left: -8px;
+    margin-bottom:-10px;
+}
+
+.ximagewithin {
+    width:100vw;
+    margin-left: -8px;
+    margin-top:60px;
+    margin-bottom: -30px;
+}
+
+
+
+
+/*navigation bar*/
+.bar {
+    position: fixed;
+    bottom:0px;
+    z-index: 3;
+    background:#fff;
+    height: 65px;
+    width: 100%;
+    opacity: .95;
+    margin-left: -8px;
+}
+
+.bartxt {
+    color:#0000b3;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-top: 14px;
+    padding:0vw;
+    text-align: center;
+    z-index: 3;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+/*navigation menu*/
+.nav {
+    position: fixed;
+    top:0px;
+    z-index: 2;
+    background:#eee;
+    height: 100vh;
+    width: 100%;
+    opacity: .95;
+    visibility: hidden;
+    margin-left: -8px;
+}
+
+
+.navtxt, .navtxt2, .navtxt3, .navtxt4, .navtxt5, .navtxt6 {
+    color:black;
+    font-size: 32px;
+    padding:2.72vh;
+    text-align: center;
+    z-index: 3;
+    line-height: 2;
+    margin: 0px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navtxt {
+    background:#cce6ff;
+}
+
+.navtxt2 {
+    background:#ccd9ff;
+}
+
+.navtxt3 {
+    background:#ccccff;
+}
+
+.navtxt4 {
+    background:	#d9ccff;
+}
+
+.navtxt5 {
+    background:#e6ccff;
+}
+
+.navtxt6 {
+    background:	#f2ccff;
+}
+
+.show {
+    visibility: visible;
+}
+
+.hide {
+    visibility: visible;
 }
