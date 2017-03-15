@@ -250,14 +250,16 @@ p.example-item {
     height: inherit;
     padding-top: 0;
     padding-bottom: 5%;
+    width: 100%;
 }
 .info .examples.pan p {
     padding: 0;
 }
 .examples.pan .example-item {
-    max-width: none;
     background: white;
     margin: 0;
+    max-width: 100%;
+    overflow-x: scroll;
 }
 .examples.pan .example-item img {
     height: inherit;
