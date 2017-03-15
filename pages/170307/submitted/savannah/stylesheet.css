@@ -1,0 +1,249 @@
+body {
+    font-size: 12pt;
+    font-family: 'Rubik', sans-serif;
+    color: black;
+    padding: 20px 20px 20px 20px;
+}
+
+.title {
+    font-size: 36pt;
+    color: cornflowerblue;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 21pt;
+    font-family: 'Rubik', sans-serif ;
+}
+
+h2, .role {
+    font-size: 16pt;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    margin-top: 30px;
+    
+}
+
+
+h3 {
+    font-size: 12pt;
+    color: cornflowerblue;
+}
+
+hr {
+    border: 0;
+    width: 60%;
+    background-color: cornflowerblue;
+    height: 3px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.lines {
+    border: 0;
+    width: 90%;
+    background-color: black;
+    height: 1px;  
+    margin-top: 30px;
+}
+
+li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    margin-left: -40px;
+    
+}
+
+.section {
+    margin-top: 40px;
+}
+
+/*navigation bar*/
+/*
+.bar {
+    position: fixed;
+    bottom:0px;
+    z-index: 3;
+    background:cornflowerblue;
+    height: 65px;
+    width: 100%;
+    opacity: .95;
+    margin-left: -28px;
+}
+
+.bartxt {
+    color:white;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-top: 16px;
+    padding:0vw;
+    text-align: center;
+    z-index: 3;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 1px;
+}
+
+navigation menu
+.nav {
+    position: fixed;
+    top:0px;
+    z-index: 2;
+    background:#eee;
+    height: 100vh;
+    width: 100%;
+    opacity: .95;
+    visibility: hidden;
+    margin-left: -8px;
+}
+
+
+.navtxt, .navtxt2, .navtxt3, .navtxt4, .navtxt5, .navtxt6 {
+    color:black;
+    font-size: 32px;
+    padding:2.72vh;
+    text-align: center;
+    z-index: 3;
+    line-height: 2;
+    margin: 0px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+*/
+
+
+/*stats section*/
+.number {
+    font-size: 30pt;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+.stat-caption {
+    font-size: 9pt;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+.stat-col {
+    width: 30%;
+    text-align: center;
+}
+
+.stat-container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    border: 3px solid cornflowerblue;
+/*pineapple bg*/
+/*  background-image: url(http://vignette3.wikia.nocookie.net/aonoexorcist/images/f/fb/Pineapple.png/revision/latest?cb=20141210014032);
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size: 100%;*/
+}
+
+/*example image section*/
+.ex-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items:center;
+}
+
+.ex-image {
+    height: auto;
+    width: 70px;
+}
+
+
+/*time section*/
+.time-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.time-plus {
+    margin: 10px 10px 10px 10px;
+}
+
+.times {
+    font-size: 30pt;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    text-align: left;
+    color: cornflowerblue;
+}
+
+.time-description {
+    font-size: 12pt;
+    font-family: 'Rubik', sans-serif;
+    text-align: left;
+}
+
+/*checkbox section*/
+.checkboxes {
+    width: 120px;
+	height: 40px;
+	background: white;
+	margin: 10px 60px;
+}
+
+/*text classes*/
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/*numbered list*/
+ol {
+	counter-reset:li; /* Initiate a counter */
+	margin-left:0; /* Remove the default left margin */
+	padding-left:10px; /* Remove the default left padding */
+}
+ol > li {
+	position:relative; /* Create a positioning context */
+	margin:0 0 6px 2em; /* list item margins */
+	padding:4px 8px; /* Add some spacing around the content */
+	list-style:none; /* Disable the normal item numbering */
+	border-top:2px solid cornflowerblue;
+}
+ol > li:before {
+	content:counter(li);
+	counter-increment:li;
+	
+    /* Position and style the number */
+	position:absolute;
+	top:-2px;
+	left:-2em;
+/*
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+*/
+	width:2em;
+	margin-right:8px;
+	padding:4px;
+	border-top:2px solid cornflowerblue;
+	color:cornflowerblue;
+    font-size: 16pt;
+/*	background:cornflowerblue;*/
+	font-weight:700;
+	font-family:"Rubik", sans-serif;
+	text-align:center;
+}

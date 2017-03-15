@@ -1,0 +1,485 @@
+/*to check the grid*/
+
+* { 
+/*  border: 0.5px solid grey;*/
+}
+
+
+/*TOP GRADIENT SECTION*/
+.gradient{
+    background: linear-gradient(180deg, #FD9F1F, #ff00ba, #1FC8FF, #18ED18, #FD9F1F, #ff00ba);
+    background-size: 100% 500%;
+    animation: colorwheel 15s linear infinite;
+    height: 100vh;
+    z-index: 5;
+}
+
+/*body text font, screen margin and background color*/
+body{
+    font-family: 'Source Serif Pro', serif;/*using this serif font for the whole body text*/
+    margin:0px;
+/*    margin: 0px 15px 40px 25px;*/
+    /*margin of the top, right, bottom, left*/
+    background: #fffce8;
+}
+
+p,ol,h1,h2,h3,h4,h5,h6 {
+    margin: 0px 20px 40px 20px;
+    
+}
+
+/* specifics for body text*/
+p, ol{ 
+    color: #17385b; /*dark blue color for the text*/
+    line-height: 22px;/*leading in pixels*/
+    margin-left: 25px;/*to add a little indent for body text*/
+}
+
+/*for headings using san serif and pink color type*/
+h1, h2, h4, h5, h6{ 
+    font-family: 'Rubik', sans-serif; 
+    color:#f44271;
+    
+}
+
+/*TOP HEADING*/
+h1{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 150px;
+    padding-top: 30px;
+    animation-name: toptitle;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;   
+}
+
+/*to animate the color of the HEADING*/
+@keyframes toptitle {
+    0%   {color: #ffe100;}
+    25%  {color: deeppink;}
+    50%  {color: #ffe100;}
+    75% {color: deeppink;}
+    100% {color: #ffe100;}
+}
+
+/*font thickness, font size, leading and tracking for MAIN HEADING*/
+h2{ 
+    font-weight: 400; 
+    font-size: 60px;
+    line-height: 55px;
+    letter-spacing: 0.5px;
+    color:#17385b;
+}
+
+/*AUTHOR*/
+h3{ 
+    font-family: 'Source Serif Pro', serif;/*changed "J. Ball" to serif type*/
+    font-size:18px; 
+    padding-left: 5px;/*to generate a bit more space*/
+    text-align: left;
+    line-height: 1;
+    padding-bottom: 200px;
+    color: #134a84;
+}
+
+/*SUBAUTHOR*/
+span.sub-author{ /*created this class to use different fonts, size, thickness, color, tracking and leading than "J. Ball"*/
+    font-family: 'Rubik', sans-serif; 
+    font-size:11px;
+    font-weight:400;
+    color:#134a84;
+    letter-spacing: 0.2px;
+}
+
+/*SYLLABUS HEADING*/
+h4{ /*font thickness, font size, leading & tracking for for Syllabus*/
+    font-weight:400;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+}
+
+span.syllabus{
+    font-weight:500; /*bold the word "Dream Method"*/
+}
+
+.three-elements{
+    font-family: 'Source Serif Pro', serif;
+/*    font-size:18px;*/
+    font-weight:400;
+    color: #17385b;
+    letter-spacing: 0.2px;
+    margin-left: 50px;
+    line-height: 22px;
+}
+
+/*R5 & R6 ARROWS*/
+summary::-webkit-details-marker {
+    display: none
+}
+summary:after {
+    content: "∆";
+    text-align: center;
+    float:left;
+    color:#f44271;
+    font-family: 'Rubik', sans-serif; 
+    font-weight:500;
+    font-size:16px;
+    margin: -40px 0px 0px 23px;
+}
+details[open] summary:after {
+    content:"∇";
+    margin: -40px 0px 0px 23px;
+}
+
+.form{
+    padding-left: 15px;
+    padding-bottom: 10px;
+    line-height: 0.5px;
+}
+
+/*YELLOW BORDERS/BOXES*/
+.yellowbox{
+    border: 1px solid #ffe100;
+    padding: 40px 0px 15px 0px;
+    background: #ffe100;
+    margin: 20px 20px 50px 20px;
+}
+
+/*PART 1 & PART 2 HEADINGS*/
+h5{ /*font thickness, font size and tracking*/
+    font-weight:500;
+    font-size: 18px;
+    letter-spacing: 0.1px;
+}
+
+/*TIME SCHEDULE*/
+span.period{ /*to adjust the boldness of the time*/
+    font-weight: 600;
+    font-family: 'Roboto Mono', monospace;
+}
+/*MINOR HEADINGS*/
+h6{ /*headings throughout the syllabus*/
+    font-weight:500;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+    padding-left: 5px;
+}
+
+.note{ /*to create hierachy for the notes part (smaller than text)*/
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.1px;
+    padding: 0px 0px 0px 0px; 
+    color:#f44271;
+}
+
+/*SUB-HEADINGS*/
+h7{
+    margin-left: 25px;
+    font-weight:400;
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    font-family: 'Rubik', sans-serif; 
+    color:#f44271;
+    margin-bottom: 20px;
+    display:block;
+}
+
+/*YELLOW BOX SPECIFICALLY FOR THE CHAIRS*/
+div.frame{ /*to create rectangle border around the text*/
+    border: 1px solid #ffe100; /*the rectangle outline*/
+    background: #ffe100;
+    height: 100vh;
+    margin-bottom: 20px;
+}
+
+/*the CHAIRS diagram*/
+.chairs{ /*adjust leading and tracking between each "h" letters*/
+    letter-spacing: 7px;
+    line-height: 50px;
+    font-size: 30px;
+    font-family: 'Source Serif Pro', serif;
+    padding: 50px 0px 0px 40px;
+    color: lightgoldenrodyellow;
+}
+
+/*Paragraph sign*/
+span.paragraph{/*for the "¶" */
+    font-weight: 700; /* to make it more visible, bold */
+    font-family: 'Rubik', sans-serif; /*using san serif*/
+    padding-left: 50px; /*move it to the right */
+    font-size: 20px;
+}
+
+.chair-sentence{
+    padding-top: 30px;
+    font-size: 70px;
+    line-height: 80px;
+    animation-name: chairs-box;
+    animation-duration: 12s;
+    animation-iteration-count:infinite;
+}
+
+/*to animate the color of the box*/
+@keyframes chairs-box {
+    0%   {color: #ffe100;}
+    25%  {color: lightgoldenrodyellow;}
+    50%  {color: #ffe100;}
+    75%  {color: lightgoldenrodyellow;}
+    100% {color: #ffe100;}
+}
+
+/*DREAMS*/
+.dream-lucid{ 
+    margin: 70px 0px 30px 25px;
+    font-weight:400;
+    font-size: 40px;
+    letter-spacing: 3px;
+    line-height: 50px;
+    font-family: 'Source Serif Pro', serif;
+    color:#f44271;
+/*
+    position: relative;
+    animation: dreamlucid 5s infinite;
+*/
+}
+
+/*
+@keyframes dreamlucid {
+    from {left: 200px;}
+    to {left: 0px;}
+}
+*/
+
+.dream-material{ 
+    margin: 10px 25px 70px 0px;
+    text-align: right;
+    font-weight:400;
+    font-size: 40px;
+    letter-spacing: 3px;
+    line-height: 50px;
+    font-family: 'Source Serif Pro', serif;
+    color:#f44271;
+/*
+    position: relative;
+    animation: dreammaterial 5s infinite;
+*/
+}
+
+/*
+@keyframes dreammaterial {
+    from {right: 200px;}
+    to {right: 0px;}
+}
+*/
+
+.plus {
+    color:#f44271;
+    font-size: 40px;
+}
+
+/*GRADIENT BOX FOR R5 & R6*/
+.gradient-box-1{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fff0a8+0,ffeacc+50,ccfcff+99 */
+    background: #fff0a8; /* Old browsers */
+    background: -moz-linear-gradient(top, #fff0a8 0%, #ffeacc 50%, #ccfcff 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fff0a8 0%,#ffeacc 50%,#ccfcff 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fff0a8 0%,#ffeacc 50%,#ccfcff 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff0a8', endColorstr='#ccfcff',GradientType=0 ); /* IE6-9 */
+    padding: 25px 0px 25px 0px;
+    margin: 20px 20px 30px 20px;
+}
+
+.gradient-box-2{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fff0a8+0,ccfcff+0,bccce5+100 */
+background: #fff0a8; /* Old browsers */
+background: -moz-linear-gradient(top, #fff0a8 0%, #ccfcff 0%, #bccce5 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #fff0a8 0%,#ccfcff 0%,#bccce5 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #fff0a8 0%,#ccfcff 0%,#bccce5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff0a8', endColorstr='#bccce5',GradientType=0 ); /* IE6-9 */
+    padding: 25px 0px 25px 0px;
+    margin: 20px 20px 30px 20px;
+}
+
+span.space{ /*to create more space in the [ ]*/
+    letter-spacing: 5px;
+}
+
+.line{ /*use a different font to be able to create smooth continuous lines*/
+    font-family: 'helvetica', sans-serif;
+}
+
+/*ROLES FOR EXHIBITION*/
+.roles{ /*to highlight the roles in exhibition*/
+    font-weight: 500; /*bold*/
+    font-family: 'Rubik', sans-serif;
+    color:#f44271;
+}
+
+/*DROPDOWN MENU SECTION*/
+/* The container of the dropdown <div>*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    margin: 0px 20px 40px 20px;
+}
+
+/* Dropdown button*/
+.dropbtn {
+    background-color: #f44271;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    padding: 16px;
+    width: 330px;
+    display: inline-block;
+    position: relative; 
+}
+
+.dropMenu {
+    border: none;
+    cursor: pointer;
+    padding: 16px;
+    width: 330px;
+    display: inline-block;
+    position: relative; 
+}
+
+/* Dropdown Content (the hidden part unless clicked on)*/
+.dropdown-content {
+    display: none;
+    border:none;
+    position: absolute;
+    background-color: #fff7f7;
+    min-width: 330px;
+    z-index: 1;
+    padding: 20px 0px 20px 0px;
+}
+
+.show {display:block;}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #f44271;
+    font-family: 'Source Serif Pro', serif;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;   
+    padding-top: 20px;
+}
+
+/* to change the color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #fccfdb}
+
+
+/*
+ show the dropdown menu on hover 
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+*/
+
+/* links in contents */
+a:link { color: #17385b;}
+
+a:visited {color: #17385b;}
+
+a:hover {color: #f44271;}
+
+/* change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #f44271;   
+}
+
+/*PICTOGRAM section */
+/*CLOUD IMAGES*/
+.img-section{
+    display:flex;
+    flex-direction:column; 
+    align-items:center;
+    
+}
+.img-col {
+    width: 30%;
+}
+
+.img-cloud {
+    width:95%;
+    height:auto;
+    display:flex;
+    justify-content:space-around;
+    padding-bottom: 80px;
+    margin-top: -50px;
+}
+
+/*Cloud at the end*/
+.img-cloud1 {
+    width:35%;
+    display:flex;
+    margin-left: 120px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+/*PINK MOVING STAR ICON*/
+.pink-star {
+    font-size: 50px;
+    animation-name: star;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    color: #f44271;
+    position:relative;
+    padding-left: 50px;
+}
+/*to animate the movement of the star*/
+@keyframes star {
+    0%   {top: 0px;}
+    25%  {top: 100px;}
+    50%  {top: 50px;}
+    75%  {top: 100px;}
+    100% {top: 0px;}
+}
+
+.pink-star-small {
+    font-size: 20px;
+    color: #f44271;
+    margin-left: 200px;
+    position: absolute;
+    animation-name: star-small;
+    animation-duration: 2s;
+    margin-top: -130px;
+    animation-iteration-count:infinite;
+    }
+
+/*to animate the color of the HEADING*/
+@keyframes star-small {
+    0%   {color: #ffe100;}
+    25%  {color: deeppink;}
+    50%  {color: #ffe100;}
+    75% {color: deeppink;}
+    100% {color: #ffe100;}
+}
+
+/*fix star that guides through the syllabus*/
+.pink-star-fix{
+    margin-top: 130px;
+    margin-left: 2.5px;
+    position: fixed;
+    font-size: 16px;
+    color: #f44271;
+    z-index: -1;
+}
+
+/*for the svg line*/
+.cls-1{ fill:#fee100;}
+    

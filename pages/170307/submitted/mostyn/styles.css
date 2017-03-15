@@ -1,0 +1,493 @@
+div{
+
+}
+
+#set-width {
+  position: fixed;
+  display: block;
+  overflow: hidden
+  height: 100%;
+  width: auto;
+}
+
+#v0{
+  position: fixed; 
+  top: 0;
+  left: 0;  
+  height: auto;
+  width: 100%;
+  z-index: -100;
+  margin: 0 auto;
+
+}
+
+/*
+.bg-image{
+    width: 100vh 100vw;
+    background-image: url("images/neuron-map2.png");
+    background-color: #FEF2E5;
+    background-size: cover;
+
+}
+*/
+
+/*
+.header{
+    height: 50px;
+    background-color: #FEFEF4;
+    border: 3px solid black;
+    position: fixed;
+    width: 600px;
+    z-index: 2;
+    text-align: center;
+    margin: 0;
+} */
+
+.wrapper{
+    margin: auto;
+    max-width: 1000px;
+
+}
+
+.title {
+    margin: 0 auto;
+    width: 94%;
+    padding: 10px 5px;
+    border: 3px solid black;
+}
+
+
+
+body{
+    background-color: #FEF2E5;
+    margin: 5vh auto 10vh auto;
+    max-width: 750px;
+    font-size: 24px;
+    font-family: "bookmania", serif;
+    font-weight: lighter;
+    color: black;
+    padding: 5vh 8vw;
+    /*north east south west*/
+    border: 10px solid black;
+    z-index: 10;
+}
+
+
+
+
+h1 {
+    color: black;
+    line-height: 1;
+    letter-spacing: 5px;
+    font-family: "bookmania", serif;
+    font-weight: normal;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.subhead{
+    color: black;
+    line-height: 0.90;
+    font-family: "bookmania", serif;
+    font-weight: normal;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h2{
+    font-size: 20px;
+    font-family: TIMES, serif;
+    font-stretch: extra-condensed;
+    letter-spacing: 5px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+a{
+    color: black;
+}
+
+p{
+    line-height: 1.10;
+    letter-spacing: 1px;
+ 
+}
+
+ul, ol, li{
+    line-height: 1.3;
+    margin-left: 5px;
+}
+
+
+.readings{
+    margin-left: 40px;
+}
+
+.brackets{
+    font-size: 20px;
+    font-family: "bookmania", serif;
+    font-weight: lighter;
+    color: black;
+    line-height: 1.2;
+    margin-top: 40px;
+}
+
+.questions{
+    text-decoration: underline;
+    letter-spacing: 1px;
+
+}
+
+button.questions{
+    width: 100%;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    text-align: left;
+    font-size: 24px;
+    font-family: "bookmania", serif;
+    font-weight: lighter;
+    line-height: 1.2;
+    border: none;
+    padding: 0;
+    background: none;
+    outline: none;
+}
+
+button.questions.active, button.questions:hover{
+    text-decoration: none;
+    font-style: italic;
+
+}
+
+.answer1{
+    width: 100%;
+}
+.answer2{
+    width: 100%;
+}
+.answer3{
+    width: 100%;
+}
+.answer4{
+    width: 100%;
+}
+
+
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#999;
+}
+
+
+
+
+
+
+/* Main drop down menu */
+
+.dropbtn {
+    font-family: "bookmania", serif;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    background-color: #FEF2E5;
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+    border-top: none;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: none;
+    outline: none;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #000;
+    color: #FEF2E5;
+    border-style: none;
+}
+
+.dropdown{
+    position: fixed;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #FEF2E5;
+    border: 1px solid black;
+    min-width: 100px;
+    overflow: auto;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+    left: 0;
+    top: 0;
+    outline: none;
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #000;
+    color: #FEF2E5;
+}
+
+.show {display:block;}
+
+
+
+
+
+
+
+
+
+/* R5/R6 forms, buttons, and dropdown accordions */
+
+button.accordion {
+    border: 3px solid black;
+    background-color: rgba(254,254,244,0.2);
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: 0.4s;
+    font-family: "bookmania", serif;
+    font-weight: lighter;
+    font-size: 34px;
+    outline: none;
+
+
+}
+
+button.accordion.active, button.accordion:hover{
+    background-color: black;
+    color: #FEF2E5;
+}
+
+div.panel{
+    padding: 0 18px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    background-color: rgba(254,254,244,0.2);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    border: 3px solid black;
+    outline: none;
+
+}
+
+input[type=text] {
+    width: 100%;
+    border: 1px solid black;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: "bookmania", serif;
+    font-weight: normal;
+    font-size: 25px;
+    background-color: rgba(254,254,244,0.2);
+    outline: none;
+
+}
+
+/*for big areas of text*/
+textarea {
+    width: 100%;
+    border: 1px solid black;
+    padding: 12px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: "bookmania", serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.2;
+    background-color: rgba(254,254,244,0.2);
+    outline: none;
+
+}
+
+/* For small two digit numbers */
+input[type=small] {
+    width: 30px;
+    border: 1px solid black;
+    padding: 6px 10px;
+    margin: 8px 0;
+    font-family: "bookmania", serif;
+    font-weight: normal;
+    font-size: 25px;
+    background-color: rgba(254,254,244,0.2);
+    outline: none;
+
+}
+
+input[type=radio]{
+  display: inline-block;
+  border: 1px solid black;
+  outline: none;
+
+}
+
+input[type=submit]{
+    border:1px solid black;
+    background: black;
+    color: #FEFEF4;
+    font-family: "bookmania", serif;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    height: 40px;
+    width: 100px;
+    margin: 0 auto;
+    outline: none;
+
+}
+
+
+.backtop{
+    color: black;
+    text-align: center;
+}
+
+
+
+/*IMAGES*/
+img{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ex-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ex-col{
+/*    background-image: url("images/pineapple3.jpg");
+    background-color: #cccccc;
+    background-size: contain;*/
+
+}
+
+.ex-image{
+    width: 250px;
+    height: 250px;
+/*CHILD IMAGE ALIGNMENT*/
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .wrapper{
+        margin: -5% -5%;
+    }
+
+    .dropbtn {
+        background-color: white;
+    }
+
+    .dropdown-content{
+        background-color: white;
+    }
+
+    body{
+        background-image: url("images/neuron-map2.png");
+        background-size: 100vh 100vw;
+        background-color: #FEF2E5;
+
+    }
+
+    ul, ol, li{
+        padding-left: -15px;
+    }
+
+    video {
+        display: none;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 750px) {
+    
+    body {
+    font-size: 18px;
+    /*north east south west*/
+    margin: 0 auto 0 auto;
+    line-height: 1.4;
+    }
+
+    button.questions {
+        font-size: 18px;
+        line-height: 1.4;
+        letter-spacing: 1px;
+    }
+
+    .questions{
+        letter-spacing: 0px;
+    }
+
+    h1{
+    font-size: 36px;
+    line-height: 1.2;
+    }
+
+    h2{
+    font-size: 14px;
+    letter-spacing: 3px;
+    }
+
+
+}
+
+@media only screen and (max-width: 920px) {
+    
+    body {
+    padding: 5vh 10vw;
+    /*north east south west*/
+    margin: 0 auto 0 auto;
+    }
+
+    .dropbtn {
+        border-left: 10px solid black;
+        border-right: 10px solid black;
+    }
+
+
+    bod
+}
+
