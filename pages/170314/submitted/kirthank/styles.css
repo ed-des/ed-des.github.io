@@ -1,0 +1,460 @@
+/* horizontal line*/
+hr {
+    border-color: black; /*line color*/
+    margin-bottom: 35px; /*spacing between lines*/
+    border-width: 1px; /*line width*/
+    width: 80%; /*line length*/
+}
+hr.topline {
+    margin-top: 35px;
+}
+
+
+
+
+
+/*downarrow button*/
+a.downarrow {
+    position: absolute;
+    left: 45vw;
+    top: 550px;
+    font-size: 54px;
+    padding-top: 30px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+    margin-top:-100px;
+    animation: colorarrow 4s linear infinite;
+}
+
+@keyframes colorarrow {
+    0% {color:black;}
+    50% {color:blue;}
+    100% {color: black;}
+}
+   
+
+
+
+
+/*svg*/
+svg {
+    width:100vw;
+    margin-left:-8px;
+    margin-top: 100px;
+    margin-bottom: -30px;
+}
+
+svg.first {
+    margin-top: 0px;
+}
+
+
+.cls-1 { /*expand to top left*/
+    transition: all 1s;
+  transform-origin: 100% 100%;
+    z-index: -1;
+    fill: black;
+}
+.cls-1:active { 
+    transform: scale(2);
+    z-index: 999;
+    fill: #404040;
+}
+
+.cls-3 { /*expand from center*/
+    transition: all 1s;
+  transform-origin: 50% 50%;
+    z-index: -1;
+    fill: black;
+}
+.cls-3:active {
+    transform: scale(2);
+    z-index: 999;
+    fill: #404040;
+}
+
+.cls-5 { /*expand to bottom right*/
+    transition: all 1s;
+  transform-origin: 0% 0%;
+    z-index: -1;
+    fill: black;
+}
+.cls-5:active { 
+    transform: scale(2);
+    z-index: 999;
+    fill: #404040;
+}
+
+
+.cls-2 { /*shrink to center*/
+    transition: all 1s;
+  transform-origin: 50% 50%;
+    z-index: -1;
+    fill: black;
+}
+.cls-2:active {
+    transform: scale(0.5);
+    z-index: 999;
+    fill: #404040;
+}
+
+.cls-4 { /*shrink to bottom right*/
+    transition: all 1s;
+  transform-origin: 100% 100%;
+    z-index: -1;
+    fill: black;
+}
+.cls-4:active {
+    transform: scale(0.5);
+    z-index: 999;
+    fill: #404040;
+}
+
+.cls-6 { /*shrink to top left*/
+    transition: all 1s;
+  transform-origin: 0% 0%;
+    z-index: -1;
+    fill: black;
+}
+.cls-6:active {
+    transform: scale(0.5);
+    z-index: 999;
+    fill: #404040;
+}
+
+
+
+
+
+/*headers*/
+h1, h2, h6 {
+   font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+}
+h1 {
+    font-size: 84px;
+    text-align: center;
+    padding-top: 0px;
+}
+h1.smallspace {
+    margin-bottom: -60px;
+    margin-top:10px;
+    font-size: 54px;
+    padding-top:20px;
+}
+h2 {
+    font-size: 30px;
+    padding-top:30px;
+}
+
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-weight:700;
+    font-size: 18px;
+    text-align: center;
+    margin-top:60px;
+    margin-bottom: 0px;
+}
+h4 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    padding-top: 15px;
+}
+h5 {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    line-height: 140%;
+    margin-top:-5px;
+}
+h6 {
+    font-size: 110px;
+    line-height: 110%;
+    text-align:center;
+    font-weight:900;
+    padding-top:20px;
+    margin-bottom:-10px;
+}
+h2,h3,h4,h5 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+/*form*/
+details {
+    margin-top:60px;
+    background-color: #e6f9ff;
+    background-blend-mode:darken;
+}
+
+details.formtwo {
+    margin-top:35px;
+   margin-bottom: 20px;
+    padding-bottom: 1px;
+}
+
+summary {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    margin-top:30px;
+    padding-left:10px;
+}
+
+.bottomline {
+    padding-bottom: 5px;
+}
+
+details summary::-webkit-details-marker {
+
+  color: black;
+  font-size: 500%;
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+summary:after {  
+    content: "☾"; 
+    color: black; 
+    float: left; 
+    margin-top:-6px;
+    margin-right:6px;
+    font-size:30px;
+    text-align: center;
+}
+
+details[open] summary:after {
+  content: "☆";
+}
+
+
+
+
+
+
+
+/*body, lists, and other general styles*/
+p, ol {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p.centering {
+    color: blue;
+    text-align: center;
+    font-size: 24px;
+    animation: colorarrow 4s linear infinite;
+}
+
+p.extraspace {
+    padding-bottom: 80px;
+}
+
+.notetext {
+    font-size: 12px;
+    line-height: 100%;
+}
+
+ol {
+    padding-left:15px;
+}
+ol.spacinglist {
+    line-height:160%;
+}
+
+.bigpadding { /*spacing for P sign in box*/
+    padding-left: 80px;
+}
+.tracking {
+    letter-spacing: 1px;
+}
+
+body { /*gradient bg*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8ddff+0,ddf2ff+50,e2ffee+100 */
+background: #f8ddff; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #f8ddff 0%, #ddf2ff 50%, #e2ffee 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #f8ddff 0%,#ddf2ff 50%,#e2ffee 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #f8ddff 0%,#ddf2ff 50%,#e2ffee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8ddff', endColorstr='#e2ffee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+strong {
+    animation: colorarrow 4s linear infinite;
+}
+
+
+
+
+/*For chair box */
+div.outline {
+    border: 0.5px solid;
+    padding-left: 75px;
+    color:blue;
+    animation: colorarrow 4s linear infinite;
+}
+
+
+div.bottomspace {
+    padding-top: 5px;
+}
+
+
+
+
+
+/*title Screen*/
+div.title-screen {
+    z-index: 1;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+	margin-top: -256px;
+    background: linear-gradient(45deg, #d8fdff 20%,#ffd8f5 50%,#f8ffe0 80%);
+	background-size: 300% 300%;
+	-webkit-animation: Gradient 40s ease infinite;
+	-moz-animation: Gradient 20s ease infinite;
+	animation: Gradient 20s ease infinite;
+}
+	    
+@-webkit-keyframes Gradient {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+@-moz-keyframes Gradient {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+@keyframes Gradient { 
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+
+
+
+
+
+
+/*gifs*/
+.ximage {
+    width:100vw;
+    margin-left: -8px;
+    margin-bottom:-10px;
+}
+
+.ximagewithin {
+    width:100vw;
+    margin-left: -8px;
+    margin-top:60px;
+    margin-bottom: -30px;
+}
+
+
+
+
+
+
+/*navigation bar*/
+.bar {
+    position: fixed;
+    bottom:0px;
+    z-index: 3;
+    background:#e6f2ff;
+    height: 65px;
+    width: 100%;
+    opacity: .95;
+    margin-left: -8px;
+}
+
+.bartxt {
+    color:#0000b3;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-top: 14px;
+    padding:0vw;
+    text-align: center;
+    z-index: 3;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+/*navigation menu*/
+.nav {
+    position: fixed;
+    top:0px;
+    z-index: 2;
+    margin-top: 217.5px;
+    height: 1vh;
+    width: 100%;
+    opacity: .95;
+    visibility: hidden;
+    margin-left: -8px;
+}
+
+.navtxt, .navtxt2, .navtxt3, .navtxt4, .navtxt5, .navtxt6 {
+    color:black;
+    font-size: 32px;
+    text-align: center;
+    z-index: 3;
+    line-height: 2;
+    margin: 0px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navtxt {
+    background:#cce6ff;
+}
+
+.navtxt2 {
+    background:#ccd9ff;
+}
+
+.navtxt3 {
+    background:#ccccff;
+}
+
+.navtxt4 {
+    background:	#d9ccff;
+}
+
+.navtxt5 {
+    background:#e6ccff;
+}
+
+.navtxt6 {
+    background:	#f2ccff;
+}
+
+.show {
+    visibility: visible;
+}
+
+.hide {
+    visibility: visible;
+}

@@ -12,10 +12,31 @@ function collapseRead() {
         $( '#read.collapsible' ).addClass( 'expand' );
     }
 }
-function collapseProj() {
-    if (  $( '#proj.collapsible' ).hasClass( 'expand' ) ) {
-        $( '#proj.collapsible' ).removeClass( 'expand' );
+function collapseProjRx() {
+    if (  $( '#proj.collapsible.rx' ).hasClass( 'expand' ) ) {
+        $( '#proj.collapsible.rx' ).removeClass( 'expand' );
     } else {
-        $( '#proj.collapsible' ).addClass( 'expand' );
+        $( '#proj.collapsible.rx' ).addClass( 'expand' );
+    }
+}
+function collapseProjUx() {
+    if (  $( '#proj.collapsible.ux' ).hasClass( 'expand' ) ) {
+        $( '#proj.collapsible.ux' ).removeClass( 'expand' );
+    } else {
+        $( '#proj.collapsible.ux' ).addClass( 'expand' );
+    }
+}
+function collapseProjPd() {
+    if (  $( '#proj.collapsible.pd' ).hasClass( 'expand' ) ) {
+        $( '#proj.collapsible.pd' ).removeClass( 'expand' );
+    } else {
+        $( '#proj.collapsible.pd' ).addClass( 'expand' );
+    }
+}
+function collapseProjCo() {
+    if (  $( '#proj.collapsible.co' ).hasClass( 'expand' ) ) {
+        $( '#proj.collapsible.co' ).removeClass( 'expand' );
+    } else {
+        $( '#proj.collapsible.co' ).addClass( 'expand' );
     }
 }

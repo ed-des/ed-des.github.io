@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="My Name">
+    <title>Dream Method</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.typekit.net/cxd2ggi.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <a name="top"></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!--
+    <div class="header">
+    	DREAM METHOD
+    </div>
+
+
+    	<div class="bg-image"></div>
+
+	!-->
+
+	<div id="set-width"></div>
+	<p id="time"></p>
+	<video id="v0" tabindex="0" autobuffer="autobuffer" preload="preload"><source src="images/neurons.mp4" type="video/mp4">
+	  <p>Sorry, your browser does not support the &lt;video&gt; element.</p>
+	</video>
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+
+<script>
+	$(function() {
+
+   $("body").mousewheel(function(event, delta) {
+
+      this.scrollLeft -= (delta * 30);
+    
+      event.preventDefault();
+
+   });
+
+});
+</script>
+
+
+<div class="wrapper">
+
+		<div class="title">
+
+			<h1>DREAM METHOD</h1>
+			<div class="subhead">J. Ball</div>
+
+		</div>
+
+
+		<div class="sub-brack">
+		Material and useful practices taken from LaBerge, Hervey, Wangyal.
+		</div>
+
+		<!--Dropdown Menu!-->
+			<div class="dropdown">
+				<button onclick="dropMenu()" class="dropbtn">DREAM METHOD</button>
+					<div id="myDropdown" class="dropdown-content">
+						<a href="#intro">Introduction</a>
+						<a href="#schedule">Schedule</a>
+						<a href="#faq">FAQ</a>
+						<a href="#readings">Readings</a>
+						<a href="#expectations">Expectations</a>
+						<a href="#forms">R5/R6 Forms</a>
+						<a href="#roles">Roles</a>
+				</div>
+			</div>
+
+	<h2>
+		<a name="intro">
+			INTRODUCTION
+		</a>
+	</h2>
+
+	<p>
+	The class will be divided into two portions. The main portion will be conducted from 1-3 pm on Fridays. The second portion will be conducted from 3pm to four. The difference between the portions will be explained below.
+	</p>
+
+	<p>
+	Students should endeavor to be punctual. Excessive lateness will be viewed harshly. I am told that two full and unexplained absences constitute a failure.
+	</p>
+
+	<p>
+	The substance of this class is a combination of three elements: guidance, performance and camaraderie. Guidance exists in the form of the weekly exercise, its description and in meetings between the professor and the student to discuss the student’s progress. Performance exists in the exhibitions that the students will put on. Camaraderie exists in the business of the dream associates, described elsewhere.
+	</p>
+
+	<p>
+	Students will be divided into 3 groups of 5. Each week, one group will conduct an exhibition based upon their dreamwork. The exhibition need not be a group-effort. It can be merely a matter of consecutive appearances.
+	</p>
+
+	<h2><a name="schedule">SCHEDULE</a>
+	</h2>
+
+	<p>
+	The class will be structured in the following manner:
+	</p>
+
+	<p>
+	Part 1
+	</p>
+
+<div class="sch-sec">
+
+	1-2 ––– Group exhibition of works created.<br>
+	2-2.30 ––– Meet with your two associates to discuss issues/methods <br>
+	2.30-3 ––– Discussion of the following week’s objectives and methods <br>
+
+	<p>
+	Part 2
+	</p>
+
+	<p>
+	3-4 - During this time I will meet individually with the members of the class. These meetings will last 10 minutes. I will meet with one group at each class session, and that group will be the group that has just presented. At these meetings the individual student‘s progress will be discussed. Obstacles, such as there may be, may be brought to light. Each student will bring the completed R5 forms from the previous weeks for me to examine. The R5 form is mandatory. It is the record and proof of the work being attempted.
+	</p>
+
+</div>
+
+	<h2><a name="faq">
+	FREQUENTLY ASKED QUESTIONS
+	</a>
+	</h2>
+
+	<button class="questions" onclick="toggleQuestion1()">
+	What are group exhibitions?
+	</button>
+
+	<p id="answer1">
+	In group exhibitions, the material you are accruing from your dreams will be employed in the creation of some kind of performance. A person can read from a story, can sing, can act, can do a false-interview, can mime, can exhibit drawings, film, etc. The work must be original, and generated from the students dreams specifically for this dream class. No prior work is acceptable. Students can use dream material to create a collaboration. All 5 students could collaborate on a single piece for instance.
+	<br><br>
+	The exhibitions are not a matter of obtaining people’s judgment on work. No one in the class will or should criticize the student for his/her work. It is merely a matter of using dream material fruitfully and expeditiously.
+	<br><br>
+	You could, for instance dress as a character from a dream and sit in a chair facing away from the class while reading aloud. Eye contact need not be involved. One could go so far as to specify that their performance will be given in the dark, or blindfolded.
+	</p>
+
+
+	<button class="questions" onclick="toggleQuestion2()">
+	What are individual meetings?</button>
+
+	<p id="answer2">
+	The nature of this dream work involves the application of particular methods to the student’s life. In individual meetings, students will speak to me about how they are integrating the methods into their lives. Also, they will speak to me about the particulars of their attempts to use dream-generated imagery and content in literature, art, film, etc.
+	</p>
+
+
+	<button class="questions" onclick="toggleQuestion3()">
+	What is the discussion of the following weeks objectives?
+	</button>
+
+	<p id="answer3">
+	During this time I will outline for the class the particular method that we will be be attempting to apply during that week, and answering any questions that people might have about that technique. Questions about the previous week’s technique can be brought up on a person-by-person basis during individual meetings.
+	</p>
+
+
+	<button class="questions" onclick="toggleQuestion4()">What is the actual intent of the course?</button>
+
+	<p id="answer4">
+	The intent of the course is that the student will, at courses end, be recalling their dreams every night, be possessed of a book filled with such recorded dreams, and furthermore be able to become conscious or lucid during dreaming.
+	<br><br>
+	Ideally, the person will gain the ability to lucid dream at will. This requires a great deal of dedication, however, and it is more likely that by the end of the semester, the students will have obtained for themselves the experience of having lucid-dreamed several times, and will continue to do so every so often as long as the intent remains.
+	</p>
+
+	<script>
+	function toggleQuestion1() {
+	    var x = document.getElementById('answer1');
+	    if (x.style.display === 'none') {
+	        x.style.display = 'block';
+	    } else {
+	        x.style.display = 'none';
+	    }
+	}
+	function toggleQuestion2() {
+	    var x = document.getElementById('answer2');
+	    if (x.style.display === 'none') {
+	        x.style.display = 'block';
+	    } else {
+	        x.style.display = 'none';
+	    }
+	}
+	function toggleQuestion3() {
+	    var x = document.getElementById('answer3');
+	    if (x.style.display === 'none') {
+	        x.style.display = 'block';
+	    } else {
+	        x.style.display = 'none';
+	    }
+	}
+	function toggleQuestion4() {
+	    var x = document.getElementById('answer4');
+	    if (x.style.display === 'none') {
+	        x.style.display = 'block';
+	    } else {
+	        x.style.display = 'none';
+	    }
+	}
+	</script>
+
+
+
+	<p>Concerns on the part of students should be addressed to: 
+		<a href="http://www.crouton.net">john@ball.com</a>
+	</p>
+
+
+	<h2><a name="readings">LIST OF READINGS</a></h2>
+
+		<div class="readings">
+
+
+			<p class="tooltip">Jung, C. G. <br><i>Memories, Dreams, Reflections.</i>
+				<span id="tooltip-span">
+					<img src="images/bk_jung.jpg"/>
+				</span>
+			</p>
+
+
+			<p class="tooltip">Van De Castle, <br><i>Robert L. Our Dreaming Mind.</i>
+				<span id="tooltip-span">
+					<img src="images/bk_van.jpg"/>
+				</span>
+			</p>
+
+
+			<p class="tooltip">Jouvet, Michel. <br><i>The Paradox of Sleep.</i>
+			<span id="tooltip-span">
+				<img src="images/bk_jouvet.jpg" width="50px" height="75px"/>
+			</span>
+			</p>
+
+			<p class="tooltip">Freud, Sigmund. <br><i>
+			Interpretation of Dreams.</i>
+			<span id="tooltip-span">
+				<img src="images/bk_freud.jpg" width="50px" height="75px"/>
+			</span>
+			</p>
+
+			<p class="tooltip">Campbell, Joseph. <br><i>The Hero With a Thousand Faces</i>
+			<span id="tooltip-span">
+				<img src="images/bk_campbell.jpg" width="50px" height="75px"/>
+			</span>
+			</p>
+
+			<p class="tooltip">Graves, Robert. <br><i>The White Goddess</i>
+			<span id="tooltip-span">
+				<img src="images/bk_graves.jpg" width="50px" height="75px"/>
+			</span>
+			</p>
+
+			<p class="tooltip">Wangyal, Tenzin (Rinpoche). <br><i>The Tibetan Yogis of Dream and Sleep.</i>
+			<span id="tooltip-span">
+				<img src="images/bk_wangyal.jpg" width="50px" height="75px"/>
+			</span>
+			</p>
+
+
+
+
+			<script> /*HOVER IMAGES javascript hover image follow mouse*/
+
+			var tooltips = document.querySelectorAll('.tooltip span');
+
+			window.onmousemove = function (e) {
+			    var x = (e.clientX + 0) + 'px',
+			        y = (e.clientY - 200) + 'px';
+
+			    for (var i = 0; i < tooltips.length; i++){
+			    	tooltips[i].style.top = y;
+			    	tooltips[i].style.left = x;
+			    }
+
+
+			};
+
+			</script>
+
+
+
+		</div>
+	</i>
+
+	<p>
+	<strong>NOTE:</strong> Readings will not be discussed in class. These books are included not because I favor the particular thoughts or methods in them, but because I believe the reading of them will be useful and suggestive to those working with dreams. Students should read these books during the semester. They need not read them in any particular order.
+	</p>
+
+	<p>
+	The two books principally crucial to the method we will utilize are:
+	</p>
+
+	<i>
+
+		<div class="readings">
+
+		<p>Hervey de Saint-Denys: <br><i>Dreams and How to Guide Them</i></p>
+
+		<p>&</p>
+
+		<p>LaBerge: <br><i>Exploring the World of Lucid Dreams</i></p>
+
+		</div>
+
+	</i>
+
+	<p>
+	<strong>Do not buy these books!</strong>
+	</p>
+
+	<p>
+	I do not encourage the student to purchase these books during the class. When the class is finished, most certainly I would advocate that. They will be useful in order to cement and continue your dream-practice.
+	</p>
+
+	<p>
+	However, I don’t want students to get ahead of themselves. We will proceed step by step through methods espoused by LaBerge, methods found in the book named above. I will provide the materials as they become necessary. Were the student to be on their own. They might not give the early exercises the time and intention they require.
+	</p>
+
+	<p>
+	So, yes, buy these last two books, but not until December of 2014. Or, buy them now, but try not to get ahead of what we are attempting in class.
+	</p>
+
+	<div class="brackets">
+	[ed. Note -- this page was from previous iteration of class -- when the class was indeed in a classroom. Our situation this semester (Ballroom) is different. I preserve this page for your amusement.]
+	</div>
+
+	<h2><a name="expectations">EXPECTATIONS</a></h2>
+
+	<p>
+	I had wanted for the class to be in a theatre, and that we would therefore be able to have our exhibitions properly, with fanfare and aplomb. As it happens, it seems this may not be possible. Therefore, we will attempt to do our best to make our classroom into a theatre of some sort.
+	</p>
+
+	<p>
+	All the chairs will point in the same direction, save one.
+	</p>
+
+	<!--[ILLUSTRATION]!-->
+
+	<p>
+	YES, ONE CHAIR, and in it you will go.
+	</p>
+
+	<p>
+	But what is the manner of interaction? What behaviour is expected?
+	</p>
+
+	<div class="questions">This is how:</div>
+
+	<ol>
+	<li>We won’t say much unless we’re asked to.</li>
+
+	<li>We will go along in a most friendly and gentle way with whatever designs the person proposes (he or she who is exhibiting).</li>
+	</ol>
+
+	<div class="questions">You are in this class because you chose it.</div>
+
+	<p>
+	If you don’t feel you can commit to working hard, please choose another course. I mean to actually attempt to have the members of this class:
+	</p>
+
+	<ol>
+		<li>Begin to dream lucidly;</li>
+		<li>Create work from their dream material</li>
+	</ol>
+
+	<p>
+	Individuals who are not interested in working hard to obtain those goals should excuse themselves
+	</p>
+
+	+<br>
+
+	<p>
+	The works that we will be doing here is largely invisible. It is work that you will do for yourself and by yourself. No one else can know, for instance, how often you are stopping yourself during the day to see if you are awake or dreaming. If you are diligent, and do this often, you will begin to see results. If you are not, you won’t.
+	</p>
+
+	<p>
+	In the matter of our exhibitions, you can use the other members of your section as you go about preparing. The time during the week, between classes, is to be spent performing that week’s exercise, recording dreams, and mining your dream-content for creative purposes.
+	</p>
+
+	<div class="questions">
+	Instructions for the use of Dream-Associates:
+	</div>
+
+	<ol>
+		<li>You will meet with your two dream-associates each week in class.</li>
+		<li>One of the three will go first. That individual will tell a dream to the other two</li>
+		<li>They will then give a filled out R6 form to each of the two associates.</li>
+		<li>The two associates will mull over it and attempt to isolate dream signs, or comment on any peculiarities or wonders.</li>
+		<li>The second will go.</li>
+		<li>The third will go.</li>
+		<li>A brief interlude will exist wherein associates may discuss any difficulties that they had performing this week’s exercise. Questions may be raised which can be asked of the professor following the meeting of the dream associates.</li>
+	</ol>
+
+	<div class="questions">
+	The utility of the Dream-Associates is three-fold.
+	</div>
+
+	<p>
+	In the first place, it creates an added forum for intentionality, thereby aiding dream-recall, and the creation of dream-momentum.
+	</p>
+
+	<p>
+	In the second place, it creates a location wherein associates may support each other in this difficult work.
+	</p>
+
+	<p>
+	In the third place, it allows the intuition of one associate to come to the aid of another.
+	</p>
+
+
+<p>
+	 <div class="ex-section">
+
+	    <div class="ex-col">
+	        <div class="ex-image">
+	            <img src="images/head01.png">
+	        </div>
+
+	    </div>
+
+	    <div class="ex-col">
+	        <div class="ex-image">
+	            <img src="images/head02.png">
+	        </div>
+	    </div>
+
+
+	    <div class="ex-col">
+	        <div class="ex-image">
+	            <img src="images/head03.png">
+	        </div>
+	    </div>
+
+	</div>
+
+</p>
+	<!--R5,R6 forms below!-->
+
+	<a name="forms">
+	<button class="accordion"> R5 </button>
+		<div class="panel">
+
+			<h1>R5 Form</h1>
+
+			<p>
+				<form>
+					No. of Dreams Recorded:
+					<input type="small" name="dreamRecord">
+				</form>
+			</p>
+
+			<p>
+			<form>
+				No. of Words Written in Recording (estimate):
+				<input type="small" name="wordsWritten">
+			</form>
+			</p>
+
+			<p>
+			<form>
+				No. of Dreams Analyzed for Dream Signs:
+				<input type="small" name="Analyzed">
+			</form>
+			</p>
+
+			<p>
+			<form>
+				Dream Sign Most Prevalent:
+				<input type="text" name="Prevalent">
+			</form>
+			</p>
+			 
+			<p>
+			<form>
+				Concerns, Worries, Difficulties:
+				<textarea rows="4" cols="50"></textarea>			
+			</form>
+			</p>
+		
+			<p>
+			<form>Attempting to Wake Yourself Multiple Times?
+			  <input type="radio" name="yn" value="yes" checked> Y
+			  <input type="radio" name="yn" value="no"> N
+			</form> 
+			</p>
+			
+
+			<p>
+			<form>
+				No. of Times This Week’s Exercise Attempted:
+				<input type="small" name="Times">
+			</form>
+			</p>
+			
+			<p>
+			<form>Success?
+			  <input type="radio" name="yn" value="yes" checked> Y
+			  <input type="radio" name="yn" value="no"> N
+			</form> 
+			</p>
+
+			<p>
+			<form>
+					Explain:
+					<textarea rows="4" cols="50"></textarea>	
+			</form>
+			</p>
+
+
+			<p>
+			<form>
+					Miscellaneous:
+					<textarea rows="4" cols="50"></textarea>			
+			</form>
+			</p>
+
+			<p>
+			<form>		Are You Asleep Now?
+			  <input type="radio" name="yn" value="yes" checked> Y
+			  <input type="radio" name="yn" value="no"> N
+			</form> 
+			</p>
+
+			<p>
+			<input type="submit" value="Submit">
+			</p>
+
+			</p>
+
+		</div>
+	</button>
+
+	<button class="accordion"> R6 </button>
+		<div class="panel">
+			
+			<h1>R6 Form</h1>
+			
+			<p>
+
+			<p>
+			<form>
+			Choose a dream from your week of dream recordings. Write it out in a manner wherein sharing does not cause you discomfort.
+				<textarea rows="8" cols="50"></textarea>			
+			</form>
+			</p>
+
+			<p>
+			<form>
+			Space for Dream-Associates to isolate dream-signs, peculiarities, wonders.
+				<textarea rows="4" cols="50"></textarea>			
+			</form>
+			</p>
+
+			<p>
+			<input type="submit" value="Submit">
+			</p>
+
+			</p>
+
+		</div>
+	</button>
+
+</div>
+</a>
+
+
+<a name="roles">
+	<h2>
+		ROLES FOR EXHIBITIONS
+	</h2>
+
+	<div class="questions">
+		Ringleader
+	</div>
+	
+	<p>
+	The ringleader will introduce the members of his/her group during the exhibition. He/she will ease the audience and see that all is taken care of to ensure an appropriately wondrous performance.
+	</p>
+
+	<div class="questions">
+	Handbill Maker
+	</div>
+
+	<p>
+	The handbill maker will prepare the handbill for the exhibition and hand it out to the members of the audience at the exhibition’s start. He or she will be emailed the information necessary to the creation of the handbill, or be brought that information by the class prior to the exhibition, at the very latest by the class preceding the exhibition. Do not put your handbill maker in a bad spot by failing to email him/her the title of your performance.
+	</p>
+
+	<div class="questions">
+	Stage Manager
+	</div>
+
+	<p>
+	The stage manager will see to it that the seating is appropriately done. He/she will arrange for any odd or unorthodox seating that a particular performance may require. He/she will see to lighting, etc.
+	</p>
+
+	<div class="questions">
+	Theater Critic
+	</div>
+
+	<p>
+	The theater critic will write a brief (three sentence) description of each performance, which will be entered into the log via email (to john@ball.com)
+	</p>
+
+	<div class="questions">
+	Lackeys
+	</div>
+
+	<p>
+	The remaining individuals will constitute a group of lackeys who will perhaps replace the above Ringleader, Handbill Maker, Stage Manager or Theater Critic, should it prove necessary.
+	</p>
+
+	<p>
+	<strong>
+	NOTE:</strong> All the above individuals will be, in addition to their roles, giving a performance. Each group will, as is mentioned elsewhere, making an exhibition once every three weeks.
+	</p>
+</a>
+
+
+<div class="backtop">
+    <a href="#" class="top">Back to the top ↑
+</a>
+</div>
+
+<!-- APPEARING TITLE BAR!!!  !-->
+
+
+<script>
+	
+	/* When the user clicks on the button toggle between hiding and showing the dropdown content */
+	function dropMenu(){
+		document.getElementById("myDropdown")
+		.classList.toggle("show");
+	}
+
+	//Close the dropdown if the user clicks outside of it
+	window.onclick = function(event){
+		if (!event.target.matches('.dropbtn')) {
+
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++){
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				}
+			}
+		}
+	}
+
+</script>
+
+<!--R5/R6 FORMS-->
+
+
+<script>
+	
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].onclick = function() {
+	    this.classList.toggle("active");
+	    var panel = this.nextElementSibling;
+	    if (panel.style.maxHeight){
+	      panel.style.maxHeight = null;
+	    } else {
+	      panel.style.maxHeight = panel.scrollHeight + "px";
+	    } 
+	  }
+	}
+
+</script>
+
+<script>
+		$(document).scroll(function() {
+			var y = $(this).scrollTop();
+			  if (y > 400) {
+			    $('.dropbtn').fadeIn();
+			  } else {
+			    $('.dropbtn').fadeOut();
+		  }
+	});
+</script>
+
+<!--video scroller!-->
+<script>
+
+	var frameNumber = 0, // start video at frame 0
+	   // lower numbers = faster playback
+	   playbackConst = 500,
+	   // get page height from video duration
+	   setHeight = document.getElementById("set-height"),
+	   // select video element        
+	   vid = document.getElementById('v0');
+	   // var vid = $('#v0')[0]; // jquery option
+
+	// dynamically set the page height according to video length
+	vid.addEventListener('loadedmetadata', function() {
+	 setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+	});
+
+
+	// Use requestAnimationFrame for smooth playback
+	function scollPlay(){  
+	 var frameNumber  = window.pageYOffset/playbackConst;
+	 vid.currentTime  = frameNumber;
+	 window.requestAnimationFrame(scollPlay);
+	}
+
+	window.requestAnimationFrame(scollPlay);
+
+</script>
+
+<script>
+/* AUTO SCROLL
+(function() {
+   'use strict';
+
+   var dbh,sto,num=15,temp=0,scrolldelay=100;
+
+function init(){ 
+    dbh=document.body.offsetHeight;
+    pageScroll();
+ }
+
+function pageScroll() {
+    window.scrollBy(0,num);
+    temp+=num;
+if((temp>=dbh)||(temp<=0)){
+    num=-num;
+ }
+   sto=setTimeout(function(){pageScroll();},scrolldelay);
+ }
+   window.addEventListener?
+   window.addEventListener('load',init,false):
+   window.attachEvent('onload',init);
+})();
+</script>
+
+</body>
+
+</html>

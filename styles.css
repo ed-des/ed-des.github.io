@@ -39,6 +39,10 @@ p, ul {
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 }
+p.caption, p.caption a {
+    font-size: 1em !important;
+    color: gray;
+}
 a {
 	color: #53E0BB;
 }
@@ -375,6 +379,9 @@ footer li:last-of-type {
         padding: 0 40px;
         width: 100%;
         float: none;
+    }
+    .examples img {
+        width: 100%;
     }
 }
 
