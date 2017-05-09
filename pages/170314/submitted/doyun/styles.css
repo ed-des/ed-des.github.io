@@ -1,7 +1,9 @@
 
 .box {
-    border: 5px solid black;
-    margin: 50px;
+    padding-top: 650px;
+   padding-bottom: 600px;
+
+    margin: 30px;
 }
 
 hr { /* horizontal line*/
@@ -96,6 +98,7 @@ div.bottomspace {
 }
 
 .container {
+    padding-top: 500px;
     width:100%;
      padding: 20px;
     margin-left: 15px;

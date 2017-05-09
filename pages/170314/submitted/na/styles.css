@@ -10,6 +10,7 @@
     background-size: 100% 500%;
     animation: colorwheel 15s linear infinite;
     height: 100vh;
+    position: relative;
     z-index: 5;
 }
 
@@ -20,13 +21,13 @@ body{
     background: #fffce8;
 }
 
-p,ol,h1,h2,h3,h4,h5,h6 {margin: 0px 20px 40px 20px;}
+p,ol,h1,h2,h3,h4,h5,h6 {margin: 0px 20px 40px 40px;}
 
 /* specifics for body text*/
 p, ol{ 
     color: #17385b; /*dark blue color for the text*/
     line-height: 22px;/*leading in pixels*/
-    margin-left: 25px;/*to add a little indent for body text*/
+    margin-left: 45px;/*to add a little indent for body text*/
 }
 
 /*for headings using san serif and pink color type*/
@@ -112,24 +113,25 @@ summary::-webkit-details-marker {
     display: none
 }
 summary:after {
-    content: "∆";
+    content: "▷";
     text-align: center;
     float:left;
     color:#f44271;
     font-family: 'Rubik', sans-serif; 
     font-weight:500;
     font-size:16px;
-    margin: -40px 0px 0px 23px;
+    margin: -43px 0px 30px 43px;
 }
 details[open] summary:after {
-    content:"∇";
-    margin: -40px 0px 0px 23px;
+    content:"▽";
+    margin: -43px 0px 30px 43px;
 }
 
 .form{
-    padding-left: 15px;
-    padding-bottom: 10px;
-    line-height: 0.5px;
+    padding-left: 65px;
+    margin-bottom: 30px;
+    line-height: 0.5px; 
+    display: block;
 }
 
 /*YELLOW BORDERS/BOXES*/
@@ -137,7 +139,7 @@ details[open] summary:after {
     border: 1px solid #ffe100;
     padding: 40px 0px 15px 0px;
     background: #ffe100;
-    margin: 20px 20px 50px 20px;
+    margin: 20px 20px 50px 40px;
 }
 
 /*PART 1 & PART 2 HEADINGS*/
@@ -171,7 +173,7 @@ h6{ /*headings throughout the syllabus*/
 
 /*SUB-HEADINGS*/
 h7{
-    margin-left: 25px;
+    margin-left: 45px;
     font-weight:400;
     font-size: 22px;
     letter-spacing: 2px;
@@ -209,7 +211,7 @@ span.paragraph{/*for the "¶" */
 }
 
 .chair-sentence{
-    padding-top: 30px;
+    padding-top: 0px;
     font-size: 70px;
     line-height: 80px;
     animation-name: chairs-box;
@@ -229,7 +231,7 @@ span.paragraph{/*for the "¶" */
 /*DREAMS*/
 .dream-quote{overflow: hidden;}
 
-.dream-lucid{ 
+.dream-lucid { 
     margin: 70px 0px 30px 25px;
     font-weight:400;
     font-size: 40px;
@@ -238,15 +240,15 @@ span.paragraph{/*for the "¶" */
     font-family: 'Source Serif Pro', serif;
     color:#f44271;
     position: relative;
-    animation: dreamlucid 5s infinite;
 }
-
+.dream-lucid.anim {
+    animation: dreamlucid 5s linear;
+}
 @keyframes dreamlucid {
     from {left: 350px;}
     to {left: 0px;}
 }
-
-.dream-material{ 
+.dream-material { 
     margin: 10px 25px 70px 0px;
     text-align: right;
     font-weight:400;
@@ -256,7 +258,9 @@ span.paragraph{/*for the "¶" */
     font-family: 'Source Serif Pro', serif;
     color:#f44271;
     position: relative;
-    animation: dreammaterial 5s infinite;
+}
+.dream-material.anim {
+    animation: dreammaterial 5s linear;
 }
 
 @keyframes dreammaterial {
@@ -267,6 +271,16 @@ span.paragraph{/*for the "¶" */
 .plus {
     color:#f44271;
     font-size: 40px;
+}
+
+/*R5 & R6*/
+h8{
+    font-weight:400;
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    font-family: 'Rubik', sans-serif; 
+    color:#f44271;
 }
 
 /*GRADIENT BOX FOR R5 & R6*/
@@ -345,7 +359,7 @@ span.space{ /*to create more space in the [ ]*/
     display: none;
     border:none;
     position: absolute;
-    background-color: #fff7f7;
+    background-color: #fff8d6;
     min-width: 330px;
     z-index: 1;
     padding: 20px 0px 20px 0px;
@@ -377,9 +391,9 @@ span.space{ /*to create more space in the [ ]*/
 */
 
 /* links in contents */
-a:link { color: #17385b;}
+a:link { color: #f44271;}
 
-a:visited {color: #17385b;}
+a:visited {color: #f44271;}
 
 a:hover {color: #f44271;}
 
@@ -458,15 +472,22 @@ a:hover {color: #f44271;}
 }
 
 /*fix star that guides through the syllabus*/
-.pink-star-fix{
+.pink-star-fix {
     margin-top: 130px;
-    margin-left: 2.5px;
+    margin-left: 4px;
     position: fixed;
-    font-size: 16px;
+    font-size: 30px;
     color: #f44271;
-    z-index: -1;
+    z-index: 1;
 }
 
 /*for the svg line*/
 .cls-1{ fill:#fee100;}
+
+.blank-space{
+    padding-left:26px;
+    display: block;
+    margin-top: 5px; 
+}
+
     

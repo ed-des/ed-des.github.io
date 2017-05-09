@@ -13,20 +13,11 @@
     <a name="top"></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-    <!--
-    <div class="header">
-    	DREAM METHOD
-    </div>
-
-
-    	<div class="bg-image"></div>
-
-	!-->
 
 	<div id="set-width"></div>
 	<p id="time"></p>
 	<video id="v0" tabindex="0" autobuffer="autobuffer" preload="preload"><source src="images/neurons.mp4" type="video/mp4">
-	  <p>Sorry, your browser does not support the &lt;video&gt; element.</p>
+	  <p>Sorry, your browser does not support this &lt;video&gt; element.</p>
 	</video>
 
 
@@ -40,7 +31,7 @@
 <body>
 
 
-<script>
+<!-- VIDEO SCROLLER <script>
 	$(function() {
 
    $("body").mousewheel(function(event, delta) {
@@ -52,22 +43,27 @@
    });
 
 });
-</script>
+</script> -->
 
 
 <div class="wrapper">
 
+
 		<div class="title">
+
+			<div class="intro-image">
+			<img src="images/sleepwalker.png">
+			</div>
 
 			<h1>DREAM METHOD</h1>
 			<div class="subhead">J. Ball</div>
 
 		</div>
 
-
 		<div class="sub-brack">
 		Material and useful practices taken from LaBerge, Hervey, Wangyal.
 		</div>
+
 
 		<!--Dropdown Menu!-->
 			<div class="dropdown">
@@ -175,7 +171,8 @@
 	Ideally, the person will gain the ability to lucid dream at will. This requires a great deal of dedication, however, and it is more likely that by the end of the semester, the students will have obtained for themselves the experience of having lucid-dreamed several times, and will continue to do so every so often as long as the intent remains.
 	</p>
 
-	<script>
+
+<!--TOGGLE THE FAQ 	<script>
 	function toggleQuestion1() {
 	    var x = document.getElementById('answer1');
 	    if (x.style.display === 'none') {
@@ -208,7 +205,7 @@
 	        x.style.display = 'none';
 	    }
 	}
-	</script>
+	</script> -->
 
 
 
@@ -270,7 +267,7 @@
 
 
 
-			<script> /*HOVER IMAGES javascript hover image follow mouse*/
+<!-- 			<script> /*HOVER IMAGES javascript hover image follow mouse*/
 
 			var tooltips = document.querySelectorAll('.tooltip span');
 
@@ -286,7 +283,7 @@
 
 			};
 
-			</script>
+			</script> -->
 
 
 
@@ -635,7 +632,7 @@
 <!-- APPEARING TITLE BAR!!!  !-->
 
 
-<script>
+ <script>
 	
 	/* When the user clicks on the button toggle between hiding and showing the dropdown content */
 	function dropMenu(){
@@ -658,12 +655,12 @@
 		}
 	}
 
-</script>
+</script> 
 
 <!--R5/R6 FORMS-->
 
 
-<script>
+<!-- <script>
 	
 	var acc = document.getElementsByClassName("accordion");
 	var i;
@@ -691,10 +688,12 @@
 			    $('.dropbtn').fadeOut();
 		  }
 	});
-</script>
+</script> -->
+
+
 
 <!--video scroller!-->
-<script>
+<!-- <script>
 
 	var frameNumber = 0, // start video at frame 0
 	   // lower numbers = faster playback
@@ -720,9 +719,11 @@
 
 	window.requestAnimationFrame(scollPlay);
 
-</script>
+</script> -->
 
-<script>
+
+
+<!-- <script>
 /* AUTO SCROLL
 (function() {
    'use strict';
@@ -747,6 +748,10 @@ if((temp>=dbh)||(temp<=0)){
    window.attachEvent('onload',init);
 })();
 </script>
+ -->
+ 
+
+<script src="script.js"></script>
 
 </body>
 

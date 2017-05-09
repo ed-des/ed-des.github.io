@@ -17,7 +17,7 @@ hr.topline {
 a.downarrow {
     position: absolute;
     left: 45vw;
-    top: 550px;
+    top: 480px;
     font-size: 54px;
     padding-top: 30px;
     font-family: 'Fjalla One', sans-serif;
@@ -39,11 +39,20 @@ a.downarrow {
 
 
 /*svg*/
-svg {
+div.bleed{
     width:100vw;
     margin-left:-8px;
+    padding-bottom: 25px;
+    overflow: hidden;
+}
+
+svg {
+    width:105%;
+    margin-left:-13px;
     margin-top: 100px;
     margin-bottom: -30px;
+    z-index: 3;
+    position: relative;
 }
 
 svg.first {
@@ -53,74 +62,140 @@ svg.first {
 
 .cls-1 { /*expand to top left*/
     transition: all 1s;
-  transform-origin: 100% 100%;
-    z-index: -1;
+    transform-origin: 100% 100%;
     fill: black;
+    animation: exptl 8s ease infinite;
+}
+@keyframes exptl {
+    0% {transform:scale(1);
+        fill: black;}
+    50% {transform: scale(1.5);
+        fill: #404040;}
+    100% {transform:scale(1);
+        fill: black;}    
 }
 .cls-1:active { 
     transform: scale(2);
-    z-index: 999;
+    fill: #404040;
+}
+.cls-1:focus { 
+    transform: scale(2);
     fill: #404040;
 }
 
 .cls-3 { /*expand from center*/
     transition: all 1s;
-  transform-origin: 50% 50%;
-    z-index: -1;
+    transform-origin: 50% 50%;
     fill: black;
+    animation: expac 13s ease infinite;
+}
+@keyframes expac {
+    0% {transform:scale(1);
+        fill: black;}
+    50% {transform:scale(2);
+        fill: #404040;}
+    100% {transform:scale(1);
+        fill: black;}
 }
 .cls-3:active {
     transform: scale(2);
-    z-index: 999;
+    fill: #404040;
+}
+.cls-3:focus {
+    transform: scale(2);
     fill: #404040;
 }
 
 .cls-5 { /*expand to bottom right*/
     transition: all 1s;
-  transform-origin: 0% 0%;
-    z-index: -1;
+    transform-origin: 0% 0%;
     fill: black;
+    animation: extbr 5s ease infinite;
 }
+    @keyframes extbr {
+        0% {transform: scale (1);
+            fill: black;}
+        50% {transform: scale(1.25);
+            fill: #404040;}
+        100% {transform: scale(1);
+            fill: black;}
+    }
 .cls-5:active { 
     transform: scale(2);
-    z-index: 999;
+    fill: #404040;
+}
+.cls-5:focus { 
+    transform: scale(2);
     fill: #404040;
 }
 
 
 .cls-2 { /*shrink to center*/
     transition: all 1s;
-  transform-origin: 50% 50%;
-    z-index: -1;
+    transform-origin: 50% 50%;
     fill: black;
+    animation: shce 7s ease infinite;
+}
+@keyframes shce {
+    0% {transform:scale(1);
+        fill: black;}
+    50% {transform:scale(0.5);
+        fill: #404040;}
+    100% {transform:scale(1);
+        fill:black;}
 }
 .cls-2:active {
     transform: scale(0.5);
-    z-index: 999;
+    fill: #404040;
+}
+.cls-2:focus {
+    transform: scale(0.5);
     fill: #404040;
 }
 
 .cls-4 { /*shrink to bottom right*/
     transition: all 1s;
-  transform-origin: 100% 100%;
-    z-index: -1;
+    transform-origin: 100% 100%;
     fill: black;
+    animation: shbr 9s ease infinite;
+}
+@keyframes shbr {
+    0% {transform:scale(1);
+    fill: black;}
+    50% {transform:scale(0.65);
+    fill:#404040;}
+    100% {transform:scale(1);
+    fill:black;}
 }
 .cls-4:active {
     transform: scale(0.5);
-    z-index: 999;
+    fill: #404040;
+}
+.cls-4:focus {
+    transform: scale(0.5);
     fill: #404040;
 }
 
 .cls-6 { /*shrink to top left*/
     transition: all 1s;
-  transform-origin: 0% 0%;
-    z-index: -1;
+    transform-origin: 0% 0%;
     fill: black;
+    animation: shtl 3.42s ease infinite;
+}
+@keyframes shtl {
+    0% {transform:scale(1);
+    fill:black;}
+    50% {transform:scale(0.8);
+    fill:#404040;}
+    100% {transform:scale(1);
+    fill:black;}
 }
 .cls-6:active {
     transform: scale(0.5);
-    z-index: 999;
+    fill: #404040;
+}
+.cls-6:focus {
+    transform: scale(0.5);
     fill: #404040;
 }
 
@@ -148,6 +223,24 @@ h2 {
     font-size: 30px;
     padding-top:30px;
 }
+h2.halftitle {
+    width: 50vw;
+    z-index: 1;
+    margin-top: -100px;
+    position: relative;
+}
+h2.halftitletriline {
+    width: 60vw;
+    z-index: 1;
+    margin-top: -100px;
+    position: relative;
+}
+h2.halftitlequadline {
+    width: 50vw;
+    z-index: 1;
+    margin-top:-130px;
+    position: relative;
+} /*B NOT WORKING???*/
 
 
 h3 {
@@ -191,10 +284,11 @@ h2,h3,h4,h5 {
 
 /*form*/
 details {
-    margin-top:60px;
+    margin-top:0px;
     background-color: #e6f9ff;
     background-blend-mode:darken;
 }
+
 
 details.formtwo {
     margin-top:35px;
@@ -320,16 +414,15 @@ div.bottomspace {
 div.title-screen {
     z-index: 1;
 	width: 100vw;
-	height: 100vh;
-	position: relative;
+	height: 10000px;
 	margin-left: calc(50% - 50vw);
 	margin-right: calc(50% - 50vw);
 	margin-top: -256px;
     background: linear-gradient(45deg, #d8fdff 20%,#ffd8f5 50%,#f8ffe0 80%);
 	background-size: 300% 300%;
-	-webkit-animation: Gradient 40s ease infinite;
-	-moz-animation: Gradient 20s ease infinite;
-	animation: Gradient 20s ease infinite;
+	-webkit-animation: Gradient 5s ease infinite;
+	-moz-animation: Gradient 5s ease infinite;
+	animation: Gradient 5s ease infinite;
 }
 	    
 @-webkit-keyframes Gradient {
@@ -348,13 +441,33 @@ div.title-screen {
 		100%{background-position:0% 50%}
 	}
 
-
-
-
+div.randomelements {
+    margin-top: 500px;
+    margin-bottom: 1000px;
+}
+h7 {
+    font-size: 75px;
+    opacity: .75;
+}
+h7.hilefta {
+    padding-left: 10px;
+}
+h7.lefta {
+    padding-left: 75px;
+}
+h7.centera {
+    align-content: center;
+}
+h7.righta {
+    padding-right: 75px;
+}
+h7.hirighta {
+    padding-right: 10px;
+}
 
 
 /*gifs*/
-.ximage {
+/*.ximage {
     width:100vw;
     margin-left: -8px;
     margin-bottom:-10px;
@@ -365,14 +478,14 @@ div.title-screen {
     margin-left: -8px;
     margin-top:60px;
     margin-bottom: -30px;
-}
+}*/
 
 
 
 
 
 
-/*navigation bar*/
+/*navigation bar
 .bar {
     position: fixed;
     bottom:0px;
@@ -396,12 +509,104 @@ div.title-screen {
     font-weight: normal;
     letter-spacing: 1px;
 }
+*/
+
+
+
+/*  NAV BAR   */
+
+#nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    padding: 15px 0 0 0;
+    background: #e6f2ff;
+    opacity: .95;
+    /*border-top: 1px solid black;*/
+    color: black;
+    text-align: center;
+    z-index: 150;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 25px;
+    color: #0000ee;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all .25s;
+    -webkit-transition: all .25s;
+}
+
+.nav-hidden {
+    display: none;
+}
+
+.nav-expanded {
+
+    transition: all .25s;
+    -webkit-transition: all .25s;
+}
+
+.nav-links {
+    position: fixed;
+    z-index: 100;
+    bottom: -525px;
+    left: 0;
+    width: 100%;
+    display: block;
+    /*background: rgba(255, 255, 255, .95);*/
+    padding: 10px
+    transition: bottom .25s ease-in;
+    -webkit-transition: bottom .25s ease-in;
+}
+
+.nav1 {
+    background:#cce6ff;
+    opacity: .95;
+}
+.nav2 {
+    background:#ccd9ff;
+    opacity: .95;
+}
+.nav3 {
+    background:#ccccff;
+    opacity: .95;
+}
+.nav4 {
+    background:	#d9ccff;
+    opacity: .95;
+}
+.nav5 {
+    background:#e6ccff;
+    opacity: .95;
+}
+.nav6 {
+    background:	#f2ccff;
+    opacity: .95;
+}
+
+.show {
+    display: block;
+    bottom: 55px;
+    transition: bottom .25s;
+    -webkit-transition: bottom .25s;
+}
+
+.nav-links a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-family: 'Merriweather';
+    font-size: 22px;
+    text-align: center;
+}
 
 
 
 
-
-/*navigation menu*/
+/*navigation menu
 .nav {
     position: fixed;
     top:0px;

@@ -1,9 +1,11 @@
 
+
 /*
 * { 
   border: 0.5px solid grey;
 }
 */
+
 
 
 body {
@@ -37,6 +39,7 @@ h1, h1.repeat {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 	animation: Gradient 12s linear infinite;
+    opacity: 0.8;
 }
 
 h1 {
@@ -156,6 +159,7 @@ span.number {
 p.line {
 	color: orangered;
 	position: relative;
+    padding-left: 23px;
 	font-family: 'Bungee Hairline', sans-serif;
     font-weight: bold;
 }
@@ -283,7 +287,7 @@ span.para {
 
 div.outline {
 	/* border of chairs h h h h */
-	border: 0.2px solid orangered;
+	border: 1px solid orangered;
 	padding-left: 20px;
 	margin: 0px 20px 0px 20px;
 }
@@ -320,32 +324,23 @@ p.roles {
 
 div.block {
 	/*lighter yellow background block for question/answer*/
-	background-color: #fff5ad;
-	padding: 5px 15px 15px 15px;
+	background-color: #fff7e5;
+	padding: 15px 15px 15px 15px;
 	margin: 20px 15px 15px 15px;
 	color: #594753;
-	animation: BlockChange 7s linear infinite;
 }
 
 div.blockr6 {
 	/*lighter yellow background block for question/answer*/
-	background-color: #fff5ad;
-	padding: 5px 15px 30px 15px;
+	background-color: #fff1d3;
+	padding: 15px 15px 15px 15px;
 	margin: 20px 15px 15px 15px;
 	color: #594753;
-	animation: BlockChange 7s linear infinite;
 }
 
 p.block-text {
-	padding-top: 15px;
-}
-
-@keyframes BlockChange {
-	0% {background: #fff5d8;}
-	25% {background:#fcecd6;}
-	50% {background: #f2dfd0;}
-	75% {background: #fcecd6;}
-	100% {background: #fff5d8;}
+	padding-top: 0px;
+    margin-bottom: 0px;
 }
 
 ol {
@@ -405,7 +400,7 @@ details[open] summary:after {
     font-size: 26px; 
     font-weight: bold; 
     text-align: center; 
-    margin: -2px 12px 0px 42px;
+    margin: -2px 12px 0px 37px;
 }
 
 
@@ -488,10 +483,12 @@ a.up-arrow:hover {
 	100% {color: orangered;}
 }
 
+/*begin to dream lucidly*/
+
 div.extra {
     margin: 110px 0px 110px 15px;
 }
-   
+
 .h5-1 {
     font-family: "Bungee Hairline", sans-serif;
     font-size: 40px;
@@ -514,7 +511,7 @@ div.extra {
     font-family: "Bungee Hairline", sans-serif;
     font-size: 40px;
     letter-spacing: 0.8px;
-    background: linear-gradient(90deg, #e8d8c0, #d6b9ad, #bc8f9a, #9e7b86, #bc8f9a, #d6b9ad, #e8d8c0);
+    background: linear-gradient(90deg, #ede7c7, #d6b9ad, #bc8f9a, #9e7b86, #bc8f9a, #d6b9ad, #ede7c7);
 	background-size: 60% 70%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -527,3 +524,118 @@ div.extra {
     50% {background-position:100% 50%;}
     100% {background-position:0% 50%;}
 }
+
+/*RED SLANTED LINE*/
+
+.red-line {
+    z-index: -1;
+}
+
+/*FORMS*/
+
+input,
+textarea {
+    background: transparent;
+    border: 1px solid orangered;
+	font-family: 'Abhaya Libre', serif;
+	font-weight: 400;
+	font-size: 18px;
+    padding: 2px 5px;
+    color: orangered;
+    width: 100%;
+}
+
+.r6-text-area {
+    background: transparent;
+    border: 1px solid orangered;
+	font-family: 'Abhaya Libre', serif;
+	font-weight: 400;
+	font-size: 18px;
+    padding: 2px 5px;
+    color: orangered;
+    width: 83%;
+    margin-left: 20px;
+}
+
+span.text-area-title {
+    padding-bottom: 10px;
+}
+
+input[type="small"] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid orangered;
+    width: 96%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+label {
+    position: relative;
+    bottom: 8px;
+    padding-left: 5px;
+    font-family: 'Abhaya Libre', serif;
+	font-weight: 400;
+	font-size: 18px;
+    color: #594753;
+}
+
+.radio {
+	-webkit-appearance: none;
+	border: 1px solid orangered;
+	padding: 9px;
+    margin-left: 20px;
+	border-radius: 50px;
+	display: inline-block;
+	position: relative;
+    width: 10px;
+    height: 10px;
+}
+
+.radio:checked:after {
+	content: '–';
+    transform: rotate(45deg);
+    color: orangered;
+    font-family: 'Bungee Hairline', sans-serif;
+    font-weight: 300;
+    font-size: 44px;
+	position: absolute;
+	top: -18px;
+	left: -8px;
+}
+
+.radio:checked {
+	color: orangered;
+	border: 1px solid orangered;
+}
+
+input[type="submit"] {
+    border: 1px solid orangered;
+	font-family: 'Abhaya Libre', serif;
+	font-weight: 400;
+	font-size: 18px;
+    color: #594753;
+    padding: 5px 10px;
+    margin: 20px 0px 20px 20px;
+    letter-spacing: 1px;
+    width: 87%;
+    background: linear-gradient(90deg, #f7e8c0, #c4b897, #a0977e, #8c8188, #a0977e, #c4b897, #f7e8c0);
+	background-size: 70% 50%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	animation: GradientText 8s ease infinite;
+}
+
+input[type="submit"]:active {
+    background-color: #594753;
+    color: #fff;
+}
+
+textarea {
+    width: calc(100% - 10px);
+    margin: auto;
+    resize: none;
+    margin-top: 10px;
+}
+

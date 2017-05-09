@@ -15,6 +15,9 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
+// nav bar only appears after certain point
+
+
 (function ($) {
     $(document).ready(function () {
         $(window).scroll(function () {
@@ -33,6 +36,9 @@ for (i = 0; i < acc.length; i++) {
 })(jQuery);
 
 
+// nav bar
+
+
 $("#nav").click(function () {
     $(".nav-links").toggleClass("show");
     $("#nav").toggleClass("nav-expanded");
@@ -46,4 +52,22 @@ $(".body-padding").click(function () {
 
 $(".nav-links").click(function () {
     $(this).toggleClass("show");
+});
+
+
+
+
+// scroll to page anchor
+
+$('a[href*="#"]:not([href="#"])').click(function () {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
 });
