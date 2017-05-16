@@ -1,0 +1,77 @@
+body {
+	background: url("images/trump.jpg"); 
+    background-size: cover;
+    font-family: 'Space Mono', monospace;
+    font-family: 'Alfa Slab One', cursive;
+}
+.title-area {
+	max-width: 100%;
+	height: 100vh;
+    background:url(images/poster.pt1copy3.jpg);
+	background-size: 40%;
+	background-repeat: no-repeat;
+}
+h1 {  
+	position: absolute;
+	transform: rotate(180deg);
+	margin-left: -80pt;
+	margin-top: 1pt;
+}
+p {
+    background-color: #FFD700;
+	font-family:'Space Mono', monospace;
+	font-size: 15pt;
+	line-height: : 100pt;
+
+}
+p1 {
+	font-family:'Space Mono', monospace;
+	font-size: 18pt;
+	line-height: : 80pt;
+
+}
+
+.section2 .text-box {
+	background: white;
+	width: 50%;
+	height: 100%;
+	margin-left: 80%;
+	line-height: 100px;
+}
+.section3{ 
+
+height:40vh; 
+background:orange;
+width: }
+}
+.text-box2 {
+background: white;
+	width: 50%;
+	height: 100%;
+	margin-left: 80%;	
+}
+
+
+}
+.body-text {
+	font-size: 30pt ;
+	font-family: "RobotoMono700", serif;
+}
+.illo {
+	height: 100px;
+	width: 300px;
+	background: orange;
+}
+.back{
+    background: url(images/triangle.gif);
+    background-size:cover;
+   
+}
+
+.yellow{
+    background-color:#FFD700;
+    margin-right:100pt;
+    height: auto;
+    width: auto;
+    
+}

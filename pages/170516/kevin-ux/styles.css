@@ -1,0 +1,99 @@
+body {     
+   width: 818px;
+   display: block;
+   margin:0px;
+   
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #CECECE;
+    background-color: #CECECE;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 90px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    font-family: 'VT323', monospace;
+
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #00FFFF;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 150px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+#clickme{
+	position: absolute;
+	top:300px;
+	left: 45px;
+	font-family: 'VT323', monospace;
+	z-index: 0;
+
+}
+#clickme2{
+	position: absolute;
+	top:300px;
+	left: 170px;
+	font-family: 'VT323', monospace;
+	z-index: 0;
+
+}
+#logo{
+    z-index: 1;
+    position: absolute;
+
+}
+#logo1{
+    z-index: 1;
+    position: absolute;
+}
+#text{
+    z-index: 1;
+    position: absolute;
+}
+
+
+@font-face {
+	font-family: moon_bold;
+	src: url(moon_bold.otf);
+}
+
+@font-face {
+	font-family: moon_light;
+	src: url(moon_light.otf);
+}

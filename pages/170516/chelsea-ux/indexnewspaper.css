@@ -1,0 +1,30 @@
+head{ 
+font-family: 'BioRhyme', serif;
+font-family: 'Archivo Black', sans-serif;}
+
+.title-area {
+	height: 100vh;
+	background:url(images/header.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.color{
+	width: auto;
+
+    
+
+}
+p{
+    font-family:'BioRhyme',serif;
+    font-size: 12pt;
+}    
+    
+  
+h1{
+  font-family:'Archivo Black', sans-serif, italic;
+    font-size: 20pt;
+
+}
+
+

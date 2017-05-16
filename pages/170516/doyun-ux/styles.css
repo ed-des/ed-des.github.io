@@ -1,0 +1,635 @@
+html {
+    background-color: #F0F0F0;
+}
+
+body {
+    font-family: avenir next;
+    margin: 0;
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;    
+}
+
+.group2 {
+    margin-top: -900px;
+}
+.hi img {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+.landing {
+    background-image: url(mars-landing.png);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    font-family: avenir next;
+    font-weight: 500;
+    color: white;
+    font-size: 50px;
+    margin: 0;
+    background-size: 100%;
+    padding: 40px;
+   /* padding: 20px,0,20px,0;*/
+}
+
+.breaking {
+    background: #F58373;
+    height: 100vh;
+}
+.breaking-frame {
+    background: url(breaking2.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+
+.breaking-mobile {
+    display: block;
+}
+.breaking-desktop {
+    display: none;
+}
+
+.breakingimage{
+    display: flex;
+    justify-content: center;
+}
+
+.breakingimage .bi {
+    width: 150%;
+}
+
+.image {
+}
+
+.bi {
+    padding: 20px;
+}
+
+.bi img {
+    width: 65%;
+    max-width: 400px;
+}
+
+h5 {
+    font-family: avenir next;
+    font-weight: 600;
+    color: white;
+    font-size: 12px;
+    line-height: 150%;
+    z-index: -1;
+    text-align: center;
+    margin-top: 7px;
+}
+
+h6 {
+    font-family: avenir next;
+    font-weight: 600;
+    color: white;
+    font-size: 18px;
+    line-height: 150%;
+    z-index: -1;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+}
+
+h7 {
+    font-family: avenir next;
+    font-weight: 600;
+    color: white;
+    font-size: 14px;
+    line-height: 150%;
+    z-index: -1;
+    margin: 0;
+    padding: 30px;
+}
+
+.arrow {
+    margin-top: 20px;
+}
+
+.boxed { 
+    border: 2px solid white;
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;    
+}
+
+.group {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+    
+.explain {
+    background-color: #F0F0F0;
+    font-size: 16px;
+    line-height: 160%;
+    font-weight: 300;
+    padding: 20px;
+    padding-top: 30px;
+        text-align: center;
+}
+
+.explain2 {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 160%;
+    font-weight: 300;
+    padding: 20px;
+}
+
+.explain3 {
+    color: white;
+    font-size: 12px;
+    line-height: 160%;
+    font-weight: 300;
+    padding: 2px;
+    padding-left: 30px;
+}
+
+
+.learnmoreexplain{
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 150%;
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+}
+
+.learnmoreexplain2{
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 150%;
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+    .learnmoreexplain3{
+    line-height: 150%;
+    font-weight: 300;
+  
+}
+    
+      .learnmoreexplain4{
+    line-height: 150%;
+    font-weight: 300;
+  
+  
+}
+
+.learnmoreimg {
+    width: 100%;
+    height: 100%;
+}
+
+.learnmoreimg2 {
+/*    margin-top: -400px;*/
+}
+
+.clock img{
+    width: 30%;
+}
+
+.firstclock {
+    margin-left: -70px;
+    overflow: hidden;
+}
+
+.firstclock img {
+    width: 70%;
+}
+
+.sub-explain {
+ font-family: avenir next;
+    font-weight: 300;
+    color: #F58373;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+/*    margin: -140px;*/
+    background-color:#F0F0F0; 
+    margin-bottom: 70px;
+
+}
+
+.sub-head {
+    font-family: avenir next;
+    font-weight: 300;
+    color: white;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    padding: 10px;
+}
+
+.features {
+    display: inline-block;
+    width: 100vw;
+}
+
+.subscribe {
+    width: 280px;
+    height: 35px;
+    background-color: white;
+    text-align: center;
+    margin-left: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.yay { 
+background: #161829;}
+
+.email {
+    color: #606060;
+    text-align: left;
+    margin-left: 20px;
+    padding-top: 10px;
+    
+}
+
+h2 {
+    font-family: avenir next;
+    font-weight: 600;
+    color: #F58373;
+    font-size: px;
+    line-height: 150%;
+    margin: 0;
+    z-index: -1;
+    text-align: center;
+}
+
+h3 {
+    font-family: avenir next;
+    font-weight: 600;
+    color: #F58373;
+    font-size: 18px;
+    line-height: 150%;
+    margin: 0;
+    margin-top: 15px;
+    z-index: -1;
+/*    padding: -1000px;*/
+    text-align: center;
+}
+
+h4 {
+    font-family: avenir next;
+    font-weight: 600;
+    color: white;
+    font-size: 28px;
+    line-height: 150%;
+    margin: 0;
+    z-index: -1;
+    text-align: center;
+    padding-top: 90px;
+}
+
+p {
+    font-family: avenir next;
+    font-weight: 300;
+    color: #606060;
+    font-size: 12px;
+    line-height: 150%;
+    margin: 0;
+    background-size: 100%;
+    z-index: -1;
+}
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+.whole {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.step-container {
+    width: 100vw;
+    overflow: hidden;
+    margin-top: -350px;
+}
+
+.next {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 300vw;
+    background-color:#F0F0F0; 
+}
+
+.next.step1 {
+    margin-left: 0;
+    background-color:#F0F0F0; 
+}
+
+.next.step2 {
+    margin-left: -100vw;
+}
+
+.next.step3 {
+    margin-left: -200vw;
+}
+
+.last {
+    background: #F58373;
+}
+
+.about {
+    background: #161829;
+}
+
+.circleimg {
+    padding-top: 60px;
+}
+
+.smallcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 10px;
+    line-height: 160%;
+    font-weight: 300;
+    padding-top: 30px;
+}
+
+.smallcaptiontop {
+    align-items: center;
+    text-align: center;
+}
+
+
+
+#div-top {
+    position:relative;
+    z-index:2;
+    padding-top: 50px;
+}
+
+#div-bottom {
+    position:relative;
+    margin-top: -470px;
+    margin-left: 250px;
+    align-items: right;
+    z-index:1;
+}
+
+#div-top2 {
+    position:relative;
+    z-index:2;
+    padding-top: 50px;
+    margin-left: 137px;
+}
+
+#div-bottom2 {
+    position:absolute;
+    margin-top: -450px;
+    margin-left: -50px;
+    z-index:1;
+    align-items: left;
+}
+
+#div-bottom3 {
+    position:relative;
+    margin-top: -480px;
+    margin-left: 230px;
+    overflow: hidden;
+    align-items: right;
+    z-index:1;
+}
+
+
+
+@media (min-width: 768px) {
+    
+    .breaking-frame {
+        background: url(breaking-desk.png);
+    }
+    
+    .breaking {
+        height: 125vh;
+    }
+    
+    h1 {
+    font-weight: 500;
+    color: white;
+    font-size: 90px;
+    margin: 0;
+    padding: 20%;
+    text-align: center;
+}
+    
+    .landing {
+    background-image: url(landing-web.png);
+}
+    h4 {
+    font-weight: 600;
+    color: white;
+    font-size: 42px;
+}
+    .sub-head {
+    font-weight: 300;
+    color: white;
+    font-size: 21px;
+}
+    
+    .breakingimage .bi {
+    width: 40%;
+}
+    .boxed { 
+    border: 3px solid white;
+    width: 150px;
+    height: 45px;
+    margin: 0 auto; 
+}
+    h5 {
+    font-family: avenir next;
+    font-weight: 600;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+    .arrow {
+    margin-top: 30px;
+}
+    #button {
+    width: 45%;
+    margin: auto;
+}
+    .explain {
+    background-color: #F0F0F0;
+    font-size: 21px;
+    line-height: 160%;
+    font-weight: 300;
+    padding: 200px;
+    padding-top: 60px;
+    height: 20vh;
+    text-align: center;
+}
+    .step-container {
+   visibility: hidden;
+        overflow: hidden;
+}
+    .hidden {
+    visibility:visible;
+}
+    .learnmoreimg img {
+    width: 45%;
+        padding-top: 5%;
+        margin-left: 0%;
+        visibility: hidden;
+}
+    .learnmoreexplain{
+    line-height: 150%;
+    font-weight: 300;
+    margin-left: 450px;
+    margin-top: -32%;
+    padding-left: 2%;
+    padding-right: 0%;
+    text-align: left;
+        visibility: hidden;
+        
+}
+    .learnmoreexplain2{
+    line-height: 150%;
+    font-weight: 300;
+        margin-top: -1350px;
+    padding-top: -100px;
+        margin-left: 450px;
+            padding-left: 2%;
+        visibility: hidden;
+  
+}
+        .learnmoreexplain3{
+    line-height: 150%;
+    font-weight: 300;
+        margin-top: -400px;
+    padding-top: -100px;
+        margin-left: 500px;
+            padding-left: 2%;
+            visibility: hidden;
+  
+}
+    
+    
+    .learnmoreimg2 {
+    visibility: hidden;
+}
+    .clock img {
+    width: 10%;
+        align-items: center;
+        margin-left: 63%;
+        margin-bottom: -15%;
+        visibility: hidden;
+}
+    h2 {
+    font-family: avenir next;
+    font-weight: 600;
+    color: #F58373;
+    font-size: px;
+    line-height: 150%;
+    margin: 0;
+    z-index: -1;
+        margin-left: 36%;
+        visibility: hidden;
+}
+
+    .firstclock img {
+    width: 25%;
+        visibility: hidden;
+}
+    .hello {
+        height: 0vh;
+        visibility: hidden;
+    }
+#div-top {
+    position:relative;
+    z-index:2;
+    padding-top: 50px;
+    visibility: hidden;
+}
+
+#div-bottom {
+    position:relative;
+    margin-top: -470px;
+    margin-left: 250px;
+    align-items: right;
+    overflow: hidden;
+    z-index:1;
+    visibility: hidden;
+}
+
+#div-top2 {
+    position:relative;
+    z-index:2;
+    padding-top: 50px;
+    margin-left: 137px;
+    visibility: hidden;
+}
+
+#div-bottom2 {
+    position:absolute;
+    margin-top: -450px;
+    margin-left: -50px;
+    z-index:1;
+    align-items: left;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#div-bottom3 {
+    position:relative;
+    margin-top: -480px;
+    margin-left: 230px;
+    overflow: hidden;
+    align-items: right;
+    z-index:1;
+    visibility: hidden;
+}
+    .hi img {
+    width: 100%;
+    height: 100%;
+        visibility: visible;
+
+}
+        
+}
+
+
+
+

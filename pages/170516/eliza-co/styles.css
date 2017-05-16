@@ -1,0 +1,58 @@
+body{
+	font-family: 'Lora', serif;
+	font-size: 28px;
+	color: #262673;
+	background: #ffd491;
+	margin: 0;
+	padding: 0;
+}
+
+.big-logo{
+	padding: 270px 0px 270px 0px;
+}
+
+.bigger{
+	padding: 0px 20px 0px 20px;
+	font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.opening-imgs{
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	flex-direction: column;
+}
+
+.square{
+	width: 100%;
+	padding: 100px 0px 0px 0px;
+}
+
+.square-gif{
+	width: 100%;
+	padding: 100px 0px 0px 0px;
+}
+
+span{
+	font-style: italic;
+	text-decoration: dotted underline;
+	font-weight: 700;
+}
+
+.body-text{
+	font-size: 20px;
+	padding: 100px 20px 0px 20px;
+}
+
+.blank-space{
+	height: 200px;
+}
+
+
+ 
+/*OVER-RIDE STYLES - DESKTOP*/

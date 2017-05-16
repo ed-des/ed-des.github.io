@@ -1,0 +1,75 @@
+body {
+    margin: 5%;
+}
+
+h1 {
+    background-color: #EA0303;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 36pt;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'Source Code Pro', monospace;
+    text-transform: uppercase;
+    color: #EA0303;
+}
+
+.h3 {
+    font-family: 'Source Code Pro', monospace;
+    text-transform: uppercase;
+    color: #EA0303;
+}
+
+p {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.virus {
+    background: url(images/tech-03.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.caption {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 10pt;
+    margin-top: 1px;
+}
+
+.yellow {
+    color: #FFEC00;
+}
+
+.red {
+    color: #EA0303;
+}
+
+.vertical-small {
+    width: 60%;
+    max-width: 100%;
+    display: block;
+}
+
+.title-wide {
+   width: 100%;
+    margin-top: -40px;
+}
+
+.wide {
+    width: 100%;
+    display: block;
+}
+
+.full-width {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+}
+
+.pad {
+   padding-bottom: 5%; 
+}

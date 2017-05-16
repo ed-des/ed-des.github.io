@@ -1,0 +1,464 @@
+/*
+* {
+    border: 1px solid black;
+}
+*/
+
+
+body {
+    background-color: rgb(83,88,114);
+    margin: 0px;
+}
+
+@font-face { 
+    font-family: Giorgio; /* serif */
+    font-weight: 300;
+    src: url(Giorgio/GiorgioS-Regular.woff);
+}
+
+@font-face { 
+    font-family: GiorgioSans; /* sans serif */
+    font-weight: 300;
+    src: url(GiorgioSans/GiorgioSans-Light.woff);
+}
+
+.title-screen, .planetplanet, .messagebg, #messagebg, .start-text, .posterletter, .fold, .wireframes, .productphoto {
+    max-width: 375px;
+}
+
+/* TITLE SCREEN */
+
+div.title-screen {
+    background: -webkit-linear-gradient(-235deg, #545973 12%, #7F7B8B 68%, #CAB5B5 100%);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top:0px;
+    left: 0px;
+    z-index: 0;
+}
+
+div.title-text { /* text as div on top */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    max-width: 375px;
+}
+
+div.spaceship { /* spaceship pic */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    mix-blend-mode: lighten;
+    max-width: 375px;
+}
+
+img.space {
+    width: 100vw;
+    height: 100vh;
+    max-width: 375px;
+}
+
+img.title-line {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: -2px;
+    max-width: 375px;
+}
+
+p.penpal { /* PENPALS FROM */
+    font-family: GiorgioSans, sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    padding: 80px 0 0 90px;
+    color: #EEE9F5; /* light purple */
+    letter-spacing: 2px;
+}
+
+h1 { /* PLANET */
+    font-family: Giorgio, serif;
+    font-size: 100px;
+    font-weight: 300;
+    color: #FFF5C3; /* light yellow */
+    margin: 10px 0 0 40px;
+}
+
+h2 { /* UTOPIA */
+    font-family: Giorgio, serif;
+    font-size: 150px;
+    font-weight: 100;
+    color: #FFF38C; /* yellow X */
+    line-height: 15px;
+    text-align: right;
+    position: relative;
+    left: 75px;
+    top: 160px;
+    letter-spacing: 5px;
+}
+
+img.blueplanet {
+    position: relative;
+    z-index: 1;
+    top: -100px;
+    width: 220px;
+}
+
+img.linegalaxy {
+    position: relative;
+    z-index: 2;
+    top: -400px;
+    left: 60px;
+    width: 185px;
+    margin-bottom: 0px;
+}
+
+p.galaxy {
+    margin-top: -400px;
+    margin-left: 30px;
+}
+
+h1.galaxyname {
+    margin-left: 90px;
+    margin-top: 0px;
+}
+
+img.picgalaxy {
+    width: 370px;
+    opacity: 0.5;
+    position: relative;
+    top: -260px;
+}
+
+/*WSP MESSAGE*/
+
+#messagebg {
+    margin-top: 80px;
+    padding-bottom: 80px;
+    width: 100vw;
+	height: 90vh;
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+h1.message {
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 4;
+    margin-left: 0px;
+    top: -150px;
+    vertical-align: middle;
+    background: linear-gradient(90deg, #FFF38C 0%, #FFF5C3 30%, #DDD6FF 100%);
+	background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	animation: Gradient 6s ease infinite;
+}
+
+/*SVG ANIMATION*/
+
+#drawline {
+    position: relative;
+    z-index: 1;
+    top: -630px;
+    left: 50px;
+}
+
+.pathgo {
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
+    animation: dash 6s linear forwards infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* INTRO */
+
+
+p {
+    font-family: Abel, sans-serif;
+    font-size: 16px;
+    margin: 30px 25px 0 25px;
+    color: #EEE9F5;
+}
+
+div.start-text {
+    padding-top: 0px;
+    background: -webkit-linear-gradient(-85deg, #545973 0%,#7f727f 50%, #545973 100%);
+}
+
+.line-two {
+    margin-top: 0px;
+    margin-left: 130px;
+    transform: rotate(45deg);
+}
+
+.line-three {
+    margin-top: -30px;
+    margin-left: 150px;
+    position: relative;
+    z-index: 5;
+}
+
+p.planetx {
+    font-family: Giorgio, serif;
+    font-size: 70px;
+    text-align: center;
+    color: #FFF5C3;
+    margin-top: -25px;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-family: Giorgio, serif;
+    color: #FFF5C3;
+    font-size: 24px;
+    font-weight: 100;
+    letter-spacing: 2.5px;
+    margin: 50px 0 20px 25px;
+}
+
+p.qualities {
+    margin-left: 50px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 3;
+}
+
+p.top {
+    position: relative;
+    z-index: 3;
+}
+
+/*POSTER AND LETTER*/
+
+div.posterletter {
+    position: relative;
+    z-index: 0;
+    background: -webkit-linear-gradient(-85deg, #545973 20%,#7f727f 50%, #545973 80%);
+}
+
+h3.info {
+    margin-top: 80px;
+    position: relative;
+    z-index: 2;
+}
+
+img.poster {
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.line-four {
+    position: relative;
+    z-index: 1;
+    top: -240px;
+    left: 40px;
+    margin-bottom: -1000px;
+}
+
+p.mailingout {
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+img.rsvp {
+    margin: 40px 0px 40px 70px;
+    display: block;
+    width: 200px;
+    box-shadow: 0px 0px 15px #fff;
+    position: relative;
+    z-index: 2;
+}
+
+img.stamp {
+    width: 100px;
+    margin: 150px 0px 40px 180px;
+    display: block;
+    box-shadow: 0px 0px 10px #fff;
+    position: relative;
+    z-index: 2;
+}
+
+img.envelope {
+    display: block;
+    box-shadow: 0px 0px 10px #fff;
+    position: relative;
+    left: 40px;
+    top: -320px;
+    z-index: 2;
+    width: 200px;
+}
+
+img.envelope1 {
+    display: block;
+    box-shadow: 0px 0px 10px #fff;
+    position: relative;
+    z-index: 2;
+    width: 200px;
+    left: 120px;
+    top: -280px;
+    margin-bottom: -100px;
+}
+
+.line-six {
+    position: relative;
+    z-index: 1;
+    top: -105px;
+    left: 130px;
+}
+
+
+/* PENPAL LETTERS */
+
+div.gradientpenpal {
+    background: -webkit-linear-gradient(top, #545973 0%,#68626d 46%,#5a5e72 84%,#545973 100%); 
+}
+
+div.letterdiv {
+    position: relative;
+    z-index: 10;
+    top: -150px;
+    padding-bottom: 30px;
+}
+
+h3.penpal-title {
+    margin-top: 0px;
+    padding-top: 60px;
+}
+
+p.description {
+    margin-top: 10px;
+}
+
+img.letterall {
+    margin: 30px 25px 10px 30px;
+    padding-bottom: 60px;
+}
+
+/*FOLDING THE POSTER*/
+
+div.fold {
+    background: -webkit-linear-gradient(85deg, #545973 10%, #CEB8B7 30%, #68697E 50%, #A79AA1 60%, #545973 80%);
+}
+
+.fold-title {
+    padding-top: 80px;
+    margin-top: -250px;
+    position: relative;
+    z-index: 3;
+}
+
+img.fold1 {
+    width: 70%;
+    margin-left: 90px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 4;
+}
+
+.fold-line {
+    margin-left: 80px;
+}
+
+img.fold2 {
+    width: 70%;
+    margin-left: 30px;
+}
+
+img.fold3 {
+    width: 70%;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+img.fold4 {
+    width: 70%;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+img.fold5 {
+    width: 50%;
+    margin-left: 170px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+/* WIREFRAMES */
+
+div.wireframes {
+    background: -webkit-linear-gradient(-75deg, #545973 10%, #847E8D, #A79AA1 90%);
+    position: relative;
+    z-index: 0;
+    margin-top: -40px;
+}
+
+img.wireframeall {
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    display: block;
+}
+
+div.productphoto {
+    background: -webkit-linear-gradient(85deg, #545973 0%, #545973 20%, #817C8C 50%, #A79AA1 100%);
+    margin-top: -30px;
+    padding-top: 70px;
+}
+
+.photo1 {
+    width: 100vw;
+    margin-top: 0px;
+    max-width: 375px;
+}
+
+p.colophon {
+    padding-top: 30px;
+    font-size: 10px;
+    font-weight: 100;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    background: linear-gradient(90deg, #FFF5C3 0%, #DDD6FF 100%);
+	background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	animation: Gradient 10s ease infinite;
+    padding-bottom: 40px;
+}
+
+@media (min-width: 768px){
+    
+    body {
+        background: rgb(83,88,114))
+    }
+    
+    .page-frame {
+        width: 375px;
+        margin: 0 auto;
+    }
+    
+}

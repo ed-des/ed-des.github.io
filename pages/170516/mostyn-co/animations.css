@@ -1,0 +1,885 @@
+body{
+    background-color: #f9f9f9;
+    max-width: 600px;
+
+}
+
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 7px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: black;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    background: #f9f9f9; 
+    -webkit-box-shadow: inset 0 0 3px rgb(0,0,0,0); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0,0,0,0);
+    border: solid black 1px; 
+}
+
+div{
+    font-family: "Times New Roman";
+    font-size: 50px;
+    text-align: right;
+    padding-right: 3%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    position: absolute;
+    line-height: 1.0;
+
+
+}
+
+h1{
+    padding: auto 0;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+p {
+    font-family: "Arial";
+    font-size: 24px;
+    text-align: left;
+    padding-right: none;
+    letter-spacing: -0.5;
+/*    text-transform: uppercase;
+*/}
+
+
+
+#ziploc{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    top: 0;
+    left: 0;
+
+/*    cursor: url(./blank.cur), none;
+*/
+}
+
+/*#mycursor{
+    cursor: none;
+    width: 97px;
+    height: 137px;
+    background: url("images/mycursor.png") no-repeat left top;
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+*/
+
+
+
+/*.bottom-bar{
+    font-family: "Times New Roman";
+    letter-spacing: 2px;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #f9f9f9
+    font-size: 24px;
+    border-top: none;
+    height: 8%;
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    outline: none;
+    line-height: 50px;
+    padding: 0;
+
+
+}*/
+
+
+.container{
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+/*      margin-left: -10px;
+        margin-top: -10px;*/
+        padding: 0 0;
+        width: 100%;
+
+/*FOR BOTTOM BAR        height: 92%;*/
+        height: 100%;
+        
+        background-color: #f9f9f9;
+/*      border: 7px solid black;
+*/      z-index: 0;
+        position: relative;
+
+}
+
+.one {
+	width: 100%;
+    height: 100%;
+    background-color:#f9f9f9;
+    transition: 1s ease-in-out; 
+    margin:0 0;
+    border: 7px solid black;
+    z-index: 8;
+    position: absolute;
+
+    line-height: 1.0;
+    vertical-align: middle;
+    
+/*    right: 0;
+*/
+
+}
+
+.one.clicked {
+    background-color: #f9f9f9;
+/*    transform: translate(250px, 0px);*/
+    width: 25%;
+    font-size: 0.5em;
+    float: left;
+    border: 7px solid black;
+}
+
+
+.two {
+        width: 100%;
+        height: 100%;
+        background-color:#f9f9f9;
+        border: 7px solid black;
+        transition: 1s ease-in-out; 
+        margin:0 0;
+        z-index: 7;
+        position: absolute;
+
+        line-height: 1.0;
+
+
+}
+
+.int2{
+    width: 40%;
+    left: 5%;
+}
+
+.two.bicked {
+        background-color: #f9f9f9;
+    /*    transform: translate(250px, 0px);
+    */
+        width: 100%;
+        height: 50%;
+}
+
+.one.nicked{
+    height: 50%;
+    background-color: #f9f9f9;
+}
+
+.three{
+    width: 100%;
+    height: 53%;
+    bottom: 0;
+    background-color: #f9f9f9;
+    border: 7px solid black;
+    transition: 1s ease-in-out; 
+    margin: 0 0;
+    z-index: 6;
+    position: absolute;
+    text-align: left;
+
+
+/*    line-height: 1200px;
+*/
+
+    line-height: 1.0;
+
+}
+
+.int3{
+    width: 40%;
+    left: 5%;
+}
+
+.three.ricked{
+    width: 25%;
+    font-size: 30px;
+
+
+    background-color: #f9f9f9;
+
+}
+
+.one.quicked{
+    width: 25%;
+    font-size: 30px;
+}
+
+.two.quicked{
+    width: 50%;
+    font-size: 30px;
+
+}
+
+.four{
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 51%;  
+    float: right;
+    bottom: 0; 
+    margin:0 0;
+    border: 7px solid black;
+    transition: 1s ease-in-out; 
+    position: absolute;
+    z-index: 5;
+
+    text-align: right;
+}
+
+.four.quicked{
+    width: 50%;
+    background-color: #f9f9f9;
+    font-size: 30px;
+
+}
+
+.five{
+    background-color: #f9f9f9;
+    width: 75%;
+    height: 50%;  
+    float: left;
+    margin:0 0;
+    border: 7px solid black;
+    position: absolute;
+    z-index: 4;
+
+    font-size: 30px;
+}
+
+.six{
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 50%;  
+    float: left;
+    margin:0 0;
+    border: 7px solid black;
+    position: absolute;
+    z-index: 3;
+
+    font-size: 30px;
+
+}
+
+.seven{
+    background-color: #f9f9f9;
+    width: 75%;
+    height: 53%;
+    bottom: 0;
+    margin:0 0;
+    border: 7px solid black;
+    position: absolute;
+    z-index: 3;
+
+    text-align: right;
+    font-size: 30px;
+
+}
+
+.eight{
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 53%;  
+    bottom: 0; 
+    margin:0 0;
+    border: 7px solid black;
+    position: absolute;
+    z-index: 1;
+
+    text-align: right;
+    font-size: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:600px){
+    div{
+
+/*        display: table;
+*/
+
+/*        overflow-x: hidden;
+*/        box-sizing: border-box;
+        position: absolute;
+
+
+    }
+
+
+    p{
+        font-size: 20px;
+        line-height: 1.1em;
+        text-transform: none;
+    }
+
+    h1{
+/*      padding: auto 0;
+*/      padding-top: 5px;
+        text-align: right;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: lighter;
+
+/*        display: table-cell;
+        vertical-align: middle;
+*/    }
+
+    .bottom-bar{
+        left: 0;
+        bottom: -50px;
+        font-size: 20px;
+        width: 100%;
+        height: 0px;
+        text-align: center;
+
+        padding-top: 10px;
+        z-index: -1;
+        border-left: solid black 7px;
+        border-right: solid black 7px;
+
+
+/*        border-top: solid black 7px;
+*/        font-family: "Times New Roman";
+/*        letter-spacing: 2px;
+*/        background-color: white;
+        position: fixed;
+        outline: none;
+        padding: 0;
+        z-index: 14;
+
+
+        transform: 4s ease-in-out;
+    }
+    .bottom-bar.active{
+        height: 50px;
+        bottom: 0;
+
+
+    }
+
+    .container{
+        background-color: #f9f9f9;   }
+
+    .one{
+        font-size: 2em;
+
+    }
+
+    .one.clicked{
+        height: 50%;
+        width: 100%;
+        font-size: 1em;
+
+    }
+
+    .one.nicked{
+        width: 35%;
+    }
+    .one.nicked h1{
+        transition: 1s ease-in-out;
+        transform: translate(-500px, 0px);
+        transform-origin: top left 50;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+
+    .img2{
+        width: 0%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-image: url("images/barcode.svg");
+        background-size: auto 100%;
+        white-space: nowrap;
+        background-repeat: no-repeat;
+        z-index: 0;
+        position: absolute;
+        transition: 1s ease-in-out; 
+        margin:0 0;
+        padding: 0 0;
+    }
+    .img2.active{
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left:0;
+    }
+    .img2.inactive{
+        width: 0%;
+        height: 100%;
+    }
+
+
+
+
+    .two {
+            width: 100%;
+            height: 52%;
+            bottom: 0;
+            background-color:#f9f9f9;
+            transition: 1s ease-in-out; 
+            margin:0 0;
+            z-index: 7;
+            position: absolute;
+            line-height: 1.0;
+
+            overflow: hidden;
+
+
+    }
+
+    .two.bicked{
+        width: 35%;
+        height: 52%;
+    }
+
+    .two.bicked h1{
+/*        font-size: 12px;*/
+        font-size: 24px;
+        transition: 1s ease-in-out;
+        transform: rotate(-90deg) translate(-175px,0px) ;
+        transform-origin: top left 50;
+        width: 100%;
+        white-space: nowrap;
+
+    }
+
+
+
+
+    .img1{
+        border: solid black 7px;
+        width: 65%;
+        height: 0%;
+        right: 0;
+        bottom: 0;
+        background-image: url("images/fcpkkba.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        z-index: 0;
+        position: fixed;
+        transition: 1s ease-in-out; 
+        margin:0 0;
+        padding: 0 0;
+
+    }
+    .img1.active{
+        z-index: 7;
+        width: 75%;
+        height: 25%;
+        bottom: 0;
+    }
+    .img1.inactive{
+        width: 0%;
+        height: 0%;
+        transform: translateX(100px);
+    }
+
+
+
+
+    .three{
+        width: 100%;
+        height: 77%;
+        top: 0;
+        background-color: #f9f9f9;
+        transition: 1s ease-in-out; 
+        margin: 0 0;
+        z-index: 6;
+        position: absolute;
+        text-align: right;
+
+
+/*        line-height: 1200px;
+*/
+
+        line-height: 1.0;
+
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+
+    }
+
+    .int2{
+        width: 60%;
+    
+        left: 40%;
+        height: auto;
+        
+    }
+
+
+    .three.ricked{
+        height: 25%;  
+        width: 100%;
+        top: 0;
+    }
+
+    .three.ricked p{
+        font-size: 12px;
+        transition: 1s ease-in-out;
+
+    }
+
+    .one.quicked{
+        height: 25%;
+        width: 50%;
+    }
+
+    .two.quicked{
+/*        height: 78%;
+
+*/    
+    }
+
+    .bang01{
+        z-index: 0;
+        bottom: 0;
+        left: -7px;
+        width: 0%;
+        height: 0%;
+        position: absolute;
+        transition: 0.5s ease-in-out;
+        overflow: hidden;
+    }
+    .bang01.active{
+        z-index: 10;
+        width: 35%;
+        height: 60%;
+
+    }
+    .bang01.second{
+        transform: translateX(-100%);
+    }
+/*    .bang01.inactive{
+        width: 0%;
+        height: 0%;
+        opacity: 0;
+    }*/
+
+
+    .img3{
+        border: solid black 7px;
+        width: 100%;
+        height: 0%;
+        top: 0;
+        left: 0;
+        background-image: url("images/machina.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        z-index: 0;
+        position: fixed;
+        transition: 1s ease-in-out; 
+        margin:0 0;
+        padding: 0 0;
+    }
+
+    .img3.active{
+        width: 100%;
+        height: 25%;
+        z-index: 10;
+    }
+    .img3.inactive{
+        height: 0%;
+        transform: translateY(-100px);
+    }
+
+
+    .four{
+        width: 100%
+        height: 77%;
+        bottom: 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+    }
+
+    .bang02{
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 0%;
+        transition: 1s ease-in-out;
+        position: absolute;
+
+    }
+    .bang02.active{
+        z-index: 10;
+        position: absolute;
+        padding: 9%;
+        width: 9%;
+        height: 9%;
+    }
+
+
+
+    .int3{
+        width: 60%;
+        left: 40%;
+        height: auto;
+
+
+    }
+
+ /*   .int3 p{
+        font-size: 12px;
+
+    }*/
+
+    .four.quicked{
+        height: 77%;
+        width: 100%
+    }
+    .four.quicked h1{
+/*        position: fixed;*/
+    }
+
+
+    .four.ricked{
+        height: 50%;
+        width: 100%;
+        bottom: 50%;
+        right: 0;
+    }
+
+    .img4{
+        border: solid black 7px;
+        width: 100%;
+        height: 0%;
+        top: 0;
+        left: 0;
+        background-image: url("images/selfdrive.png");
+        background-color: #f9f9f9;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        z-index: 0;
+        position: fixed;
+        transition: 1s ease-in-out; 
+        margin:0 0;
+        padding: 0 0;
+    }
+
+    .img4.active{
+        width: 100%;
+        height: 50%;
+        z-index: 10;
+    }
+    .img4.inactive{
+        height: 0%;
+        transform: translateY(-100px);
+    }
+
+
+    .one.ricked{
+        height: 25%;
+        width: 50%;
+    }
+    .two.ricked{
+        height: 50%;
+        width: 50%;
+        bottom: 50%;
+    }
+    .two.ricked h1{
+
+    }
+
+    .three.sicked{
+
+    }
+
+
+
+    .five{
+        background-color: #f9f9f9;
+        width: 35%;
+        height: 53%;  
+        float: left;
+        bottom: 0;
+        position: absolute;
+        z-index: 4;
+
+        line-height: 1.0;
+        font-size: 30px;
+    }
+
+        .five h1{
+    /*        font-size: 12px;*/
+            font-size: 24px;
+            transition: 1s ease-in-out;
+            transform: rotate(-90deg) translate(-175px,0px) ;
+            transform-origin: top left 50;
+            width: 100%;
+            white-space: nowrap;
+
+        }
+
+
+
+        .bang03{
+            z-index: 0;
+            right:  -8px;
+            top: -8px;
+            width: 0%;
+            height: 0%;
+            position: absolute;
+            transition: 0.5s ease-in-out;
+/*            overflow: hidden;
+*/        }
+        .bang03.active{
+            z-index: 10;
+            width: 70%;
+            height: 50%;
+        }
+        .bang03.second{
+            opacity: 0;
+        }
+
+/*
+BANG FOR THE UBER*/
+        .bang04{
+            z-index: 11;
+            bottom: 0;
+            left:0;
+            width: 0%;
+            height: 0%;
+            position: absolute;
+            transition: 0.5s ease-in-out;
+            overflow: hidden;
+        }
+        .bang04.active{
+            z-index: 11;
+            width: 100%;
+            height: 75%;
+        }
+        .bang04.second{
+            opacity: 0;
+        }
+
+
+
+
+    .six{
+        background-color: #f9f9f9;
+        width: 100%;
+        height: 53%;  
+        float: left;
+        bottom: 0;
+        position: absolute;
+        z-index: 3;
+
+        line-height: 1.0;
+        font-size: 30px;
+
+    }
+
+    .six.ricked{
+        height: 100%;
+        width: 50%;  
+
+    }
+
+
+    .int4{
+        width: 60%;
+        left: 40%;
+        height: auto;
+
+
+    }
+
+    .seven{
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        opacity: 0;
+    }
+
+    .seven h1{
+        padding-top: 25%;
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .seven.overlord{
+        z-index: 9;
+        opacity: 1;
+
+    }
+
+    .img5{
+        border: solid black 7px;
+        width: 100%;
+        height: 0%;
+        top: 0;
+        left: 0;
+        background-image: url("images/riot.png");
+        background-color: #f9f9f9;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        z-index: 0;
+        position: fixed;
+        transition: 1s ease-in-out; 
+        margin:0 0;
+        padding: 0 0;
+    }
+
+    .img5.active{
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+    }
+    .img5.inactive{
+        height: 0%;
+        transform: translateY(-100px);
+    }
+
+/*    .eight{
+        z-index: 1;
+
+
+    }*/
+
+}
+
+

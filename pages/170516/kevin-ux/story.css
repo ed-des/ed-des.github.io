@@ -1,0 +1,22 @@
+body {     
+    width: 818px;
+    margin-left: 0px;
+    margin-top:0px
+}
+
+
+#back{
+    position:absolute;
+    z-index: 1;
+    width:100px;
+    top: 30px;
+    left: 40px;
+}
+
+#back{
+    position:absolute;
+    z-index: 1;
+    width:100px;
+    top: 100px;
+    left: 90px;
+}

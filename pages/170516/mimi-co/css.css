@@ -1,0 +1,561 @@
+@font-face {
+    font-family: "Akzidenz Grotesk BoldCond";
+    src: url("fonts/AkzidenzGrotesk-BoldCond.otf")
+}
+
+@font-face {
+    font-family: "Akzidenz Grotesk Cond";
+    src: url("fonts/AkzidenzGrotesk-Cond.otf")
+}
+
+@font-face {
+    font-family: "Akzidenz Grotesk MediumCond";
+    src: url("fonts/AkzidenzGrotesk-MediumCond.otf")
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Akzidenz-Grotesk BQ';
+    font-weight: 300;
+    background: #000;
+    font-size: 15px;
+    color: #dfdfdf;
+    line-height: 1.35em;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+.container {
+    padding: 0 9vw;
+    margin-bottom: 20px;
+}
+
+.intro {
+    background: #000;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.attention {
+    margin-top: 50vh;
+    animation: flicker2 1s linear infinite;
+}
+
+.surrendered {
+    margin-top: 80vh;
+    margin-left: 35vw;
+    width: 50vw;
+}
+
+.surrendered-2 {
+    margin-top: 20vh;
+    margin-left: 35vw;
+}
+
+.oblivious-width {
+    width: 100%;
+    overflow: hidden;
+}
+
+.oblivious {
+    font-size: 200px;
+    text-transform: uppercase;
+    font-family: 'Akzidenz Grotesk BoldCond';
+    margin-top: 0px;
+    margin-left: -20px;
+    line-height: .9em;
+    animation: flicker1 1s linear infinite;
+}
+
+.double {
+    margin-top: -362px;
+    animation: flicker2 1s linear infinite;
+}
+
+span.oblivious-break {
+    display: block;
+}
+
+@keyframes flicker1 {
+    0% {
+        transform: translate(-15px);
+        opacity: 1;
+        letter-spacing: 1px;
+    }
+    1% {
+        transform: translate(17px);
+        opacity: .1;
+        letter-spacing: 1px;
+    }
+    95% {
+        transform: translate(17px);
+        opacity: .1;
+        letter-spacing: 1px;
+    }
+    97% {
+        transform: translate(-5px);
+        opacity: 1;
+        letter-spacing: 1px;
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes flicker2 {
+    0% {
+        transform: translate(-15px);
+        opacity: 0;
+    }
+    1% {
+        transform: translate(-15px, -3px);
+        opacity: 1;
+    }
+    3% {
+        transform: translate(28px, 5px);
+    }
+    4% {
+        transform: translate(0px, 2px);
+    }
+    100% {
+        transform: translate(0px, 2px);
+    }
+}
+
+.section {
+    width: 82vw;
+    margin: 0 9vw;
+    padding: 20vw 0;
+}
+
+.black-purple {
+    background: rgba(0, 0, 0, 1);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(57, 60, 98, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(57, 60, 98, 1)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(57, 60, 98, 1) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(57, 60, 98, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(57, 60, 98, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(57, 60, 98, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#393c62', GradientType=0);
+}
+
+p {
+    position: relative;
+    z-index: 50;
+}
+
+.background-text {
+    width: 100%;
+    margin: auto;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-family: 'Akzidenz Grotesk Cond';
+    letter-spacing: 1px;
+    animation: flicker2 1.5s linear infinite 2s;
+}
+
+.background-info h3 {
+    margin-top: 400px;
+}
+
+.solid-purple {
+    background: rgba(57, 60, 98, 1);
+    margin-bottom: -20px;
+    padding-top: 150px;
+}
+
+img {
+    /*        animation: flicker2 2s linear infinite 5s;*/
+}
+
+.postcards.crop {
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 1.0), rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+    margin-top: 40px;
+}
+
+img.postcards {
+    margin-left: -9vw;
+    width: 118vw;
+}
+
+.postcards img:nth-child(2) {
+    margin-top: -40px;
+}
+
+.crop {
+    width: 100vw;
+    margin-left: -9vw;
+    overflow-x: hidden;
+}
+
+.wireframe-text {
+    margin-top: 300px;
+}
+
+.lenticular img {
+    width: 100%;
+}
+
+.lenticular-1 {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.lenticular-2 {
+    width: 75%;
+    margin-top: 100px;
+}
+
+.wireframe {
+    width: 100%;
+    margin-top: 150px;
+}
+
+p.wireframe-caption {
+    margin-left: 5vw;
+    margin-top: 50px;
+}
+
+.purple-gray {
+    margin-top: -2px;
+    overflow-x: hidden;
+    background: rgba(57, 60, 98, 1);
+    background: -moz-linear-gradient(top, rgba(57, 60, 98, 1) 0%, rgba(75, 115, 168, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(57, 60, 98, 1)), color-stop(100%, rgba(0, 0, 0, 1)));
+    background: -webkit-linear-gradient(top, rgba(57, 60, 98, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: -o-linear-gradient(top, rgba(57, 60, 98, 1) 0%, rgba(75, 115, 168, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(57, 60, 98, 1) 0%, rgba(75, 115, 168, 1) 100%);
+    background: linear-gradient(to bottom, rgba(57, 60, 98, 1) 0%, rgba(176, 179, 193, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#393c62', GradientType=0);
+}
+
+h3.prototypes {
+    margin-top: 200px;
+}
+
+.solid-gray .section {
+    padding-bottom: 1vh;
+}
+
+h3.final {
+    z-index: 200;
+    position: relative;
+    margin-top: 20vh;
+    margin-bottom: 40px;
+}
+
+svg.proto-1,
+svg.proto-2 {
+    width: 100vw;
+    margin-left: -4.5vw;
+}
+
+p.proto-caption-1,
+p.proto-caption-2 {
+    width: 60vw;
+    color: white;
+    position: absolute;
+}
+
+p.proto-caption-2 {
+    margin-left: 21vw;
+}
+
+.solid-gray {
+    background: rgba(176, 179, 193, 1);
+    color: white;
+}
+
+.final-flexbox {
+    margin-top: 60px;
+    display: flex;
+    width: 100vw;
+    margin-left: -9vw;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+.final-flexbox img {
+    flex: 1 1 auto;
+    width: 88vw;
+    align-self: center;
+    display: inline-block;
+    /*    border: 1px solid rgba(176, 179, 193, 1);*/
+    margin-right: 5px;
+}
+
+.scroll-arrow {
+    position: absolute;
+    z-index: 200;
+    font-size: 3.5em;
+    opacity: .4;
+    margin-top: -37vw;
+    right: 3vw;
+}
+
+img.gif {
+    margin-top: 40px;
+}
+
+a.pdfbutton {
+    text-decoration: none;
+}
+
+button.pdfbutton {
+    border: 1px solid white;
+    text-align: center;
+    margin: 40px auto 50px auto;
+    padding: 10px 25px;
+    background: transparent;
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Akzidenz Grotesk Cond';
+    font-size: 1.75em;
+    letter-spacing: 1px;
+    line-height: 1em;
+    cursor: pointer;
+}
+
+.footer {
+    /*
+    background: rgba(75, 115, 168, 1);
+    background: -moz-linear-gradient(top, rgba(75, 115, 168, 1) 0%, rgba(0, 0, 0, 1) 50%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(75, 115, 168, 1)), color-stop(50%, rgba(0, 0, 0, 1)));
+    background: -webkit-linear-gradient(top, rgba(75, 115, 168, 1) 0%, rgba(0, 0, 0, 1) 50%);
+    background: -o-linear-gradient(top, rgba(75, 115, 168, 1) 0%, rgba(0, 0, 0, 1) 50%);
+    background: -ms-linear-gradient(top, rgba(75, 115, 168, 1) 0%, rgba(0, 0, 0, 1) 50%);
+    background: linear-gradient(to bottom, rgba(75, 115, 168, 1) 0%, rgba(0, 0, 0, 1) 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#393c62', GradientType=0);
+*/
+}
+
+.footer {
+    background: rgba(126, 129, 143, 1);
+    font-size: 13px;
+}
+
+.footer .section {
+    padding: 5vh 0;
+}
+
+
+/*  
+
+
+LARGER THAN IPHONE 6S   
+
+
+*/
+
+@media only screen and (min-width: 500px) {
+    .oblivious {
+        margin-left: 8vw;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .oblivious-width {
+        overflow: visible;
+        margin: auto;
+    }
+    .oblivious {
+        margin-top: 100px;
+        margin-left: 0px;
+        text-align: center;
+        font-size: 28vw;
+    }
+    .double {
+        margin-top: -182px;
+    }
+    span.oblivious-break {
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    .container,
+    {
+        width: 80vw;
+        padding: 0 10vw;
+        overflow-x: hidden;
+    }
+    .section {
+        margin: 0 auto;
+        padding: 30vw 0;
+    }
+    .section h3,
+    .section p {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h2 {
+        font-size: 2em;
+        line-height: 1.4em;
+    }
+    .oblivious {
+        margin: auto;
+        margin-top: 150px;
+        letter-spacing: 2px;
+        font-size: 12em;
+        text-align: center;
+    }
+    span.oblivious-break {
+        display: inline;
+    }
+    .double {
+        margin-top: -196px;
+    }
+    .background-info {
+        width: 100%;
+    }
+    img.postcards {
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    .lenticular {
+        max-width: 600px;
+        margin: auto;
+    }
+    .final-flexbox {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 0;
+        animation: none;
+    }
+    .final-flexbox img {
+        flex: 1 1 auto;
+        margin-bottom: 0;
+        width: 49%;
+        height: auto;
+        min-width: 250px;
+        border: 2px solid rgba(176, 179, 193, 1);
+    }
+    .scroll-arrow {
+        display: none;
+    }
+    img.gif {
+        margin-bottom: 7vw;
+    }
+}
+
+
+/*  
+
+
+FADE IN IMAGES   
+
+
+*/
+
+.scroll-load {
+    opacity: 0;
+}
+
+.come-in {
+    transform: translate(0) scale(90%);
+    opacity: 0;
+    animation: come-in 1s ease forwards;
+}
+
+
+/* So they look staggered */
+
+@keyframes come-in {
+    to {
+        transform: translate(0) scale(100%);
+        opacity: 1;
+    }
+    /* 0% {
+   	transform: translate(0);
+   	opacity:0;
+   }
+16% {
+   	transform: translate(0);
+   	   	opacity:1;
+
+   }
+
+    20% {
+    	transform: translate(10px);
+    	   	opacity:1;
+
+    }
+
+    21% {
+    	transition: translate(-10px);
+    	   	opacity:0;
+
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }*/
+}
+
+
+/*
+
+
+
+SVG
+
+
+
+*/
+
+.cls-1,
+.cls-2 {
+    fill: none;
+}
+
+.cls-1,
+.cls-5 {
+    stroke: #407bff;
+}
+
+.cls-1,
+.cls-2,
+.cls-3,
+.cls-5 {
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+}
+
+.cls-2,
+.cls-3 {
+    stroke: #e29334;
+}
+
+.cls-3,
+.cls-4 {
+    fill: #e29334;
+}
+
+.cls-5,
+.cls-6 {
+    fill: #407bff;
+}

@@ -1,0 +1,42 @@
+/*div {
+	background-color: red;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 20%;
+
+
+    -webkit-transform: rotate(3deg);  Chrome, Safari, Opera 
+    transform: rotate(3deg);
+
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+}*/
+
+body{
+	background-color: #f9f9f9;
+}
+
+p {
+	font-family: "Times New Roman";
+	letter-spacing: 2px;
+
+	font-size: 30px;
+	padding: 15px;
+}
+
+blockquote{
+	font-family: "Arial";
+	font-size: 30px;
+	text-align: justify;
+	text-indent: 25%;
+}
+
+a {
+	font-family: "Times New Roman";
+	font-size: 30px;
+	padding: 15px;
+}
+

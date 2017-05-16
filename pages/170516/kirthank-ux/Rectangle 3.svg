@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="5px" height="8618px" viewBox="0 0 5 8618" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="93.1810303%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF8787" stop-opacity="0.405768795" offset="0%"></stop>
+            <stop stop-color="#FF4F4F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-7" transform="translate(-41.000000, -667.000000)" fill="url(#linearGradient-1)">
+            <rect id="Rectangle-3" transform="translate(43.500000, 4976.000000) rotate(-180.000000) translate(-43.500000, -4976.000000) " x="41.0852084" y="667" width="4.82958313" height="8618"></rect>
+        </g>
+    </g>
+</svg>

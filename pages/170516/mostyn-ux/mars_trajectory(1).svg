@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="300 0 450 670"><defs>
+
+
+
+
+	<style>
+
+		.cls-1,.cls-2,.cls-3{
+			fill:none;
+			stroke-miterlimit:10;
+			stroke-width:8px;
+
+		
+
+		}
+		
+		.cls-1{stroke:red;}
+
+		.cls-2{fill:red;stroke-linecap:round;stroke-linejoin:round;stroke-width:10px;
+		
+					stroke:#fff;
+
+
+		stroke-dasharray: 1350;
+		stroke-dashoffset: 0;
+		-webkit-animation: dash 3s ease forwards infinite;
+		-o-animation: dash 3s ease forwards infinite;
+		-moz-animation: dash 3s ease forwards infinite;
+		animation: dash 3s ease forwards infinite;
+		animation-direction: alternate;
+
+		}
+
+		.cls-3{
+			stroke:#fff;
+
+			stroke-dasharray: 1050;
+			stroke-dashoffset: 0;
+			-webkit-animation: dash 2s linear forwards infinite;
+			-o-animation: dash 2s linear forwards infinite;
+			-moz-animation: dash 2s linear forwards infinite;
+			animation: dash 2s linear forwards infinite;
+			animation-direction: alternate;
+
+		}
+
+
+		@-webkit-keyframes dash{
+			from{
+				stroke-dashoffset: 1350;
+			}
+
+			to{
+				stoke-dashoffset: 0;
+			}
+		}
+
+
+
+	</style>
+
+
+
+</defs><title>mars_trajectory</title>
+
+
+<g id="Layer_2" data-name="Layer 2">
+
+
+	<g id="Layer_1-2" data-name="Layer 1">
+	
+	<path class="cls-1" d="M270.82,508.56S1067.54,134.95.49,4" 
+		id="theMotionPath"/>
+
+
+	<circle class="cls-2" cx="136.3" cy="109.36" r="104.36"> 
+		<animateMotion dur="5s" repeatCount="indefinite">
+		  <mpath xlink:href="#theMotionPath"/>
+		</animateMotion>
+	</circle>
+
+	<circle class="cls-3" cx="96.48" cy="149.29" r="21.83">	
+		<animateMotion dur="5s" repeatCount="indefinite">
+		  <mpath xlink:href="#theMotionPath"/>
+		</animateMotion>
+	</circle>
+
+
+	<line class="cls-3" x1="96.6" y1="140.07" x2="96.6" y2="114.61">
+		<animateMotion dur="5s" repeatCount="indefinite">
+		  <mpath xlink:href="#theMotionPath"/>
+		</animateMotion>
+	</line>
+
+	<line class="cls-3" x1="96.48" y1="183.85" x2="96.48" y2="158.39">
+		<animateMotion dur="5s" repeatCount="indefinite">
+		  <mpath xlink:href="#theMotionPath"/>
+		</animateMotion>
+	</line>
+
+	<line class="cls-3" x1="105.59" y1="149.29" x2="131.04" y2="149.29">
+		<animateMotion dur="5s" repeatCount="indefinite">
+		  <mpath xlink:href="#theMotionPath"/>
+		</animateMotion>
+	</line>
+
+	<line class="cls-3" x1="61.93" y1="149.29" x2="87.38" y2="149.29">
+		<animateMotion dur="5s" repeatCount="indefinite">
+		  <mpath xlink:href="#theMotionPath"/>
+		</animateMotion>
+	</line>
+
+
+	</g>
+
+</g>
+
+
+</svg>
+
+

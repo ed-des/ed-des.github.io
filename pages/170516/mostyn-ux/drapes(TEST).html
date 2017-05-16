@@ -1,0 +1,119 @@
+<html>
+	<head>
+		<title>TEST</title>
+	
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+
+</head>
+
+<body>
+
+<!-- <div class="typewriter">
+  <h1>HUMANS HAVE <BR>
+JUST LANDED<BR> ON THE MARTIAN <br>
+SURFACE AT <p id="demo"></p></h1>
+</div> -->
+
+	<div class="objContainer">
+ 			<object>
+ 				<embed src="mars_path2.svg">
+			</object>
+		</div>
+
+	<div class="text01">
+	  <h1>Hatt Dem</h1>
+	</div>
+	
+	
+	<hr>
+
+
+	<div class="under">
+		<object class="nasa">
+			<embed src="nasa.svg">
+		</object>
+
+		<a href="drapes(TEST_pt2).html">MORE INFO</a>
+	</div>
+
+
+</body>
+
+<script>
+
+
+document.addEventListener('DOMContentLoaded',function(event){
+  // array with texts to type in typewriter
+  var dataText = [ "HUMANS HAVE <br> JUST LANDED <br> ON THE MARTIAN <br> SURFACE AT 12:23 EST"];
+  
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(text, i, fnCallback) {
+    // check if text isn't finished yet
+    if (i < (text.length)) {
+      // add next character to h1
+     document.querySelector("h1").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function() {
+        typeWriter(text, i + 1, fnCallback)
+      }, 100);
+    }
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == 'function') {
+      // call callback after timeout
+      setTimeout(fnCallback, 700);
+    }
+  }
+  // start a typewriter animation for a text in the dataText array
+   function StartTextAnimation(i) {
+     if (typeof dataText[i] == 'undefined'){
+        setTimeout(function() {
+          StartTextAnimation(0);
+        }, 3000);
+     }
+     // check if dataText[i] exists
+    if (i < dataText[i].length) {
+      // text exists! start typewriter animation
+     typeWriter(dataText[i], 0, function(){
+       // after callback (and whole text has been animated), start next text
+       StartTextAnimation(i + 1);
+     });
+    }
+  }
+  // start the text animation
+  StartTextAnimation(0);
+});
+
+
+
+//create a string that includes DATATEXT and includes a variable
+
+// var currentTime = Date();
+
+// var dataText = string + currentTime();
+
+
+
+// document.getElementById("demo").innerHTML = Date();
+	
+// 	var d = new Date(); // for now
+// 	d.getHours(); // => 9
+// 	d.getMinutes(); // =>  30
+// 	d.getSeconds(); // => 51
+
+
+
+// var d = new Date();
+// document.getElementById("demo").innerHTML = d.toDateString()
+
+
+
+</script>
+
+	
+</html>

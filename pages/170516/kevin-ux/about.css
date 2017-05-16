@@ -1,0 +1,53 @@
+body {     
+    width: 818px;
+    margin-left: 0px;
+    margin-top:0px
+}
+
+.title
+ {
+    position:absolute;
+    left: 215px;
+    top: 100px;
+    z-index: 1;
+    font-size: 200px;
+    font-family: 'VT323', monospace;
+    line-height: 120px;
+    color:black;
+    text-align:center;
+}
+
+.intro {
+    position:absolute;
+    left: 110px;
+    top: 430px;
+    z-index: 1;
+    font-size: 50px;
+    font-family: 'VT323', monospace;
+    color:black;
+    text-align:left;
+    width:600px;
+
+}
+
+.intro1 {
+    position:absolute;
+    left: 110px;
+    top: 1500px;
+    z-index: 1;
+    font-size: 50px;
+    font-family: 'VT323', monospace;
+    color:black;
+    text-align:left;
+    width:600px;
+
+}
+
+#back{
+    position:absolute;
+    z-index: 1;
+    width:100px;
+    top: 100px;
+    left: 90px;
+}
+

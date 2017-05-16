@@ -1,0 +1,119 @@
+/*body {
+    background-image: url("penpal.png");
+    background-size: contain;
+    background-position: center;
+    background-clip: content-box;
+    background-repeat: no-repeat;
+}*/
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 120%;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    margin: 0;
+    font-size: 14px;
+}
+
+.note {
+    color: grey;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+    line-height: 150%;
+}
+
+span {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 300%;
+    text-align: center;
+    align-content: center;
+    font-size: 14px;
+    margin: 30px;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 32px;
+    margin: 0;
+    line-height: 150%;
+    padding: 0;
+}
+
+.group {
+    display:block;
+    padding: 50px;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+#toggle {
+    position: absolute;
+    display: none;
+}
+
+span {
+    display: none;
+}
+
+#toggle:checked + span {
+    display: block;
+}
+
+img {
+    cursor: pointer;
+}
+
+#checkbox {
+    visibility: hidden;
+}
+
+#images {
+    height: 800px;
+}
+
+#image {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+#image > div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    
+}
+
+ #image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#caption {
+    background: #000;
+    color: #ccc;
+    display: none;
+    overflow: hidden;
+}
+
+#caption p {
+  padding: 5px;
+  margin: 0;
+    font-size: 32px;
+    line-height: 150%;
+}
