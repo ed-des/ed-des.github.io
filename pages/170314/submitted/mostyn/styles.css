@@ -226,6 +226,7 @@ button.questions.active, button.questions:hover{
     display: block;
     position: fixed;
     overflow: hidden;
+    pointer-events: none;
 }
 
 
@@ -528,6 +529,7 @@ img{
     h1{
     font-size: 36px;
     line-height: 1.2;
+    margin-top: -10px;
     }
 
     h2{
@@ -552,6 +554,5 @@ img{
     }
 
 
-    bod
 }
 

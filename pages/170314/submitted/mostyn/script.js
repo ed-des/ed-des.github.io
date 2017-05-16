@@ -64,7 +64,7 @@ When the user clicks on the button toggle between hiding and showing the dropdow
 
 		$(document).scroll(function() {
 			var y = $(this).scrollTop();
-			  if (y > 400) {
+			  if (y > 1200) {
 			    $('.dropbtn').fadeIn();
 			  } else {
 			    $('.dropbtn').fadeOut();

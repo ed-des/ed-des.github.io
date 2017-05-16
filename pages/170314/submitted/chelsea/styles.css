@@ -1,4 +1,5 @@
 body {
+    font-family: 'BioRhyme', serif;
      margin: 20px;
     
        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d456ea+0,ef017c+100 */
@@ -163,15 +164,18 @@ h8{
     justify-content: 20%;
 }
 .ex-col {
+    height: auto;
+    width:100%;
     
 }
 .ex-image {  
-    height: 90px;
-    width: 90px;
+    height: 100%;
+    width: auto;
     overflow: inherit;
 }
 .ex-fish {
-    width: 110%;
+    width: 100%;
+    height: auto;
 }
 
 li .green{
