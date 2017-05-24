@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title>The Drapes</title>
+	
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+		<!-- <h1>
+			The Authoritarian's Drapes
+		</h1>
+ -->
+
+<div class="wrapper" >
+
+
+<button class="accordion"></button>
+		<div class="panel">
+
+			<iframe src="drapes(TEST).html"></iframe>
+
+
+		</div>
+
+	<object class="handle">
+		<embed src="handle.svg" width="30%" height="150%" z-index="-9" margin-top="-60px">
+	</object>
+
+
+
+
+	</div>
+
+
+
+</body>
+
+	<script>
+
+/* DROPDOWN */
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].onclick = function() {
+	    this.classList.toggle("active");
+
+	    var panel = this.nextElementSibling;
+	    if (panel.style.maxHeight){
+	      panel.style.maxHeight = null;
+	    } else {
+	      panel.style.maxHeight = panel.scrollHeight + "px";
+	    } 
+	  }
+	}
+
+
+	// $("object.handle").on("click", function(){
+	//   $(this).toggleClass("clicked");
+	// });
+
+	
+
+	</script>
+
+</html>

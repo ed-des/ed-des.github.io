@@ -29,9 +29,10 @@ p {
 
 blockquote{
 	font-family: "Arial";
-	font-size: 30px;
+	font-size: 24px;
 	text-align: justify;
 	text-indent: 25%;
+	letter-spacing: -0.5px;
 }
 
 a {

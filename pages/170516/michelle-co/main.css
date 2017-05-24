@@ -1,0 +1,54 @@
+.title-section {
+    height: 100vh;
+}
+
+.intro {
+    color: #585858;
+}
+
+.img1{
+    width: 100%;
+    height: 200px;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    background-image: url("images/coposterfinal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img1 .text{
+    text-align: center;
+}
+
+p{
+    color: red;
+    font-size: 20px;
+    font-family: 'Droid Sans', sans-serif;
+    
+}
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: relative;
+  height: 100vh;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}

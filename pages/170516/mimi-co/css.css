@@ -13,10 +13,20 @@
     src: url("fonts/AkzidenzGrotesk-MediumCond.otf")
 }
 
+@font-face {
+    font-family: "AkzidenzGrotesk-Regular";
+    src: url("fonts/AkzidenzGrotesk-Regular.otf");
+}
+
+@font-face {
+    font-family: "AkzidenzGrotesk-Bold";
+    src: url("fonts/AkzidenzGrotesk-Bold.otf");
+}
+
 body {
     width: 100%;
     margin: 0;
-    font-family: 'Akzidenz-Grotesk BQ';
+    font-family: 'AkzidenzGrotesk-Regular';
     font-weight: 300;
     background: #000;
     font-size: 15px;
@@ -31,6 +41,7 @@ h3,
 h4 {
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
+    font-family: 'AkzidenzGrotesk-Bold';
 }
 
 .container {

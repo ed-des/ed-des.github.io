@@ -1,0 +1,86 @@
+
+.title-section {
+    height: 100vh;
+}
+
+.blue {
+    background-color: #51c0f0;
+    margin-top: -23px;
+    
+}
+.img1{
+    width: 100%;
+    height: 200px;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    background-image: url("images/uxcontent1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro {
+    margin-left: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.secondimg {
+    margin-top: -16px;
+}
+
+.secondimg img {
+    align-content: center;
+    text-align: center
+}
+
+.thirdimg {
+    margin-top: -16px;
+}
+
+.instruction {
+ margin-top: -16px;
+}
+
+.blueimg {
+    margin-top: -130px;
+   padding-top: 20%
+    
+}
+
+.secondgif {
+    margin-top: -300px;
+    height: 200px;
+    padding-left: 20px;
+}
+
+.featureone {
+      margin-top: 96px;
+}
+
+.featuretwo {
+      margin-top: -16px;
+}
+
+.lastimg {
+      margin-top: -16px;
+    
+}
+
+
+
+
+p{
+    color: red;
+}
+
+
+.img1 .text{
+    text-align: center;
+}
+

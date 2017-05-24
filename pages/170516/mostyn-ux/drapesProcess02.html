@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+
+	<head>
+		<title>The Drapes</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="stylesProcess02.css">
+
+	</head>
+
+
+
+<body>
+
+<div id="main">
+
+	
+
+	<h1>THE AUTHORITARIAN'S DRAPES</h1>
+	<hr>
+
+<div class="description">
+	<p>The Authoritarian’s Drapes are a speculative design object wherein a citizen's blinds are in the direct control of a government entity. A citizen can be subjected to any  news and other pertinent pieces of information that the government may want to project.</p>
+
+	<p>The use case in this instance would be NASA's first successful manned mission to Mars – a news story that any government would want to directly broadcast to its citizens to a patriotic and emboldening affect.</p>
+
+
+	</div>
+
+
+
+
+<button class="accordion"> KEYFRAMES </button>
+		<div class="panel">
+			
+			<div class="rowWrapper">
+
+				<div class="row0">
+	
+					<div class="mainTile">
+						<img src="process/1f.svg"/>
+					</div>
+					<div class="mainTile">
+						<img src="process/2f.svg"/>
+					</div>
+					<div class="mainTile">
+						<img src="process/3f.svg"/>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+
+		<button class="accordion"> DRAFT </button>
+				<div class="panel">
+					
+
+				<div class="rowWrapper">
+
+					<div class="row1">
+
+						<div class="mainTile">
+							<img src="process/01.svg"/>
+						</div>
+						<div class="mainTile">
+							<img src="process/02.svg"/>
+						</div>
+						<div class="mainTile">
+							<img src="process/03.svg"/>
+						</div>
+						<div class="mainTile">
+							<img src="process/04.svg"/>
+						</div>
+						<div class="mainTile">
+							<img src="process/05.svg"/>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+
+	<button class="accordion"> USE CASE #1 </button>
+			<div class="panel">
+				
+
+			<div class="rowWrapper">
+
+				<div class="row2">
+
+					<div class="secondTile">
+						<img src="process/info_01.svg"/>
+					</div>
+					<div class="secondTile">
+						<img src="process/info_02.svg"/>
+					</div>
+					<div class="secondTile">
+						<img src="process/info_03.svg"/>
+					</div>
+					<div class="secondTile">
+						<img src="process/info_04.svg"/>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+
+		<button class="accordion"> USE CASE #2 </button>
+				<div class="panel">
+					
+
+				<div class="rowWrapper">
+
+					<div class="row3">
+
+						<div class="secondTile">
+							<img src="process/nuke_01.svg"/>
+						</div>
+						<div class="secondTile">
+							<img src="process/nuke_02.svg"/>
+						</div>
+						<div class="secondTile">
+							<img src="process/nuke_03.svg"/>
+						</div>
+						<div class="secondTile">
+							<img src="process/nuke_04.svg"/>
+						</div>
+						<div class="secondTile">
+							<img src="process/nuke_05.svg"/>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+<!-- 
+			<div class="description2">
+			 Mostyn Griffith 2017
+
+			</div>
+ -->
+
+
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+	
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].onclick = function() {
+	    this.classList.toggle("active");
+	    var panel = this.nextElementSibling;
+	    if (panel.style.maxHeight){
+	      panel.style.maxHeight = null;
+	    } else {
+	      panel.style.maxHeight = panel.scrollHeight + "px";
+	    } 
+	  }
+	}
+
+</script>
+
+
+</html>

@@ -1,0 +1,190 @@
+
+h1 {
+  width: 80%;
+  text-align: center;
+	font-size: 24px;
+	margin: 0 auto;
+	line-height: 0.95;
+  font-family: 'tradegothiclt-bold', sans-serif;
+
+
+}
+
+hr{
+  border: 5px solid white;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  position: relative;
+}
+
+body{
+	background-color: red;
+  display: block;
+  font-family: 'tradegothiclt-bold', sans-serif;
+  color: white;
+
+}
+
+p{
+  font-size: 36px;
+  text-align: justify;
+  line-height: 1.1;
+  font-family: 'comic-sans', sans-serif;
+  height: auto;
+  padding-bottom: 5%;
+
+
+}
+
+
+#main {
+  top: 0;
+  left: 0;
+  padding: 0 auto;
+  margin: 0 auto;
+/*    margin-top: 5%;
+    margin-bottom: 5%;*/
+    margin-top: 12px;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+
+}
+
+.description{
+  margin: 0 auto;
+  width: 90%;
+}
+/*
+.description2{
+  margin: 0 auto;
+  text-align: center;
+  overflow: scroll;
+
+}*/
+
+
+
+
+button.accordion {
+    margin: 0 auto;
+    border: 5px solid white;
+    background-color: red;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    height: 7%;
+/*    margin-top: 20px;
+    margin-bottom: 20px;
+*/    text-align: center;
+    transition: 0.4s;
+    font-family: 'tradegothiclt-bold', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    outline: none;
+
+    position: relative;
+
+
+}
+
+button.accordion.active, button.accordion:hover{
+    background-color: white;
+    color: red;
+}
+
+div.panel{  
+/*    margin-bottom: 20px;
+    margin-top: -20px;
+*/    
+    background-color: red;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+/*    border: 5px solid white;
+*/    outline: none;
+
+}
+
+
+
+.rowWrapper {
+/*    height: calc(100% - 88px);
+*/
+    height: 70vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    background-color: red;
+    padding-bottom: 15%;
+    font-size: 20px;
+}
+
+.row0{
+  height: 100%;
+  width: 330%;
+/*  margin-top: 4%;
+*/  padding: 8px;
+}
+
+.row1 {
+  height: 100%;
+  width: 510%;
+
+  padding: 8px;
+}
+
+.row2{
+  height: 100%;
+  width: 850%;
+  padding: 8px;
+
+}
+
+.row3{
+  height: 100%;
+  width: 550%;
+  padding: 8px;
+
+}
+
+.mainTile {
+    height: 100%;
+    width: auto;
+    display: inline-block;
+    float: left;
+    padding: 2%;
+    margin-right: 5%;
+    top: 0;
+    position: relative;
+}
+
+.mainTile > img {
+    height: 100%;
+    width: auto;
+}
+
+.secondTile{
+    height: 75%;
+    width: auto;
+    display: inline-block;
+    float: left;
+    padding: 2%;
+/*    margin-right: 2%;
+*/    margin-bottom: 5%;
+    top: 5%;
+    position: relative;
+}
+
+.secondTile > img {
+    height: 100%;
+    width: auto;
+}
+

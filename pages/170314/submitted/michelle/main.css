@@ -1,0 +1,503 @@
+body {
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    line-height: 1.25em;
+    background: #EBBFBF;
+}
+
+.body-padding {
+    padding: -20px;
+}
+
+
+
+/*   h1 = TITLE   */
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+h2,
+h3,
+h4 {
+    font-family: 'Roboto Mono';
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1em;
+    -webkit-margin-before: 0;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.author {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 28px;
+    position: relative;
+    
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.2em;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+
+
+.down-arrow {
+    font-size: 50px;
+    right: 10px;
+    position: absolute;
+    animation: MoveUpDown 1s linear infinite;
+    animation: MoveUpDown 1s linear infinite;
+}
+
+.back-top {
+    text-align: center;
+    padding-bottom: 80px;
+    z-index: 0;
+}
+
+.up-arrow {
+    font-size: 90px;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    position: relative;
+    transform: rotate(180deg);
+    animation: MoveUpDown 1s linear infinite;
+    animation: MoveUpDown 1s linear infinite;
+}
+
+.down-arrow a,
+.up-arrow a,
+.back-top a,
+a:visited {
+    text-decoration: none;
+    color: #0000ff;
+}
+
+@keyframes MoveUpDown {
+    0% {
+        bottom: 45px;
+    }
+    50% {
+        bottom: 26px;
+    }
+    100% {
+        bottom: 45px;
+    }
+}
+
+
+/*   h2 = SECTION HEADINGS, AUTHOR   */
+
+h2 {
+    line-height: 1em;
+    font-weight: 500;
+    font-size: 32px;
+    padding-top: 20px;
+    -webkit-margin-after: 0px;
+    text-transform: uppercase;
+}
+
+span.line-through {
+    border-bottom: 1px dotted white;
+}
+
+span.book-name {
+    color: white;
+}
+
+.syllabus {
+    border-top: 2px dotted black;
+    font-size: 40px;
+    line-height: .9em;
+}
+
+.syllabus-demph {
+    font-size: 20px;
+}
+
+ul {
+    -webkit-padding-start: 40px;
+}
+
+.nonlist {
+    list-style: none;
+    line-height: 1.35em;
+    font-size: 20px;
+    /*
+margin-top: -.5em;
+margin-bottom: -.5em; 
+*/
+}
+
+.nonlist li {
+    -webkit-margin-before: .25em;
+}
+
+
+/*   h3 = QUESTION HEADINGS   */
+
+h3 {
+    margin-top: 1.3em;
+    margin-bottom: -.25em;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.2em;
+}
+
+
+/*  h4 = notes, this is how    */
+
+h4 {
+    -webkit-margin-before: 1.5em;
+    -webkit-margin-after: 1.5em;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1.2em;
+    margin-bottom: -5px;
+    font-weight: 600;
+}
+
+
+/*  h5 = PART 1, PART 2 */
+
+.part {
+    margin-left: 75px;
+}
+
+.part h5 {
+    margin-top: 0;
+    margin-left: -75px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: -10px;
+    letter-spacing: 0;
+}
+
+.part p {
+    -webkit-margin-before: .1em;
+    margin-top: -1.3em;
+    -webkit-margin-after: 2em;
+}
+
+.censored {
+    padding-right: 80px;
+    height: 10px;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0);
+    background: black;
+}
+
+
+/*  LIST OF READINGS    */
+
+ul.readings {
+    -webkit-padding-start: 0;
+    width: 105%;
+    margin-right: 120px;
+}
+
+.readings li {
+    list-style-type: none;
+    -webkit-margin-after: .55em;
+    text-indent: -25px;
+}
+
+.readings li:before {
+    content: "\261E";
+    padding-right: 10px;
+    font-weight: 100;
+    color: blue;
+}
+
+.readings li:nth-child(1) {
+    -webkit-margin-after: 1.1em;
+}
+
+.readings li:nth-child(2) {
+    line-height: 1.2em;
+    -webkit-margin-after: 1.25em;
+}
+
+.readings li:nth-child(3) {
+    -webkit-margin-after: 1.5em;
+}
+
+.readings li:nth-child(4) {
+    line-height: 1.1em;
+    -webkit-margin-after: 1.9em;
+}
+
+.readings li:nth-child(5) {
+    line-height: 1.1em;
+    -webkit-margin-after: 1.8em;
+}
+
+.readings li:nth-child(6) {
+    -webkit-margin-after: 2.4em;
+}
+
+.readings li:nth-child(7) {
+    line-height: 1.2em;
+    -webkit-margin-after: 2.35em;
+}
+
+
+
+.extra-books-flexbox {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: auto;
+}
+
+
+
+.book-img-caption {
+    display: inline;
+    padding: 10px 10px;
+    text-align: left;
+    font-size: 24px;
+    line-height: 1.2em;
+}
+
+.caption1 {
+    width: 200px;
+}
+
+.caption2 {
+    width: 150px;
+    top: 270px;
+    left: -15px;
+    margin-bottom: 350px;
+}
+
+.book-img-and {
+    align-self: center;
+    top: 160px;
+    position: relative;
+}
+
+.emph-word {
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.notes {
+    bottom: 15px;
+    font-size: 14px;
+    line-height: 1.3em;
+    margin: 30px 0 30px 0;
+}
+
+.chair-illustration {
+    padding: 10px 30px;
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.h-row1 {
+    display: block;
+    line-height: 1.5em;
+    transform: scaleY(1.5);
+}
+
+.h-row2 {
+    display: block;
+    transform: scaleY(1.5);
+    line-height: 2.5em;
+}
+
+.h-row3 {
+    display: block;
+    transform: scaleY(1.5);
+    line-height: 3em;
+}
+
+.h-row4 {
+    display: block;
+    transform: scaleY(1.5);
+    line-height: 3.5em;
+}
+
+.h-row5 {
+    transform: scaleY(1.5);
+    display: block;
+    line-height: 4em;
+}
+
+.pilcrow {
+    float: right;
+    margin-top: -9.5em;
+    transform: scaleX(4) scaleY(3);
+}
+
+ol {
+    margin-left: -10px;
+}
+
+ol li {
+    -webkit-margin-after: .5em;
+}
+
+
+
+.utility-one {
+    margin-left: 30px;
+}
+
+.utility-two {
+    margin-left: 60px;
+}
+
+.utility-three {
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+
+.roles {
+    padding-top: 74px;
+    border-top: 2px solid black;
+    font-size: 40px;
+}
+
+.roles-list {
+    margin-left: 40px;
+}
+
+.roles-list h5 {
+    margin-left: -40px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: -10px;
+    letter-spacing: 0;
+}
+
+
+/*      FORMS       */
+
+button.form-accordion {
+    font-family: 'Inconsolata';
+    background: transparent;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    color: hotpink;
+    transition: background-color 0.1s linear;
+    -webkit-transition: background-color 0.1s linear;
+}
+
+button.form-accordion.active {
+    background-color: mediumvioletred;
+    color: transparent;
+    border-bottom: 0;
+    transition: background-color 0.1s linear;
+    -webkit-transition: background-color 0.1s linear;
+}
+
+
+
+div.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    -webkit-transition: max-height 0.5s ease-out;
+    background: rgba(255, 255, 255, .85)
+}
+
+form {
+    border: 1px solid black;
+    padding: 5px 10px 10px 10px;
+}
+
+.panel h2 {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+input,
+textarea {
+    background: transparent;
+    border: 1px dotted #000000;
+    font-family: 'Inconsolata';
+    font-size: 14px;
+    padding: 2px 5px;
+    color: #ee00ee;
+}
+
+input[type="small"] {
+    width: 100px;
+}
+
+input[type="submit"] {
+    border: 1px solid black;
+    color: #0000ee;
+    padding: 5px 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+input[type="submit"]:active {
+    background-color: #0000ee;
+    color: #fff;
+}
+
+textarea {
+    width: calc(100% - 10px);
+    margin: auto;
+}
+
+
+
+
+    .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    
